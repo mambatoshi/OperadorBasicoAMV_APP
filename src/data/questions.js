@@ -629,7 +629,7 @@ export const questions = [
         opts: ['Solo conservador', 'Conservador, moderado y de mayor riesgo', 'Solo moderado y agresivo', 'Bajo y alto riesgo'], ans: 1,
         exp: 'El esquema de multifondos ofrece tres perfiles: conservador, moderado y de mayor riesgo, permitiendo al afiliado elegir según su perfil de riesgo y cercanía al retiro.'
     },
-,
+    ,
 
     {
         id: 'e8', cat: 'etica', q: "Según el Decreto 2555 de 2010, ¿cuáles son los principios orientadores para el manejo de conflictos de interés?",
@@ -972,7 +972,7 @@ export const questions = [
         opts: ["Solo la BVC", "BVC, sistemas de negociación, depósitos centralizados de valores, cámaras de compensación y sistemas de registro", "Solo DECEVAL", "Solo la CRCC"], ans: 1,
         exp: "Los proveedores de infraestructura incluyen bolsas, sistemas de negociación, depósitos centralizados, cámaras de compensación y sistemas de registro."
     }
-,
+    ,
 
     {
         id: 'rv9', cat: 'renta_variable', q: "La rentabilidad de una acción se obtiene por:",
@@ -1357,7 +1357,7 @@ export const questions = [
         opts: ["Una tasa fijada por la SFC", "Una tasa de interés de referencia de corto plazo que refleja la tasa a la que los bancos están dispuestos a prestar o recibir recursos", "La tasa de los TES", "La tasa de créditos hipotecarios"], ans: 1,
         exp: "El IBR es un indicador de tasa de interés de referencia de corto plazo, calculado a partir de las cotizaciones de los bancos, que refleja el costo del dinero interbancario."
     }
-,
+    ,
 
     {
         id: 'm15', cat: 'matematicas', q: "Si invierte $10.000.000 al 0,5% mes vencido con interés simple durante 12 meses, ¿cuánto recibe al final?",
@@ -1520,7 +1520,7 @@ export const questions = [
         opts: ["Menor a $100M", "Igual a $100M", "Mayor a $100M ($100.589.589)", "Imposible calcularlo"], ans: 2,
         exp: "VF = $100M + $5,22M = $105,22M. VP = 105.220.000/(1+0,0498)^(338/365) = $100.589.589. Como TIR < tasa facial, se compra con prima."
     }
-,
+    ,
 
     // ═══════════════════ v4 REGULACIÓN EXPANSION ═══════════════════
     {
@@ -1934,259 +1934,411 @@ export const questions = [
         exp: 'La política fiscal expansiva usa mayor gasto público o menores impuestos para aumentar la demanda agregada y estimular el crecimiento económico.'
     }
 
-,
+    ,
 
     // ═══════════════════ v5 REGULACIÓN DEEP EXPANSION ═══════════════════
-    {id:'r36',cat:'regulacion',q:'El prospecto de información de una emisión debe estar disponible en:',
-     opts:['Solo la página de la SFC','La página web del emisor, de la SFC y del sistema de negociación','Solo la bolsa de valores','El Banco de la República'],ans:1,
-     exp:'El prospecto debe publicarse en la web del emisor, de la SFC y del sistema de negociación donde estén inscritos los títulos (art. 5.2.1.1.4 Decreto 2555).'},
-    {id:'r37',cat:'regulacion',q:'Los bonos convertibles en acciones (BOCEAS) se caracterizan porque:',
-     opts:['Son bonos a tasa variable','Al vencimiento, el capital y rendimientos se pagan obligatoriamente en acciones del emisor','Solo pueden emitirlos bancos','Son bonos cupón cero'],ans:1,
-     exp:'Los BOCEAS son Bonos Obligatoriamente Convertibles en Acciones: al vencimiento el inversionista recibe acciones en lugar de dinero.'},
-    {id:'r38',cat:'regulacion',q:'Los bonos hipotecarios están respaldados por:',
-     opts:['El patrimonio general del emisor','Créditos hipotecarios otorgados por establecimientos de crédito','Acciones del emisor','Títulos TES'],ans:1,
-     exp:'Los bonos hipotecarios (Ley 546/1999) están respaldados por créditos hipotecarios. Puede ser hipotecarios (financian nuevos créditos) o estructurados (créditos preexistentes).'},
-    {id:'r39',cat:'regulacion',q:'Los bonos de riesgo son emitidos por:',
-     opts:['El Banco de la República','Empresas en procesos de reestructuración empresarial','Fondos de pensiones','La Bolsa de Valores'],ans:1,
-     exp:'Los bonos de riesgo son títulos de deuda emitidos por empresas en proceso de reestructuración. Pueden o no tener rendimiento financiero y ser convertibles en acciones.'},
-    {id:'r40',cat:'regulacion',q:'Los papeles comerciales tienen un plazo mínimo y máximo de:',
-     opts:['1 a 5 años','30 a 180 días','Superior a 15 días e inferior a 1 año','Sin límite de plazo'],ans:2,
-     exp:'Los papeles comerciales son pagarés con plazo superior a 15 días e inferior a 1 año. Sus recursos NO pueden destinarse a adquirir acciones o bonos convertibles.'},
-    {id:'r41',cat:'regulacion',q:'La emisión rotativa de papeles comerciales permite:',
-     opts:['Rotar el monto redimido colocando nuevamente hasta el valor global autorizado, sin superar 2 años','Emitir sin límite de tiempo','Cambiar la tasa de interés libremente','Redimir antes del vencimiento'],ans:0,
-     exp:'En emisión rotativa, el emisor puede recolocar montos redimidos hasta el tope global autorizado, por máximo 2 años. La emisión única no permite rotación ni prórroga.'},
-    {id:'r42',cat:'regulacion',q:'En la titularización, el agente de manejo tiene como función:',
-     opts:['Entregar los activos al vehículo','Actuar como vocero del patrimonio autónomo emisor, recaudar recursos y solicitar autorización ante la SFC','Calificar los títulos','Auditar al originador'],ans:1,
-     exp:'El agente de manejo es vocero del patrimonio autónomo emisor, gestiona la emisión, recauda recursos y debe propender por el manejo seguro y eficiente.'},
-    {id:'r43',cat:'regulacion',q:'Los títulos de participación en una titularización otorgan al inversionista:',
-     opts:['Una tasa de interés fija','Un derecho patrimonial sobre los activos del patrimonio autónomo','Solo el derecho a recibir cupones','Derechos políticos sobre el emisor'],ans:1,
-     exp:'Los títulos de participación dan derecho patrimonial sobre los activos titularizados. Los de contenido crediticio dan derecho a capital+rendimientos fijos. Los mixtos combinan ambos.'},
-    {id:'r44',cat:'regulacion',q:'Los Valores de Financiación Colaborativa (VFC/Crowdfunding) se caracterizan porque:',
-     opts:['Se negocian en la BVC','No constituyen oferta pública y no pueden negociarse en el mercado principal ni segundo mercado','Son emitidos por el gobierno','Requieren calificación de riesgo'],ans:1,
-     exp:'Los VFC son valores de deuda o capital emitidos en plataformas de crowdfunding. No son oferta pública, no se inscriben en el RNVE y no se negocian en mercado principal.'},
-    {id:'r45',cat:'regulacion',q:'El mercado principal se diferencia del segundo mercado en que:',
-     opts:['El principal es solo para derivados','En el principal participan todos los inversionistas; en el segundo solo inversionistas calificados o profesionales','No hay diferencia','El segundo mercado es internacional'],ans:1,
-     exp:'El mercado principal es para el público general con requisitos de emisión estrictos. El segundo mercado se limita a inversionistas calificados/profesionales con requisitos menos estrictos.'},
-    {id:'r46',cat:'regulacion',q:'El principio de finalidad en la compensación y liquidación establece que:',
-     opts:['Las operaciones pueden ser revertidas en 24 horas','Una vez aceptada por el sistema, la operación es firme, irrevocable, exigible y oponible frente a terceros','Solo aplica a operaciones de renta fija','Las garantías pueden liberarse anticipadamente'],ans:1,
-     exp:'El principio de finalidad (art. 10 Ley 964/2005) da firmeza a las operaciones: no pueden ser impugnadas, anuladas ni suspendidas una vez aceptadas por el sistema.'},
-    {id:'r47',cat:'regulacion',q:'¿Quiénes pueden actuar como representantes legales de tenedores de bonos?',
-     opts:['Cualquier persona jurídica','Bancos, corporaciones financieras y sociedades fiduciarias autorizadas por la SFC','Solo la AMV','El Ministerio de Hacienda'],ans:1,
-     exp:'Solo bancos, corporaciones financieras y fiduciarias autorizadas por la SFC pueden ser representantes de tenedores de bonos. La sociedad emisora los designa inicialmente.'},
-    {id:'r48',cat:'regulacion',q:'Los CDT son títulos nominativos que:',
-     opts:['Pueden redimirse en cualquier momento','No son redimibles antes de su vencimiento','Solo se emiten en UVR','No pagan intereses'],ans:1,
-     exp:'Los CDT no son redimibles antes del vencimiento. Si no se redimen al vencimiento, se prorrogan automáticamente por un término igual al inicialmente pactado.'},
-    {id:'r49',cat:'regulacion',q:'El SEN (Sistema Electrónico de Negociación) es un sistema de negociación administrado por:',
-     opts:['La SFC','El Banco de la República para negociar deuda pública','La BVC','La AMV'],ans:1,
-     exp:'El SEN es administrado por el Banco de la República. Junto con el MEC (administrado por la BVC), son los principales sistemas de negociación de deuda pública.'},
-    {id:'r50',cat:'regulacion',q:'Las garantías entregadas a un sistema de compensación y liquidación:',
-     opts:['Pueden ser embargadas por orden judicial','No pueden ser objeto de embargo, secuestro u otra medida cautelar hasta que se cumplan las obligaciones','Se liberan automáticamente cada mes','Solo pueden ser en efectivo'],ans:1,
-     exp:'Las garantías en sistemas de compensación no pueden ser embargadas ni retenidas hasta que se cumplan totalmente las obligaciones derivadas de las operaciones (art. 11 Ley 964).'},
-    {id:'r51',cat:'regulacion',q:'Los bonos ordinarios se garantizan con:',
-     opts:['Créditos hipotecarios','El patrimonio del emisor','Depósitos en el Banco de la República','Títulos TES'],ans:1,
-     exp:'Los bonos ordinarios tienen las características generales de los bonos y se garantizan con el patrimonio del emisor (garantía general, no específica).'},
+    {
+        id: 'r36', cat: 'regulacion', q: 'El prospecto de información de una emisión debe estar disponible en:',
+        opts: ['Solo la página de la SFC', 'La página web del emisor, de la SFC y del sistema de negociación', 'Solo la bolsa de valores', 'El Banco de la República'], ans: 1,
+        exp: 'El prospecto debe publicarse en la web del emisor, de la SFC y del sistema de negociación donde estén inscritos los títulos (art. 5.2.1.1.4 Decreto 2555).'
+    },
+    {
+        id: 'r37', cat: 'regulacion', q: 'Los bonos convertibles en acciones (BOCEAS) se caracterizan porque:',
+        opts: ['Son bonos a tasa variable', 'Al vencimiento, el capital y rendimientos se pagan obligatoriamente en acciones del emisor', 'Solo pueden emitirlos bancos', 'Son bonos cupón cero'], ans: 1,
+        exp: 'Los BOCEAS son Bonos Obligatoriamente Convertibles en Acciones: al vencimiento el inversionista recibe acciones en lugar de dinero.'
+    },
+    {
+        id: 'r38', cat: 'regulacion', q: 'Los bonos hipotecarios están respaldados por:',
+        opts: ['El patrimonio general del emisor', 'Créditos hipotecarios otorgados por establecimientos de crédito', 'Acciones del emisor', 'Títulos TES'], ans: 1,
+        exp: 'Los bonos hipotecarios (Ley 546/1999) están respaldados por créditos hipotecarios. Puede ser hipotecarios (financian nuevos créditos) o estructurados (créditos preexistentes).'
+    },
+    {
+        id: 'r39', cat: 'regulacion', q: 'Los bonos de riesgo son emitidos por:',
+        opts: ['El Banco de la República', 'Empresas en procesos de reestructuración empresarial', 'Fondos de pensiones', 'La Bolsa de Valores'], ans: 1,
+        exp: 'Los bonos de riesgo son títulos de deuda emitidos por empresas en proceso de reestructuración. Pueden o no tener rendimiento financiero y ser convertibles en acciones.'
+    },
+    {
+        id: 'r40', cat: 'regulacion', q: 'Los papeles comerciales tienen un plazo mínimo y máximo de:',
+        opts: ['1 a 5 años', '30 a 180 días', 'Superior a 15 días e inferior a 1 año', 'Sin límite de plazo'], ans: 2,
+        exp: 'Los papeles comerciales son pagarés con plazo superior a 15 días e inferior a 1 año. Sus recursos NO pueden destinarse a adquirir acciones o bonos convertibles.'
+    },
+    {
+        id: 'r41', cat: 'regulacion', q: 'La emisión rotativa de papeles comerciales permite:',
+        opts: ['Rotar el monto redimido colocando nuevamente hasta el valor global autorizado, sin superar 2 años', 'Emitir sin límite de tiempo', 'Cambiar la tasa de interés libremente', 'Redimir antes del vencimiento'], ans: 0,
+        exp: 'En emisión rotativa, el emisor puede recolocar montos redimidos hasta el tope global autorizado, por máximo 2 años. La emisión única no permite rotación ni prórroga.'
+    },
+    {
+        id: 'r42', cat: 'regulacion', q: 'En la titularización, el agente de manejo tiene como función:',
+        opts: ['Entregar los activos al vehículo', 'Actuar como vocero del patrimonio autónomo emisor, recaudar recursos y solicitar autorización ante la SFC', 'Calificar los títulos', 'Auditar al originador'], ans: 1,
+        exp: 'El agente de manejo es vocero del patrimonio autónomo emisor, gestiona la emisión, recauda recursos y debe propender por el manejo seguro y eficiente.'
+    },
+    {
+        id: 'r43', cat: 'regulacion', q: 'Los títulos de participación en una titularización otorgan al inversionista:',
+        opts: ['Una tasa de interés fija', 'Un derecho patrimonial sobre los activos del patrimonio autónomo', 'Solo el derecho a recibir cupones', 'Derechos políticos sobre el emisor'], ans: 1,
+        exp: 'Los títulos de participación dan derecho patrimonial sobre los activos titularizados. Los de contenido crediticio dan derecho a capital+rendimientos fijos. Los mixtos combinan ambos.'
+    },
+    {
+        id: 'r44', cat: 'regulacion', q: 'Los Valores de Financiación Colaborativa (VFC/Crowdfunding) se caracterizan porque:',
+        opts: ['Se negocian en la BVC', 'No constituyen oferta pública y no pueden negociarse en el mercado principal ni segundo mercado', 'Son emitidos por el gobierno', 'Requieren calificación de riesgo'], ans: 1,
+        exp: 'Los VFC son valores de deuda o capital emitidos en plataformas de crowdfunding. No son oferta pública, no se inscriben en el RNVE y no se negocian en mercado principal.'
+    },
+    {
+        id: 'r45', cat: 'regulacion', q: 'El mercado principal se diferencia del segundo mercado en que:',
+        opts: ['El principal es solo para derivados', 'En el principal participan todos los inversionistas; en el segundo solo inversionistas calificados o profesionales', 'No hay diferencia', 'El segundo mercado es internacional'], ans: 1,
+        exp: 'El mercado principal es para el público general con requisitos de emisión estrictos. El segundo mercado se limita a inversionistas calificados/profesionales con requisitos menos estrictos.'
+    },
+    {
+        id: 'r46', cat: 'regulacion', q: 'El principio de finalidad en la compensación y liquidación establece que:',
+        opts: ['Las operaciones pueden ser revertidas en 24 horas', 'Una vez aceptada por el sistema, la operación es firme, irrevocable, exigible y oponible frente a terceros', 'Solo aplica a operaciones de renta fija', 'Las garantías pueden liberarse anticipadamente'], ans: 1,
+        exp: 'El principio de finalidad (art. 10 Ley 964/2005) da firmeza a las operaciones: no pueden ser impugnadas, anuladas ni suspendidas una vez aceptadas por el sistema.'
+    },
+    {
+        id: 'r47', cat: 'regulacion', q: '¿Quiénes pueden actuar como representantes legales de tenedores de bonos?',
+        opts: ['Cualquier persona jurídica', 'Bancos, corporaciones financieras y sociedades fiduciarias autorizadas por la SFC', 'Solo la AMV', 'El Ministerio de Hacienda'], ans: 1,
+        exp: 'Solo bancos, corporaciones financieras y fiduciarias autorizadas por la SFC pueden ser representantes de tenedores de bonos. La sociedad emisora los designa inicialmente.'
+    },
+    {
+        id: 'r48', cat: 'regulacion', q: 'Los CDT son títulos nominativos que:',
+        opts: ['Pueden redimirse en cualquier momento', 'No son redimibles antes de su vencimiento', 'Solo se emiten en UVR', 'No pagan intereses'], ans: 1,
+        exp: 'Los CDT no son redimibles antes del vencimiento. Si no se redimen al vencimiento, se prorrogan automáticamente por un término igual al inicialmente pactado.'
+    },
+    {
+        id: 'r49', cat: 'regulacion', q: 'El SEN (Sistema Electrónico de Negociación) es un sistema de negociación administrado por:',
+        opts: ['La SFC', 'El Banco de la República para negociar deuda pública', 'La BVC', 'La AMV'], ans: 1,
+        exp: 'El SEN es administrado por el Banco de la República. Junto con el MEC (administrado por la BVC), son los principales sistemas de negociación de deuda pública.'
+    },
+    {
+        id: 'r50', cat: 'regulacion', q: 'Las garantías entregadas a un sistema de compensación y liquidación:',
+        opts: ['Pueden ser embargadas por orden judicial', 'No pueden ser objeto de embargo, secuestro u otra medida cautelar hasta que se cumplan las obligaciones', 'Se liberan automáticamente cada mes', 'Solo pueden ser en efectivo'], ans: 1,
+        exp: 'Las garantías en sistemas de compensación no pueden ser embargadas ni retenidas hasta que se cumplan totalmente las obligaciones derivadas de las operaciones (art. 11 Ley 964).'
+    },
+    {
+        id: 'r51', cat: 'regulacion', q: 'Los bonos ordinarios se garantizan con:',
+        opts: ['Créditos hipotecarios', 'El patrimonio del emisor', 'Depósitos en el Banco de la República', 'Títulos TES'], ans: 1,
+        exp: 'Los bonos ordinarios tienen las características generales de los bonos y se garantizan con el patrimonio del emisor (garantía general, no específica).'
+    },
 
     // ═══════════════════ v5 RENTA VARIABLE DEEP EXPANSION ═══════════════════
-    {id:'rv25',cat:'renta_variable',q:'El valor nominal de una acción se calcula como:',
-     opts:['Precio de mercado / Acciones en circulación','Capital social / Número de acciones emitidas','Patrimonio neto / Acciones emitidas','Utilidad / Acciones'],ans:1,
-     exp:'Valor nominal = Capital social / # acciones emitidas. Es fijo desde la constitución y es el precio mínimo al que pueden venderse las acciones.'},
-    {id:'rv26',cat:'renta_variable',q:'Los ADR (American Depositary Receipts) son:',
-     opts:['Acciones colombianas negociadas en la BVC','Títulos emitidos por un banco estadounidense que representan acciones de una empresa extranjera','Bonos del gobierno de EEUU','Derivados sobre índices americanos'],ans:1,
-     exp:'Los ADR permiten a inversionistas estadounidenses invertir en empresas extranjeras. Un banco abre una fiducia con las acciones y emite ADR negociables en NYSE/NASDAQ.'},
-    {id:'rv27',cat:'renta_variable',q:'En el Mercado Global Colombiano (MGC), los títulos de renta variable extranjeros:',
-     opts:['Se negocian en dólares','Se negocian en pesos colombianos a través de la BVC y comisionistas afiliadas','Requieren cuenta en el exterior','Solo están disponibles para inversionistas profesionales'],ans:1,
-     exp:'El MGC permite a inversionistas colombianos acceder a acciones internacionales negociándolas en COP a través de la BVC, con custodia en DECEVAL.'},
-    {id:'rv28',cat:'renta_variable',q:'Una acción inactiva es aquella que:',
-     opts:['Ha sido suspendida por la SFC','No ha tenido operaciones de marcación de precio en más de 30 días calendario','Ha perdido más del 50% de su valor','No paga dividendos'],ans:1,
-     exp:'Una acción pasa a inactiva si en 30+ días calendario no ha tenido operaciones. Cuando hay un posible calce, se desata una subasta de volatilidad en el sistema.'},
-    {id:'rv29',cat:'renta_variable',q:'El mercado de acciones en Colombia se suspende cuando el COLCAP cae:',
-     opts:['5% en un día','10% en un día, se suspende 30 min; si cae otro 5% tras reactivación, se suspende definitivamente','15% en una semana','No existe mecanismo de suspensión automática'],ans:1,
-     exp:'Circuit breaker: caída del 10% del COLCAP = suspensión 30 min. Si tras reactivar cae otro 5%, se suspende definitivamente hasta el día hábil siguiente.'},
-    {id:'rv30',cat:'renta_variable',q:'Las operaciones de contado sobre acciones en Colombia se cumplen en:',
-     opts:['T+0 (el mismo día)','T+2 (dos días hábiles después de la celebración)','T+5 (cinco días hábiles)','T+30 (treinta días)'],ans:1,
-     exp:'Las operaciones de contado se cumplen en T+2 hasta las 4:30 p.m. Excepto BOCEAS que se cumplen en T+0 hasta las 7:00 p.m.'},
-    {id:'rv31',cat:'renta_variable',q:'En una operación repo sobre acciones, el porcentaje de castigo (haircut) se aplica para:',
-     opts:['Calcular la comisión de la bolsa','Determinar el valor efectivo de la garantía considerando la volatilidad del activo','Fijar la tasa de interés','Calcular impuestos'],ans:1,
-     exp:'El haircut es un descuento sobre el precio del activo que refleja su riesgo de mercado. Se calcula usando medidas de volatilidad y es publicado por la CRCC.'},
-    {id:'rv32',cat:'renta_variable',q:'El período exdividendo es el tiempo durante el cual:',
-     opts:['Se pagan los dividendos','El comprador de acciones NO tiene derecho a percibir los dividendos pendientes de pago','Se suspende la negociación','Se calcula el dividendo'],ans:1,
-     exp:'En el período exdividendo (entre primer día hábil de pago y 4 días hábiles antes), el comprador no recibe los dividendos. Permite al emisor actualizar el libro de accionistas.'},
-    {id:'rv33',cat:'renta_variable',q:'Los títulos de participación se diferencian de las acciones porque representan:',
-     opts:['Deuda con interés fijo','Un derecho patrimonial sobre un proyecto o activo específico en fideicomiso, no sobre una compañía','Solo derechos políticos','Participación en derivados'],ans:1,
-     exp:'Los títulos de participación dan derecho sobre activos bajo encargo fiduciario (ej: proyectos inmobiliarios), a diferencia de las acciones que representan propiedad de una empresa.'},
-    {id:'rv34',cat:'renta_variable',q:'Las acciones sin dividendo se caracterizan porque:',
-     opts:['Nunca pagan dividendos','Son acciones recibidas como pago de dividendos en especie y no generan dividendos futuros','Se emiten solo para empleados','Son acciones del gobierno'],ans:1,
-     exp:'Las acciones sin dividendo se emiten cuando la asamblea (80%+ aprobación) decide pagar dividendos en acciones. Esas acciones recibidas no pagan dividendo futuro.'},
-    {id:'rv35',cat:'renta_variable',q:'El límite de repos sobre una acción respecto a su flotante es de:',
-     opts:['10%','25%','50%','Sin límite'],ans:1,
-     exp:'No se permiten nuevos repos si la relación entre acciones en repos y el flotante de esa especie supera el 25%. Adicionalmente, no puede superar 40 veces su promedio diario negociado.'},
+    {
+        id: 'rv25', cat: 'renta_variable', q: 'El valor nominal de una acción se calcula como:',
+        opts: ['Precio de mercado / Acciones en circulación', 'Capital social / Número de acciones emitidas', 'Patrimonio neto / Acciones emitidas', 'Utilidad / Acciones'], ans: 1,
+        exp: 'Valor nominal = Capital social / # acciones emitidas. Es fijo desde la constitución y es el precio mínimo al que pueden venderse las acciones.'
+    },
+    {
+        id: 'rv26', cat: 'renta_variable', q: 'Los ADR (American Depositary Receipts) son:',
+        opts: ['Acciones colombianas negociadas en la BVC', 'Títulos emitidos por un banco estadounidense que representan acciones de una empresa extranjera', 'Bonos del gobierno de EEUU', 'Derivados sobre índices americanos'], ans: 1,
+        exp: 'Los ADR permiten a inversionistas estadounidenses invertir en empresas extranjeras. Un banco abre una fiducia con las acciones y emite ADR negociables en NYSE/NASDAQ.'
+    },
+    {
+        id: 'rv27', cat: 'renta_variable', q: 'En el Mercado Global Colombiano (MGC), los títulos de renta variable extranjeros:',
+        opts: ['Se negocian en dólares', 'Se negocian en pesos colombianos a través de la BVC y comisionistas afiliadas', 'Requieren cuenta en el exterior', 'Solo están disponibles para inversionistas profesionales'], ans: 1,
+        exp: 'El MGC permite a inversionistas colombianos acceder a acciones internacionales negociándolas en COP a través de la BVC, con custodia en DECEVAL.'
+    },
+    {
+        id: 'rv28', cat: 'renta_variable', q: 'Una acción inactiva es aquella que:',
+        opts: ['Ha sido suspendida por la SFC', 'No ha tenido operaciones de marcación de precio en más de 30 días calendario', 'Ha perdido más del 50% de su valor', 'No paga dividendos'], ans: 1,
+        exp: 'Una acción pasa a inactiva si en 30+ días calendario no ha tenido operaciones. Cuando hay un posible calce, se desata una subasta de volatilidad en el sistema.'
+    },
+    {
+        id: 'rv29', cat: 'renta_variable', q: 'El mercado de acciones en Colombia se suspende cuando el COLCAP cae:',
+        opts: ['5% en un día', '10% en un día, se suspende 30 min; si cae otro 5% tras reactivación, se suspende definitivamente', '15% en una semana', 'No existe mecanismo de suspensión automática'], ans: 1,
+        exp: 'Circuit breaker: caída del 10% del COLCAP = suspensión 30 min. Si tras reactivar cae otro 5%, se suspende definitivamente hasta el día hábil siguiente.'
+    },
+    {
+        id: 'rv30', cat: 'renta_variable', q: 'Las operaciones de contado sobre acciones en Colombia se cumplen en:',
+        opts: ['T+0 (el mismo día)', 'T+2 (dos días hábiles después de la celebración)', 'T+5 (cinco días hábiles)', 'T+30 (treinta días)'], ans: 1,
+        exp: 'Las operaciones de contado se cumplen en T+2 hasta las 4:30 p.m. Excepto BOCEAS que se cumplen en T+0 hasta las 7:00 p.m.'
+    },
+    {
+        id: 'rv31', cat: 'renta_variable', q: 'En una operación repo sobre acciones, el porcentaje de castigo (haircut) se aplica para:',
+        opts: ['Calcular la comisión de la bolsa', 'Determinar el valor efectivo de la garantía considerando la volatilidad del activo', 'Fijar la tasa de interés', 'Calcular impuestos'], ans: 1,
+        exp: 'El haircut es un descuento sobre el precio del activo que refleja su riesgo de mercado. Se calcula usando medidas de volatilidad y es publicado por la CRCC.'
+    },
+    {
+        id: 'rv32', cat: 'renta_variable', q: 'El período exdividendo es el tiempo durante el cual:',
+        opts: ['Se pagan los dividendos', 'El comprador de acciones NO tiene derecho a percibir los dividendos pendientes de pago', 'Se suspende la negociación', 'Se calcula el dividendo'], ans: 1,
+        exp: 'En el período exdividendo (entre primer día hábil de pago y 4 días hábiles antes), el comprador no recibe los dividendos. Permite al emisor actualizar el libro de accionistas.'
+    },
+    {
+        id: 'rv33', cat: 'renta_variable', q: 'Los títulos de participación se diferencian de las acciones porque representan:',
+        opts: ['Deuda con interés fijo', 'Un derecho patrimonial sobre un proyecto o activo específico en fideicomiso, no sobre una compañía', 'Solo derechos políticos', 'Participación en derivados'], ans: 1,
+        exp: 'Los títulos de participación dan derecho sobre activos bajo encargo fiduciario (ej: proyectos inmobiliarios), a diferencia de las acciones que representan propiedad de una empresa.'
+    },
+    {
+        id: 'rv34', cat: 'renta_variable', q: 'Las acciones sin dividendo se caracterizan porque:',
+        opts: ['Nunca pagan dividendos', 'Son acciones recibidas como pago de dividendos en especie y no generan dividendos futuros', 'Se emiten solo para empleados', 'Son acciones del gobierno'], ans: 1,
+        exp: 'Las acciones sin dividendo se emiten cuando la asamblea (80%+ aprobación) decide pagar dividendos en acciones. Esas acciones recibidas no pagan dividendo futuro.'
+    },
+    {
+        id: 'rv35', cat: 'renta_variable', q: 'El límite de repos sobre una acción respecto a su flotante es de:',
+        opts: ['10%', '25%', '50%', 'Sin límite'], ans: 1,
+        exp: 'No se permiten nuevos repos si la relación entre acciones en repos y el flotante de esa especie supera el 25%. Adicionalmente, no puede superar 40 veces su promedio diario negociado.'
+    },
 
     // ═══════════════════ v5 DERIVADOS DEEP ═══════════════════
-    {id:'d19',cat:'derivados',q:'La base en futuros se calcula como:',
-     opts:['Precio futuro × Precio spot','Precio futuro - Precio spot del subyacente','Tasa de interés × Plazo','Volatilidad × Delta'],ans:1,
-     exp:'Base = Precio futuro - Precio spot. Si la base es positiva se llama contango; si es negativa, backwardation (normal para commodities con costo de almacenamiento).'},
-    {id:'d20',cat:'derivados',q:'El contango en el mercado de futuros significa que:',
-     opts:['El precio futuro es menor que el spot','El precio futuro es mayor que el precio spot','No hay diferencia entre futuro y spot','El mercado está cerrado'],ans:1,
-     exp:'Contango: Futuro > Spot. Es la situación normal cuando hay costos de acarreo (almacenamiento, financiamiento). Backwardation: Futuro < Spot.'},
-    {id:'d21',cat:'derivados',q:'La CRCC (Cámara de Riesgo Central de Contraparte) tiene como función principal:',
-     opts:['Regular el mercado de derivados','Interponerse como contraparte de ambas partes en una operación, garantizando el cumplimiento','Emitir opciones','Fijar los precios de los futuros'],ans:1,
-     exp:'La CRCC se convierte en compradora de todo vendedor y vendedora de todo comprador, eliminando el riesgo de contraparte. Exige márgenes y garantías para su gestión.'},
-    {id:'d22',cat:'derivados',q:'Un warrant es:',
-     opts:['Un tipo de bono','Una opción emitida por una empresa que da derecho a comprar sus acciones a un precio fijo','Un futuro sobre divisas','Un contrato de permuta financiera'],ans:1,
-     exp:'Un warrant es similar a una opción call pero es emitido directamente por la empresa. Al ejercerse, se emiten acciones nuevas (a diferencia de opciones listadas que no diluyen).'},
-    {id:'d23',cat:'derivados',q:'El valor intrínseco de una opción call es:',
-     opts:['Siempre igual a la prima','Máximo entre cero y (Precio spot - Precio strike)','El precio de la acción subyacente','La volatilidad implícita'],ans:1,
-     exp:'Valor intrínseco Call = Max(0, S-K). Valor intrínseco Put = Max(0, K-S). La prima = Valor intrínseco + Valor temporal.'},
-    {id:'d24',cat:'derivados',q:'Un Cross Currency Swap implica:',
-     opts:['Solo intercambio de tasas de interés en la misma moneda','Intercambio de principal y flujos de intereses en dos monedas diferentes','Solo intercambio de divisas al inicio','Intercambio de acciones entre dos bolsas'],ans:1,
-     exp:'En un Cross Currency Swap se intercambian principal y flujos de interés en diferentes divisas. A diferencia del IRS tradicional, sí hay intercambio de nocional.'},
-    {id:'d25',cat:'derivados',q:'Gamma en opciones mide:',
-     opts:['La sensibilidad al paso del tiempo','La tasa de cambio de Delta respecto al precio del subyacente','La sensibilidad a la volatilidad','El costo de financiamiento'],ans:1,
-     exp:'Gamma = ∂Delta/∂Precio. Es máxima cuando la opción está ATM. Indica cuánto cambia delta por cada $1 de movimiento del subyacente.'},
+    {
+        id: 'd19', cat: 'derivados', q: 'La base en futuros se calcula como:',
+        opts: ['Precio futuro × Precio spot', 'Precio futuro - Precio spot del subyacente', 'Tasa de interés × Plazo', 'Volatilidad × Delta'], ans: 1,
+        exp: 'Base = Precio futuro - Precio spot. Si la base es positiva se llama contango; si es negativa, backwardation (normal para commodities con costo de almacenamiento).'
+    },
+    {
+        id: 'd20', cat: 'derivados', q: 'El contango en el mercado de futuros significa que:',
+        opts: ['El precio futuro es menor que el spot', 'El precio futuro es mayor que el precio spot', 'No hay diferencia entre futuro y spot', 'El mercado está cerrado'], ans: 1,
+        exp: 'Contango: Futuro > Spot. Es la situación normal cuando hay costos de acarreo (almacenamiento, financiamiento). Backwardation: Futuro < Spot.'
+    },
+    {
+        id: 'd21', cat: 'derivados', q: 'La CRCC (Cámara de Riesgo Central de Contraparte) tiene como función principal:',
+        opts: ['Regular el mercado de derivados', 'Interponerse como contraparte de ambas partes en una operación, garantizando el cumplimiento', 'Emitir opciones', 'Fijar los precios de los futuros'], ans: 1,
+        exp: 'La CRCC se convierte en compradora de todo vendedor y vendedora de todo comprador, eliminando el riesgo de contraparte. Exige márgenes y garantías para su gestión.'
+    },
+    {
+        id: 'd22', cat: 'derivados', q: 'Un warrant es:',
+        opts: ['Un tipo de bono', 'Una opción emitida por una empresa que da derecho a comprar sus acciones a un precio fijo', 'Un futuro sobre divisas', 'Un contrato de permuta financiera'], ans: 1,
+        exp: 'Un warrant es similar a una opción call pero es emitido directamente por la empresa. Al ejercerse, se emiten acciones nuevas (a diferencia de opciones listadas que no diluyen).'
+    },
+    {
+        id: 'd23', cat: 'derivados', q: 'El valor intrínseco de una opción call es:',
+        opts: ['Siempre igual a la prima', 'Máximo entre cero y (Precio spot - Precio strike)', 'El precio de la acción subyacente', 'La volatilidad implícita'], ans: 1,
+        exp: 'Valor intrínseco Call = Max(0, S-K). Valor intrínseco Put = Max(0, K-S). La prima = Valor intrínseco + Valor temporal.'
+    },
+    {
+        id: 'd24', cat: 'derivados', q: 'Un Cross Currency Swap implica:',
+        opts: ['Solo intercambio de tasas de interés en la misma moneda', 'Intercambio de principal y flujos de intereses en dos monedas diferentes', 'Solo intercambio de divisas al inicio', 'Intercambio de acciones entre dos bolsas'], ans: 1,
+        exp: 'En un Cross Currency Swap se intercambian principal y flujos de interés en diferentes divisas. A diferencia del IRS tradicional, sí hay intercambio de nocional.'
+    },
+    {
+        id: 'd25', cat: 'derivados', q: 'Gamma en opciones mide:',
+        opts: ['La sensibilidad al paso del tiempo', 'La tasa de cambio de Delta respecto al precio del subyacente', 'La sensibilidad a la volatilidad', 'El costo de financiamiento'], ans: 1,
+        exp: 'Gamma = ∂Delta/∂Precio. Es máxima cuando la opción está ATM. Indica cuánto cambia delta por cada $1 de movimiento del subyacente.'
+    },
 
     // ═══════════════════ v5 RENTA FIJA DEEP ═══════════════════
-    {id:'rf16',cat:'renta_fija',q:'Los TES Clase A tienen como destino:',
-     opts:['Financiar el presupuesto nacional','Sustituir deuda contraída en OMAS y sustituir deuda interna con el Banco de la República','Financiar infraestructura','Pagar pensiones'],ans:1,
-     exp:'TES Clase A: sustituyen deuda del gobierno en operaciones de mercado abierto (OMAS) o deuda con el Banco de la República.'},
-    {id:'rf17',cat:'renta_fija',q:'Los TES Clase B se utilizan principalmente para:',
-     opts:['Sustituir deuda del BanRep','Obtener recursos para apropiaciones presupuestales, operaciones de tesorería y generar curva de rendimientos','Financiar exportaciones','Pagar deuda externa'],ans:1,
-     exp:'TES Clase B captan recursos para el presupuesto, operaciones de tesorería, y además proveen información al mercado generando una curva de rendimientos.'},
-    {id:'rf18',cat:'renta_fija',q:'Un bono cupón cero se caracteriza porque:',
-     opts:['Paga cupones mensuales','No paga intereses periódicos; paga al vencimiento el valor nominal más todos los intereses acumulados','Su tasa es variable','No tiene fecha de vencimiento'],ans:1,
-     exp:'Un bono cupón cero se emite con descuento sobre su valor nominal y al vencimiento paga el valor nominal completo. La diferencia es el rendimiento del inversionista.'},
-    {id:'rf19',cat:'renta_fija',q:'Los bonos subordinados se caracterizan porque en caso de liquidación:',
-     opts:['Tienen prelación sobre todas las deudas','Se pagan después de los demás acreedores pero antes de los accionistas','Se pagan primero','No se pagan'],ans:1,
-     exp:'La deuda subordinada tiene menor prelación que la deuda senior. En liquidación, se paga después de otros acreedores (senior) pero antes que los accionistas.'},
-    {id:'rf20',cat:'renta_fija',q:'La tasa facial de un bono es:',
-     opts:['La tasa de descuento del mercado','La tasa de interés que el emisor promete pagar periódicamente sobre el valor nominal','La TIR del bono','La tasa libre de riesgo'],ans:1,
-     exp:'La tasa facial o cupón es la tasa contractual que determina los pagos periódicos de intereses. Es fija desde la emisión, a diferencia de la TIR que varía con el precio de mercado.'},
-    {id:'rf21',cat:'renta_fija',q:'Cuando la tasa de mercado sube, el precio de un bono de tasa fija:',
-     opts:['Sube','Baja (relación inversa entre tasa y precio)','No cambia','Depende del emisor'],ans:1,
-     exp:'Existe relación inversa entre tasa y precio en renta fija: si las tasas suben, el valor presente de los flujos futuros disminuye y el precio del bono baja.'},
+    {
+        id: 'rf16', cat: 'renta_fija', q: 'Los TES Clase A tienen como destino:',
+        opts: ['Financiar el presupuesto nacional', 'Sustituir deuda contraída en OMAS y sustituir deuda interna con el Banco de la República', 'Financiar infraestructura', 'Pagar pensiones'], ans: 1,
+        exp: 'TES Clase A: sustituyen deuda del gobierno en operaciones de mercado abierto (OMAS) o deuda con el Banco de la República.'
+    },
+    {
+        id: 'rf17', cat: 'renta_fija', q: 'Los TES Clase B se utilizan principalmente para:',
+        opts: ['Sustituir deuda del BanRep', 'Obtener recursos para apropiaciones presupuestales, operaciones de tesorería y generar curva de rendimientos', 'Financiar exportaciones', 'Pagar deuda externa'], ans: 1,
+        exp: 'TES Clase B captan recursos para el presupuesto, operaciones de tesorería, y además proveen información al mercado generando una curva de rendimientos.'
+    },
+    {
+        id: 'rf18', cat: 'renta_fija', q: 'Un bono cupón cero se caracteriza porque:',
+        opts: ['Paga cupones mensuales', 'No paga intereses periódicos; paga al vencimiento el valor nominal más todos los intereses acumulados', 'Su tasa es variable', 'No tiene fecha de vencimiento'], ans: 1,
+        exp: 'Un bono cupón cero se emite con descuento sobre su valor nominal y al vencimiento paga el valor nominal completo. La diferencia es el rendimiento del inversionista.'
+    },
+    {
+        id: 'rf19', cat: 'renta_fija', q: 'Los bonos subordinados se caracterizan porque en caso de liquidación:',
+        opts: ['Tienen prelación sobre todas las deudas', 'Se pagan después de los demás acreedores pero antes de los accionistas', 'Se pagan primero', 'No se pagan'], ans: 1,
+        exp: 'La deuda subordinada tiene menor prelación que la deuda senior. En liquidación, se paga después de otros acreedores (senior) pero antes que los accionistas.'
+    },
+    {
+        id: 'rf20', cat: 'renta_fija', q: 'La tasa facial de un bono es:',
+        opts: ['La tasa de descuento del mercado', 'La tasa de interés que el emisor promete pagar periódicamente sobre el valor nominal', 'La TIR del bono', 'La tasa libre de riesgo'], ans: 1,
+        exp: 'La tasa facial o cupón es la tasa contractual que determina los pagos periódicos de intereses. Es fija desde la emisión, a diferencia de la TIR que varía con el precio de mercado.'
+    },
+    {
+        id: 'rf21', cat: 'renta_fija', q: 'Cuando la tasa de mercado sube, el precio de un bono de tasa fija:',
+        opts: ['Sube', 'Baja (relación inversa entre tasa y precio)', 'No cambia', 'Depende del emisor'], ans: 1,
+        exp: 'Existe relación inversa entre tasa y precio en renta fija: si las tasas suben, el valor presente de los flujos futuros disminuye y el precio del bono baja.'
+    },
 
     // ═══════════════════ v5 DIVISAS DEEP ═══════════════════
-    {id:'dv12',cat:'divisas',q:'Los IMC (Intermediarios del Mercado Cambiario) en Colombia son:',
-     opts:['Solo casas de cambio','Establecimientos bancarios, corporaciones financieras, compañías de financiamiento, la FDN y sociedades comisionistas de bolsa','Solo el Banco de la República','Cualquier empresa que negocie dólares'],ans:1,
-     exp:'Los IMC incluyen bancos, corporaciones financieras, compañías de financiamiento, la FDN y SCB. Están autorizados para comprar y vender divisas conforme a la regulación cambiaria.'},
-    {id:'dv13',cat:'divisas',q:'La operación de arbitraje en el mercado cambiario consiste en:',
-     opts:['Especular sobre la dirección del tipo de cambio','Aprovechar discrepancias de precio entre mercados o instrumentos para obtener ganancia sin riesgo','Comprar dólares para ahorro','Cubrirse contra riesgo cambiario'],ans:1,
-     exp:'El arbitraje cambiario explota desigualdades de precio entre mercados (ej: diferencia spot en dos plazas, o entre spot/forward vs. diferencial de tasas). Teóricamente sin riesgo.'},
-    {id:'dv14',cat:'divisas',q:'La posición de contado en moneda extranjera de un IMC incluye:',
-     opts:['Solo los billetes en caja','Activos en ME menos pasivos en ME, excluyendo derivados','Solo los depósitos en el exterior','Todos los activos del banco'],ans:1,
-     exp:'La posición de contado = activos en ME - pasivos en ME, sin incluir contingencias de derivados. La posición propia incluye además los derechos y obligaciones en derivados sobre ME.'},
-    {id:'dv15',cat:'divisas',q:'Las operaciones de mercado cambiario que deben canalizarse a través de IMC son:',
-     opts:['Todas las operaciones en dólares','Importaciones, exportaciones, inversión extranjera directa, endeudamiento externo y sus pagos','Solo las compras superiores a USD 10.000','Solo las transferencias al exterior'],ans:1,
-     exp:'Las operaciones de cambio obligatorias (importaciones, exportaciones, IED, deuda externa, inversiones y derivados financieros) deben canalizarse por IMC o cuentas de compensación.'},
+    {
+        id: 'dv12', cat: 'divisas', q: 'Los IMC (Intermediarios del Mercado Cambiario) en Colombia son:',
+        opts: ['Solo casas de cambio', 'Establecimientos bancarios, corporaciones financieras, compañías de financiamiento, la FDN y sociedades comisionistas de bolsa', 'Solo el Banco de la República', 'Cualquier empresa que negocie dólares'], ans: 1,
+        exp: 'Los IMC incluyen bancos, corporaciones financieras, compañías de financiamiento, la FDN y SCB. Están autorizados para comprar y vender divisas conforme a la regulación cambiaria.'
+    },
+    {
+        id: 'dv13', cat: 'divisas', q: 'La operación de arbitraje en el mercado cambiario consiste en:',
+        opts: ['Especular sobre la dirección del tipo de cambio', 'Aprovechar discrepancias de precio entre mercados o instrumentos para obtener ganancia sin riesgo', 'Comprar dólares para ahorro', 'Cubrirse contra riesgo cambiario'], ans: 1,
+        exp: 'El arbitraje cambiario explota desigualdades de precio entre mercados (ej: diferencia spot en dos plazas, o entre spot/forward vs. diferencial de tasas). Teóricamente sin riesgo.'
+    },
+    {
+        id: 'dv14', cat: 'divisas', q: 'La posición de contado en moneda extranjera de un IMC incluye:',
+        opts: ['Solo los billetes en caja', 'Activos en ME menos pasivos en ME, excluyendo derivados', 'Solo los depósitos en el exterior', 'Todos los activos del banco'], ans: 1,
+        exp: 'La posición de contado = activos en ME - pasivos en ME, sin incluir contingencias de derivados. La posición propia incluye además los derechos y obligaciones en derivados sobre ME.'
+    },
+    {
+        id: 'dv15', cat: 'divisas', q: 'Las operaciones de mercado cambiario que deben canalizarse a través de IMC son:',
+        opts: ['Todas las operaciones en dólares', 'Importaciones, exportaciones, inversión extranjera directa, endeudamiento externo y sus pagos', 'Solo las compras superiores a USD 10.000', 'Solo las transferencias al exterior'], ans: 1,
+        exp: 'Las operaciones de cambio obligatorias (importaciones, exportaciones, IED, deuda externa, inversiones y derivados financieros) deben canalizarse por IMC o cuentas de compensación.'
+    },
 
     // ═══════════════════ v5 PORTAFOLIOS DEEP ═══════════════════
-    {id:'p13',cat:'portafolios',q:'La covarianza entre dos activos mide:',
-     opts:['El riesgo individual de cada activo','La dirección y magnitud en que los rendimientos de dos activos se mueven juntos','La rentabilidad promedio','El máximo drawdown'],ans:1,
-     exp:'La covarianza mide el co-movimiento entre rendimientos. Positiva: se mueven en la misma dirección. Negativa: dirección opuesta. Cero: no hay relación lineal.'},
-    {id:'p14',cat:'portafolios',q:'El coeficiente de correlación entre dos activos varía entre:',
-     opts:['0 y 100','0 y 1','-1 y +1','-100 y +100'],ans:2,
-     exp:'Correlación = Covarianza/(σA×σB). Va de -1 (perfectamente inversa) a +1 (perfectamente directa). A menor correlación, mayor beneficio de diversificación.'},
-    {id:'p15',cat:'portafolios',q:'El CAPM (Capital Asset Pricing Model) establece que el rendimiento esperado de un activo es:',
-     opts:['Solo la tasa libre de riesgo','Rf + β × (Rm - Rf), donde Rf es la tasa libre de riesgo y Rm el retorno del mercado','El promedio histórico de rendimientos','La inflación más un spread'],ans:1,
-     exp:'E(Ri) = Rf + βi(E(Rm)-Rf). El rendimiento esperado depende del riesgo sistemático (β). A mayor beta, mayor rendimiento exigido.'},
-    {id:'p16',cat:'portafolios',q:'La Línea del Mercado de Capitales (CML) representa:',
-     opts:['La relación riesgo-retorno de un activo individual','La relación riesgo-retorno de portafolios eficientes combinando el activo libre de riesgo con el portafolio de mercado','La política monetaria','La curva de rendimientos'],ans:1,
-     exp:'La CML conecta el activo libre de riesgo con el portafolio de mercado (tangente a la frontera eficiente). Todos los portafolios eficientes están sobre esta línea.'},
-    {id:'p17',cat:'portafolios',q:'La SML (Security Market Line) se diferencia de la CML en que:',
-     opts:['Son lo mismo','La SML aplica a activos individuales usando beta como medida de riesgo; la CML solo aplica a portafolios eficientes','La SML usa desviación estándar','La CML usa beta'],ans:1,
-     exp:'SML: E(Ri)=Rf+βi(Rm-Rf) para cualquier activo. CML: E(Rp)=Rf+[(Rm-Rf)/σm]×σp solo para portafolios eficientes. La SML es más general.'},
+    {
+        id: 'p13', cat: 'portafolios', q: 'La covarianza entre dos activos mide:',
+        opts: ['El riesgo individual de cada activo', 'La dirección y magnitud en que los rendimientos de dos activos se mueven juntos', 'La rentabilidad promedio', 'El máximo drawdown'], ans: 1,
+        exp: 'La covarianza mide el co-movimiento entre rendimientos. Positiva: se mueven en la misma dirección. Negativa: dirección opuesta. Cero: no hay relación lineal.'
+    },
+    {
+        id: 'p14', cat: 'portafolios', q: 'El coeficiente de correlación entre dos activos varía entre:',
+        opts: ['0 y 100', '0 y 1', '-1 y +1', '-100 y +100'], ans: 2,
+        exp: 'Correlación = Covarianza/(σA×σB). Va de -1 (perfectamente inversa) a +1 (perfectamente directa). A menor correlación, mayor beneficio de diversificación.'
+    },
+    {
+        id: 'p15', cat: 'portafolios', q: 'El CAPM (Capital Asset Pricing Model) establece que el rendimiento esperado de un activo es:',
+        opts: ['Solo la tasa libre de riesgo', 'Rf + β × (Rm - Rf), donde Rf es la tasa libre de riesgo y Rm el retorno del mercado', 'El promedio histórico de rendimientos', 'La inflación más un spread'], ans: 1,
+        exp: 'E(Ri) = Rf + βi(E(Rm)-Rf). El rendimiento esperado depende del riesgo sistemático (β). A mayor beta, mayor rendimiento exigido.'
+    },
+    {
+        id: 'p16', cat: 'portafolios', q: 'La Línea del Mercado de Capitales (CML) representa:',
+        opts: ['La relación riesgo-retorno de un activo individual', 'La relación riesgo-retorno de portafolios eficientes combinando el activo libre de riesgo con el portafolio de mercado', 'La política monetaria', 'La curva de rendimientos'], ans: 1,
+        exp: 'La CML conecta el activo libre de riesgo con el portafolio de mercado (tangente a la frontera eficiente). Todos los portafolios eficientes están sobre esta línea.'
+    },
+    {
+        id: 'p17', cat: 'portafolios', q: 'La SML (Security Market Line) se diferencia de la CML en que:',
+        opts: ['Son lo mismo', 'La SML aplica a activos individuales usando beta como medida de riesgo; la CML solo aplica a portafolios eficientes', 'La SML usa desviación estándar', 'La CML usa beta'], ans: 1,
+        exp: 'SML: E(Ri)=Rf+βi(Rm-Rf) para cualquier activo. CML: E(Rp)=Rf+[(Rm-Rf)/σm]×σp solo para portafolios eficientes. La SML es más general.'
+    },
 
     // ═══════════════════ v5 FONDOS DEEP ═══════════════════
-    {id:'fo14',cat:'fondos',q:'Un FIC cerrado se diferencia de uno abierto porque:',
-     opts:['No cobra comisión','Las participaciones solo pueden redimirse al vencimiento del plazo o en las condiciones del reglamento','No tiene administrador','Invierte solo en acciones'],ans:1,
-     exp:'En el FIC cerrado hay restricciones de redención: solo al vencimiento o en condiciones del reglamento. El abierto permite entrada y salida en cualquier momento.'},
-    {id:'fo15',cat:'fondos',q:'La rentabilidad mínima obligatoria en fondos de pensiones obligatorias es:',
-     opts:['No existe ese concepto','Un piso de rendimiento que las AFP deben garantizar, calculado con base en benchmarks definidos por la SFC','El IPC','La DTF'],ans:1,
-     exp:'La rentabilidad mínima es un piso que las AFP deben garantizar. Si no lo alcanzan, deben cubrirlo con la reserva de estabilización y su patrimonio.'},
-    {id:'fo16',cat:'fondos',q:'El retiro programado como modalidad de pensión consiste en:',
-     opts:['La transferencia del ahorro a una aseguradora','El afiliado mantiene su cuenta en la AFP y recibe mesadas calculadas según el saldo y expectativa de vida, valor variable','Un retiro único del total del ahorro','Un préstamo del gobierno'],ans:1,
-     exp:'En retiro programado la mesada es variable: depende del saldo, rendimientos del fondo y expectativa de vida. Si el saldo se agota, el Fondo de Garantía de Pensión Mínima cubre.'},
-    {id:'fo17',cat:'fondos',q:'Los FIC escalonados (fund of funds) invierten en:',
-     opts:['Solo acciones locales','Participaciones de otros Fondos de Inversión Colectiva','Solo títulos de renta fija','Bienes inmuebles'],ans:1,
-     exp:'Los FIC escalonados o fondos de fondos (fund of funds) invierten su portafolio mayoritariamente en participaciones de otros FIC, buscando mayor diversificación.'},
-    {id:'fo18',cat:'fondos',q:'La sociedad administradora de un FIC tiene prohibido:',
-     opts:['Cobrar comisión de administración','Garantizar rendimientos al inversionista o asumir pérdidas del fondo con su patrimonio propio','Invertir en títulos de renta fija','Tener varios fondos'],ans:1,
-     exp:'La sociedad administradora NO puede garantizar rendimientos ni asumir pérdidas con su propio patrimonio. El riesgo de la inversión lo asume el inversionista.'},
+    {
+        id: 'fo14', cat: 'fondos', q: 'Un FIC cerrado se diferencia de uno abierto porque:',
+        opts: ['No cobra comisión', 'Las participaciones solo pueden redimirse al vencimiento del plazo o en las condiciones del reglamento', 'No tiene administrador', 'Invierte solo en acciones'], ans: 1,
+        exp: 'En el FIC cerrado hay restricciones de redención: solo al vencimiento o en condiciones del reglamento. El abierto permite entrada y salida en cualquier momento.'
+    },
+    {
+        id: 'fo15', cat: 'fondos', q: 'La rentabilidad mínima obligatoria en fondos de pensiones obligatorias es:',
+        opts: ['No existe ese concepto', 'Un piso de rendimiento que las AFP deben garantizar, calculado con base en benchmarks definidos por la SFC', 'El IPC', 'La DTF'], ans: 1,
+        exp: 'La rentabilidad mínima es un piso que las AFP deben garantizar. Si no lo alcanzan, deben cubrirlo con la reserva de estabilización y su patrimonio.'
+    },
+    {
+        id: 'fo16', cat: 'fondos', q: 'El retiro programado como modalidad de pensión consiste en:',
+        opts: ['La transferencia del ahorro a una aseguradora', 'El afiliado mantiene su cuenta en la AFP y recibe mesadas calculadas según el saldo y expectativa de vida, valor variable', 'Un retiro único del total del ahorro', 'Un préstamo del gobierno'], ans: 1,
+        exp: 'En retiro programado la mesada es variable: depende del saldo, rendimientos del fondo y expectativa de vida. Si el saldo se agota, el Fondo de Garantía de Pensión Mínima cubre.'
+    },
+    {
+        id: 'fo17', cat: 'fondos', q: 'Los FIC escalonados (fund of funds) invierten en:',
+        opts: ['Solo acciones locales', 'Participaciones de otros Fondos de Inversión Colectiva', 'Solo títulos de renta fija', 'Bienes inmuebles'], ans: 1,
+        exp: 'Los FIC escalonados o fondos de fondos (fund of funds) invierten su portafolio mayoritariamente en participaciones de otros FIC, buscando mayor diversificación.'
+    },
+    {
+        id: 'fo18', cat: 'fondos', q: 'La sociedad administradora de un FIC tiene prohibido:',
+        opts: ['Cobrar comisión de administración', 'Garantizar rendimientos al inversionista o asumir pérdidas del fondo con su patrimonio propio', 'Invertir en títulos de renta fija', 'Tener varios fondos'], ans: 1,
+        exp: 'La sociedad administradora NO puede garantizar rendimientos ni asumir pérdidas con su propio patrimonio. El riesgo de la inversión lo asume el inversionista.'
+    },
 
     // ═══════════════════ v5 RIESGOS DEEP ═══════════════════
-    {id:'ri15',cat:'riesgos',q:'El riesgo operativo incluye pérdidas por:',
-     opts:['Solo fluctuaciones de mercado','Fallas en procesos internos, personas, sistemas o eventos externos','Solo incumplimiento de contrapartes','Solo cambios regulatorios'],ans:1,
-     exp:'El riesgo operativo (SARO) abarca fallas en procesos, errores humanos, fallos tecnológicos y eventos externos (fraude, desastres). Es transversal a todas las áreas.'},
-    {id:'ri16',cat:'riesgos',q:'El riesgo de contraparte es:',
-     opts:['El riesgo de que un activo pierda valor','El riesgo de que la otra parte en una operación no cumpla sus obligaciones','El riesgo de cambios regulatorios','El riesgo país'],ans:1,
-     exp:'El riesgo de contraparte es una forma de riesgo de crédito donde la contraparte de una operación financiera incumple sus obligaciones contractuales.'},
-    {id:'ri17',cat:'riesgos',q:'El Expected Shortfall (ES) o CVaR se diferencia del VaR en que:',
-     opts:['Es menos conservador que el VaR','Mide la pérdida esperada promedio en los escenarios que exceden el VaR (cola de la distribución)','Solo usa distribución normal','Ignora la cola de la distribución'],ans:1,
-     exp:'El ES/CVaR mide la pérdida promedio cuando se excede el VaR. Es más informativo que el VaR porque cuantifica qué tan grandes pueden ser las pérdidas extremas.'},
-    {id:'ri18',cat:'riesgos',q:'El riesgo legal se refiere a:',
-     opts:['El riesgo de mercado','Pérdidas por deficiencias en la documentación legal, cambios normativos adversos o fallos judiciales desfavorables','El riesgo de liquidez','El riesgo cambiario'],ans:1,
-     exp:'El riesgo legal incluye contratos inadecuados, cambios regulatorios adversos, demandas, y la imposibilidad de ejecutar contratos. Es un componente del riesgo operativo.'},
-    {id:'ri19',cat:'riesgos',q:'El SARM (Sistema de Administración de Riesgo de Mercado) obliga a las entidades a:',
-     opts:['Solo invertir en renta fija','Identificar, medir, controlar y monitorear el riesgo de mercado de sus posiciones','No asumir ningún riesgo','Reportar solo anualmente'],ans:1,
-     exp:'El SARM establece políticas y procedimientos para gestionar el riesgo de mercado (pérdidas por movimientos adversos en tasas, precios, tipos de cambio) de las posiciones.'},
+    {
+        id: 'ri15', cat: 'riesgos', q: 'El riesgo operativo incluye pérdidas por:',
+        opts: ['Solo fluctuaciones de mercado', 'Fallas en procesos internos, personas, sistemas o eventos externos', 'Solo incumplimiento de contrapartes', 'Solo cambios regulatorios'], ans: 1,
+        exp: 'El riesgo operativo (SARO) abarca fallas en procesos, errores humanos, fallos tecnológicos y eventos externos (fraude, desastres). Es transversal a todas las áreas.'
+    },
+    {
+        id: 'ri16', cat: 'riesgos', q: 'El riesgo de contraparte es:',
+        opts: ['El riesgo de que un activo pierda valor', 'El riesgo de que la otra parte en una operación no cumpla sus obligaciones', 'El riesgo de cambios regulatorios', 'El riesgo país'], ans: 1,
+        exp: 'El riesgo de contraparte es una forma de riesgo de crédito donde la contraparte de una operación financiera incumple sus obligaciones contractuales.'
+    },
+    {
+        id: 'ri17', cat: 'riesgos', q: 'El Expected Shortfall (ES) o CVaR se diferencia del VaR en que:',
+        opts: ['Es menos conservador que el VaR', 'Mide la pérdida esperada promedio en los escenarios que exceden el VaR (cola de la distribución)', 'Solo usa distribución normal', 'Ignora la cola de la distribución'], ans: 1,
+        exp: 'El ES/CVaR mide la pérdida promedio cuando se excede el VaR. Es más informativo que el VaR porque cuantifica qué tan grandes pueden ser las pérdidas extremas.'
+    },
+    {
+        id: 'ri18', cat: 'riesgos', q: 'El riesgo legal se refiere a:',
+        opts: ['El riesgo de mercado', 'Pérdidas por deficiencias en la documentación legal, cambios normativos adversos o fallos judiciales desfavorables', 'El riesgo de liquidez', 'El riesgo cambiario'], ans: 1,
+        exp: 'El riesgo legal incluye contratos inadecuados, cambios regulatorios adversos, demandas, y la imposibilidad de ejecutar contratos. Es un componente del riesgo operativo.'
+    },
+    {
+        id: 'ri19', cat: 'riesgos', q: 'El SARM (Sistema de Administración de Riesgo de Mercado) obliga a las entidades a:',
+        opts: ['Solo invertir en renta fija', 'Identificar, medir, controlar y monitorear el riesgo de mercado de sus posiciones', 'No asumir ningún riesgo', 'Reportar solo anualmente'], ans: 1,
+        exp: 'El SARM establece políticas y procedimientos para gestionar el riesgo de mercado (pérdidas por movimientos adversos en tasas, precios, tipos de cambio) de las posiciones.'
+    },
 
     // ═══════════════════ v5 ÉTICA DEEP ═══════════════════
-    {id:'e14',cat:'etica',q:'El deber de confidencialidad del intermediario implica:',
-     opts:['Compartir información con todos los clientes','Guardar reserva sobre las operaciones e información del cliente, salvo excepciones legales','No es obligatorio en Colombia','Solo aplica a clientes institucionales'],ans:1,
-     exp:'El intermediario debe mantener confidencial la información de sus clientes, sus operaciones y portafolios. Solo puede revelarla por orden judicial o requerimiento de autoridades.'},
-    {id:'e15',cat:'etica',q:'El principio de prevalencia del interés del cliente obliga al intermediario a:',
-     opts:['Priorizar siempre las operaciones por cuenta propia','Dar prelación a las órdenes del cliente sobre las operaciones por cuenta propia cuando exista conflicto','Cobrar la menor comisión posible','Solo atender inversionistas profesionales'],ans:1,
-     exp:'Cuando hay conflicto de interés, el intermediario debe dar prioridad a las órdenes del cliente sobre sus propias operaciones. La prevalencia del interés del cliente es principio fundamental.'},
-    {id:'e16',cat:'etica',q:'El know your customer (KYC) incluye:',
-     opts:['Solo verificar la identidad del cliente','Conocer la identidad, actividad económica, perfil de riesgo y origen de fondos del cliente','Solo clasificar al cliente como profesional','Revisar solo el historial crediticio'],ans:1,
-     exp:'KYC es un proceso integral: verificar identidad, conocer actividad económica, origen de recursos, perfil de riesgo, transaccionalidad esperada. Es base del SARLAFT y perfilamiento.'},
-    {id:'e17',cat:'etica',q:'El conflicto de interés en el mercado de valores surge cuando:',
-     opts:['El cliente no está de acuerdo con la comisión','El interés del intermediario o de un tercero puede comprometer la actuación imparcial del intermediario frente al cliente','Solo en operaciones internacionales','Cuando hay pérdidas en el portafolio'],ans:1,
-     exp:'Hay conflicto de interés cuando el intermediario tiene incentivos que podrían llevarle a actuar en contra de los intereses de su cliente. Deben gestionarse y revelarse.'},
+    {
+        id: 'e14', cat: 'etica', q: 'El deber de confidencialidad del intermediario implica:',
+        opts: ['Compartir información con todos los clientes', 'Guardar reserva sobre las operaciones e información del cliente, salvo excepciones legales', 'No es obligatorio en Colombia', 'Solo aplica a clientes institucionales'], ans: 1,
+        exp: 'El intermediario debe mantener confidencial la información de sus clientes, sus operaciones y portafolios. Solo puede revelarla por orden judicial o requerimiento de autoridades.'
+    },
+    {
+        id: 'e15', cat: 'etica', q: 'El principio de prevalencia del interés del cliente obliga al intermediario a:',
+        opts: ['Priorizar siempre las operaciones por cuenta propia', 'Dar prelación a las órdenes del cliente sobre las operaciones por cuenta propia cuando exista conflicto', 'Cobrar la menor comisión posible', 'Solo atender inversionistas profesionales'], ans: 1,
+        exp: 'Cuando hay conflicto de interés, el intermediario debe dar prioridad a las órdenes del cliente sobre sus propias operaciones. La prevalencia del interés del cliente es principio fundamental.'
+    },
+    {
+        id: 'e16', cat: 'etica', q: 'El know your customer (KYC) incluye:',
+        opts: ['Solo verificar la identidad del cliente', 'Conocer la identidad, actividad económica, perfil de riesgo y origen de fondos del cliente', 'Solo clasificar al cliente como profesional', 'Revisar solo el historial crediticio'], ans: 1,
+        exp: 'KYC es un proceso integral: verificar identidad, conocer actividad económica, origen de recursos, perfil de riesgo, transaccionalidad esperada. Es base del SARLAFT y perfilamiento.'
+    },
+    {
+        id: 'e17', cat: 'etica', q: 'El conflicto de interés en el mercado de valores surge cuando:',
+        opts: ['El cliente no está de acuerdo con la comisión', 'El interés del intermediario o de un tercero puede comprometer la actuación imparcial del intermediario frente al cliente', 'Solo en operaciones internacionales', 'Cuando hay pérdidas en el portafolio'], ans: 1,
+        exp: 'Hay conflicto de interés cuando el intermediario tiene incentivos que podrían llevarle a actuar en contra de los intereses de su cliente. Deben gestionarse y revelarse.'
+    },
 
     // ═══════════════════ v5 AUTORREGULACIÓN DEEP ═══════════════════
-    {id:'a16',cat:'autorregulacion',q:'El RNPMV (Registro Nacional de Profesionales del Mercado de Valores) es administrado por:',
-     opts:['La SFC','La AMV, donde se inscriben las personas certificadas para actuar en el mercado de valores','El Banco de la República','La BVC'],ans:1,
-     exp:'El RNPMV es administrado por la AMV. Es obligatorio inscribirse para quienes vayan a desempeñar funciones como operadores, asesores y directivos del mercado de valores.'},
-    {id:'a17',cat:'autorregulacion',q:'La función de supervisión de la AMV consiste en:',
-     opts:['Emitir reglamentos','Realizar el seguimiento y monitoreo del cumplimiento de normas del mercado por parte de las personas vinculadas a sus miembros','Sancionar a los emisores','Aprobar nuevas emisiones'],ans:1,
-     exp:'La función de supervisión de la AMV incluye el monitoreo en tiempo real de operaciones, vigilancia de conductas y revisión del cumplimiento normativo de las personas certificadas.'},
-    {id:'a18',cat:'autorregulacion',q:'La AMV puede imponer como sanción disciplinaria la expulsión, lo que significa:',
-     opts:['Una multa mayor','La prohibición permanente de ejercer actividades en el mercado de valores','Suspensión temporal de 30 días','Una amonestación pública'],ans:1,
-     exp:'La expulsión es la sanción más severa: impide permanentemente que la persona ejerza actividades en el mercado de valores. Las sanciones van de amonestación a expulsión.'},
+    {
+        id: 'a16', cat: 'autorregulacion', q: 'El RNPMV (Registro Nacional de Profesionales del Mercado de Valores) es administrado por:',
+        opts: ['La SFC', 'La AMV, donde se inscriben las personas certificadas para actuar en el mercado de valores', 'El Banco de la República', 'La BVC'], ans: 1,
+        exp: 'El RNPMV es administrado por la AMV. Es obligatorio inscribirse para quienes vayan a desempeñar funciones como operadores, asesores y directivos del mercado de valores.'
+    },
+    {
+        id: 'a17', cat: 'autorregulacion', q: 'La función de supervisión de la AMV consiste en:',
+        opts: ['Emitir reglamentos', 'Realizar el seguimiento y monitoreo del cumplimiento de normas del mercado por parte de las personas vinculadas a sus miembros', 'Sancionar a los emisores', 'Aprobar nuevas emisiones'], ans: 1,
+        exp: 'La función de supervisión de la AMV incluye el monitoreo en tiempo real de operaciones, vigilancia de conductas y revisión del cumplimiento normativo de las personas certificadas.'
+    },
+    {
+        id: 'a18', cat: 'autorregulacion', q: 'La AMV puede imponer como sanción disciplinaria la expulsión, lo que significa:',
+        opts: ['Una multa mayor', 'La prohibición permanente de ejercer actividades en el mercado de valores', 'Suspensión temporal de 30 días', 'Una amonestación pública'], ans: 1,
+        exp: 'La expulsión es la sanción más severa: impide permanentemente que la persona ejerza actividades en el mercado de valores. Las sanciones van de amonestación a expulsión.'
+    },
 
     // ═══════════════════ v5 ANÁLISIS ECONÓMICO DEEP ═══════════════════
-    {id:'ae16',cat:'analisis_economico',q:'La tasa de cambio real efectiva mide:',
-     opts:['Solo el precio del dólar en pesos','El poder adquisitivo de la moneda nacional respecto a una canasta de monedas de socios comerciales, ajustado por inflación','La tasa interbancaria','El IPC'],ans:1,
-     exp:'La tasa de cambio real efectiva ajusta la tasa nominal por los diferenciales de inflación con los socios comerciales. Indica competitividad real de las exportaciones.'},
-    {id:'ae17',cat:'analisis_economico',q:'La regla de Taylor establece que la tasa de interés de política monetaria debe responder a:',
-     opts:['Solo la inflación','La desviación de la inflación respecto a su meta y la brecha del producto (PIB real vs potencial)','Solo el tipo de cambio','La tasa de desempleo únicamente'],ans:1,
-     exp:'Taylor: i = r* + π + α(π-π*) + β(y-y*). La tasa sube si la inflación excede la meta o si el PIB real sobrepasa el potencial, y baja en la situación contraria.'},
-    {id:'ae18',cat:'analisis_economico',q:'El multiplicador bancario relaciona:',
-     opts:['La tasa de cambio y la inflación','La cantidad de dinero que el sistema bancario puede crear a partir de los depósitos, según el encaje bancario','La deuda pública y el PIB','Las exportaciones y las importaciones'],ans:1,
-     exp:'Multiplicador = 1/Encaje. Si el encaje es 10%, cada peso depositado puede generar hasta 10 pesos en el sistema. A menor encaje, mayor capacidad de creación de dinero.'},
-    {id:'ae19',cat:'analisis_economico',q:'El déficit fiscal se financia principalmente mediante:',
-     opts:['Solo impresión de dinero','Emisión de deuda pública (TES), impuestos adicionales y privatizaciones','Reducción de la tasa de interés','Aumento del encaje'],ans:1,
-     exp:'El déficit fiscal (gasto > ingresos) se financia con emisión de TES (deuda interna), deuda externa, aumento de impuestos o venta de activos del estado.'},
-    {id:'ae20',cat:'analisis_economico',q:'La paridad de poder adquisitivo (PPA) establece que:',
-     opts:['Las tasas de interés deben ser iguales en todos los países','A largo plazo, el tipo de cambio debe ajustarse para que el poder de compra sea equivalente entre países','Las importaciones deben igualar las exportaciones','El PIB per cápita debe convergir'],ans:1,
-     exp:'La PPA sostiene que a largo plazo, una canasta de bienes debería costar lo mismo en dos países cuando se expresa en la misma moneda (ajustado por tipo de cambio).'},
+    {
+        id: 'ae16', cat: 'analisis_economico', q: 'La tasa de cambio real efectiva mide:',
+        opts: ['Solo el precio del dólar en pesos', 'El poder adquisitivo de la moneda nacional respecto a una canasta de monedas de socios comerciales, ajustado por inflación', 'La tasa interbancaria', 'El IPC'], ans: 1,
+        exp: 'La tasa de cambio real efectiva ajusta la tasa nominal por los diferenciales de inflación con los socios comerciales. Indica competitividad real de las exportaciones.'
+    },
+    {
+        id: 'ae17', cat: 'analisis_economico', q: 'La regla de Taylor establece que la tasa de interés de política monetaria debe responder a:',
+        opts: ['Solo la inflación', 'La desviación de la inflación respecto a su meta y la brecha del producto (PIB real vs potencial)', 'Solo el tipo de cambio', 'La tasa de desempleo únicamente'], ans: 1,
+        exp: 'Taylor: i = r* + π + α(π-π*) + β(y-y*). La tasa sube si la inflación excede la meta o si el PIB real sobrepasa el potencial, y baja en la situación contraria.'
+    },
+    {
+        id: 'ae18', cat: 'analisis_economico', q: 'El multiplicador bancario relaciona:',
+        opts: ['La tasa de cambio y la inflación', 'La cantidad de dinero que el sistema bancario puede crear a partir de los depósitos, según el encaje bancario', 'La deuda pública y el PIB', 'Las exportaciones y las importaciones'], ans: 1,
+        exp: 'Multiplicador = 1/Encaje. Si el encaje es 10%, cada peso depositado puede generar hasta 10 pesos en el sistema. A menor encaje, mayor capacidad de creación de dinero.'
+    },
+    {
+        id: 'ae19', cat: 'analisis_economico', q: 'El déficit fiscal se financia principalmente mediante:',
+        opts: ['Solo impresión de dinero', 'Emisión de deuda pública (TES), impuestos adicionales y privatizaciones', 'Reducción de la tasa de interés', 'Aumento del encaje'], ans: 1,
+        exp: 'El déficit fiscal (gasto > ingresos) se financia con emisión de TES (deuda interna), deuda externa, aumento de impuestos o venta de activos del estado.'
+    },
+    {
+        id: 'ae20', cat: 'analisis_economico', q: 'La paridad de poder adquisitivo (PPA) establece que:',
+        opts: ['Las tasas de interés deben ser iguales en todos los países', 'A largo plazo, el tipo de cambio debe ajustarse para que el poder de compra sea equivalente entre países', 'Las importaciones deben igualar las exportaciones', 'El PIB per cápita debe convergir'], ans: 1,
+        exp: 'La PPA sostiene que a largo plazo, una canasta de bienes debería costar lo mismo en dos países cuando se expresa en la misma moneda (ajustado por tipo de cambio).'
+    },
 
     // ═══════════════════ v5 MATEMÁTICAS DEEP ═══════════════════
-    {id:'m42',cat:'matematicas',q:'La tasa forward implícita entre el año 1 y el año 2 se puede calcular como:',
-     opts:['(1+r2)/(1+r1)','[(1+r2)²/(1+r1)] - 1','(r2-r1)/2','r1+r2'],ans:1,
-     exp:'La tasa forward f(1,2) = [(1+r2)²/(1+r1)] - 1, donde r1 y r2 son las tasas spot a 1 y 2 años respectivamente. Refleja la expectativa de tasas futuras.'},
-    {id:'m43',cat:'matematicas',q:'Un bono al descuento con valor nominal de $1.000 se compra en $950. Su rentabilidad al vencimiento es:',
-     opts:['5%','5,26%','4,76%','9,5%'],ans:1,
-     exp:'Rendimiento = (1000-950)/950 = 50/950 = 5,26%. Se calcula sobre el monto invertido ($950), no sobre el valor nominal.'},
-    {id:'m44',cat:'matematicas',q:'Si la tasa spot a 1 año es 8% y a 2 años es 10%, la tasa forward del año 2 es aproximadamente:',
-     opts:['9%','12,04%','10%','18%'],ans:1,
-     exp:'f(1,2) = [(1,10)²/(1,08)] - 1 = [1,21/1,08] - 1 = 1,12037 - 1 = 12,04%. La tasa forward del año 2 es mayor que la tasa spot a 2 años.'},
-    {id:'m45',cat:'matematicas',q:'El concepto de duration de Macaulay es:',
-     opts:['El plazo al vencimiento del bono','El promedio ponderado de los plazos de cada flujo del bono, ponderado por su valor presente','La tasa interna de retorno','El valor presente del bono'],ans:1,
-     exp:'Duration de Macaulay = Σ[t × VP(Ct)/P]. Es el promedio ponderado del tiempo en que se reciben los flujos. Un cupón cero tiene duration igual a su plazo.'},
-    {id:'m46',cat:'matematicas',q:'Si un inversionista requiere una tasa real del 4% y la inflación esperada es 6%, la tasa nominal aproximada por Fisher es:',
-     opts:['10%','10,24%','2%','24%'],ans:1,
-     exp:'Fisher exacto: (1+nominal) = (1+real)(1+inflación) = 1,04×1,06 = 1,1024. Tasa nominal = 10,24%. La aproximación lineal sería 10%.'}
+    {
+        id: 'm42', cat: 'matematicas', q: 'La tasa forward implícita entre el año 1 y el año 2 se puede calcular como:',
+        opts: ['(1+r2)/(1+r1)', '[(1+r2)²/(1+r1)] - 1', '(r2-r1)/2', 'r1+r2'], ans: 1,
+        exp: 'La tasa forward f(1,2) = [(1+r2)²/(1+r1)] - 1, donde r1 y r2 son las tasas spot a 1 y 2 años respectivamente. Refleja la expectativa de tasas futuras.'
+    },
+    {
+        id: 'm43', cat: 'matematicas', q: 'Un bono al descuento con valor nominal de $1.000 se compra en $950. Su rentabilidad al vencimiento es:',
+        opts: ['5%', '5,26%', '4,76%', '9,5%'], ans: 1,
+        exp: 'Rendimiento = (1000-950)/950 = 50/950 = 5,26%. Se calcula sobre el monto invertido ($950), no sobre el valor nominal.'
+    },
+    {
+        id: 'm44', cat: 'matematicas', q: 'Si la tasa spot a 1 año es 8% y a 2 años es 10%, la tasa forward del año 2 es aproximadamente:',
+        opts: ['9%', '12,04%', '10%', '18%'], ans: 1,
+        exp: 'f(1,2) = [(1,10)²/(1,08)] - 1 = [1,21/1,08] - 1 = 1,12037 - 1 = 12,04%. La tasa forward del año 2 es mayor que la tasa spot a 2 años.'
+    },
+    {
+        id: 'm45', cat: 'matematicas', q: 'El concepto de duration de Macaulay es:',
+        opts: ['El plazo al vencimiento del bono', 'El promedio ponderado de los plazos de cada flujo del bono, ponderado por su valor presente', 'La tasa interna de retorno', 'El valor presente del bono'], ans: 1,
+        exp: 'Duration de Macaulay = Σ[t × VP(Ct)/P]. Es el promedio ponderado del tiempo en que se reciben los flujos. Un cupón cero tiene duration igual a su plazo.'
+    },
+    {
+        id: 'm46', cat: 'matematicas', q: 'Si un inversionista requiere una tasa real del 4% y la inflación esperada es 6%, la tasa nominal aproximada por Fisher es:',
+        opts: ['10%', '10,24%', '2%', '24%'], ans: 1,
+        exp: 'Fisher exacto: (1+nominal) = (1+real)(1+inflación) = 1,04×1,06 = 1,1024. Tasa nominal = 10,24%. La aproximación lineal sería 10%.'
+    }
 
 ];
 
@@ -2215,7 +2367,7 @@ export const flashcards = [
     { id: 'fc22', cat: 'portafolios', front: 'Riesgo sistemático vs no sistemático', back: 'Sistemático: afecta todo el mercado, NO diversificable. No sistemático: específico de una empresa/sector, SÍ diversificable.' },
     { id: 'fc23', cat: 'fondos', front: '¿Qué es un FIC?', back: 'Fondo de Inversión Colectiva. Mecanismo que reúne aportes de varias personas para inversión colectiva con resultados compartidos.' },
     { id: 'fc24', cat: 'fondos', front: 'Multifondos de pensiones', back: 'Tres perfiles: Conservador, Moderado y de Mayor Riesgo. El afiliado elige según su perfil y cercanía a la jubilación.' },
-,
+    ,
     { id: 'fc25', cat: 'etica', front: "Principios del Decreto 2555 para conflictos de interés", back: "Transparencia del mercado, Confidencialidad y reserva, Uso adecuado de información, Lealtad, Profesionalismo, Respeto de la ley." },
     { id: 'fc26', cat: 'etica', front: "¿Qué es el VTU?", back: "Valor Total Unificado. Valor único (% EA y pesos) que indica al cliente el costo total real de un producto financiero. Creado por Ley 1748 de 2014." },
     { id: 'fc27', cat: 'etica', front: "Ley 1778 de 2016", back: "Ley antisoborno/anticorrupción. Sanciona el soborno transnacional y promueve programas de ética empresarial." },
@@ -2232,7 +2384,7 @@ export const flashcards = [
     { id: 'fc38', cat: 'renta_fija', front: "Bono cupón cero", back: "No paga cupones periódicos. Se emite a descuento y se redime a valor nominal al vencimiento." },
     { id: 'fc39', cat: 'derivados', front: "¿Qué hace la CRCC?", back: "Cámara de Riesgo Central de Contraparte. Se interpone entre compradores y vendedores de derivados, garantizando el cumplimiento." },
     { id: 'fc40', cat: 'divisas', front: "Mercado cambiario vs mercado libre", back: "Cambiario: operaciones que DEBEN canalizarse por IMCs (importaciones, exportaciones, inversión extranjera). Libre: operaciones no obligatoriamente canalizables." }
-,
+    ,
     { id: 'fc41', cat: 'renta_variable', front: "Tipos de acciones en Colombia", back: "Ordinarias (derecho a voto + flujo residual), Preferenciales (dividendo fijo, sin voto), Privilegiadas (beneficio económico + voto), Sin dividendo (entregadas como pago en especie)." },
     { id: 'fc42', cat: 'renta_variable', front: "ADR vs GDR", back: "ADR: emitido por banco de EE.UU. para cotizar en mercados estadounidenses. GDR: emitido por banco de otro país para cotizar en otros mercados internacionales." },
     { id: 'fc43', cat: 'renta_variable', front: "Valor nominal vs patrimonial vs de mercado", back: "Nominal: Capital social / acciones emitidas (fijo). Patrimonial: Patrimonio neto / acciones (variable). De mercado: Precio de cotización en bolsa (variable, oferta/demanda)." },
@@ -2249,7 +2401,7 @@ export const flashcards = [
     { id: 'fc54', cat: 'derivados', front: "CDS (Credit Default Swap)", back: "Derivado de crédito. El comprador paga primas periódicas; si ocurre default del emisor, el vendedor compensa. En Colombia los residentes pueden celebrarlos pero NO emitirlos." },
     { id: 'fc55', cat: 'analisis_economico', front: "PIB: métodos de cálculo", back: "1) Producción (bienes finales), 2) Valor agregado (ventas - insumos), 3) Ingresos (salarios + intereses + arriendos + utilidades), 4) Gasto (consumo + inversión + gasto público)." },
     { id: 'fc56', cat: 'analisis_economico', front: "IPC vs IPP", back: "IPC: mide cambio en precios de la canasta familiar (443 artículos, 38 ciudades, elaborado por DANE). IPP: mide precios a nivel de producción/mayorista." }
-,
+    ,
     { id: 'fc57', cat: 'matematicas', front: "Interés simple vs compuesto", back: "Simple: I = VP × ip × n (intereses solo sobre capital). Compuesto: VF = VP × (1+ip)^n (intereses sobre intereses). La reinversión genera mayor rentabilidad." },
     { id: 'fc58', cat: 'matematicas', front: "Conversión nominal → periódica → EA", back: "1) ip = Nominal/n. 2) EA = (1+ip)^(Base/días) - 1. Ejemplo: 6% NATV → ip=1,5% → EA = (1,015)^4 - 1 = 6,136%." },
     { id: 'fc59', cat: 'matematicas', front: "Tasa anticipada (ipa) ↔ vencida (ipv)", back: "ipv = ipa/(1-ipa). ipa = ipv/(1+ipv). Ejemplo: 2% T.A. = 2,04% T.V. La anticipada siempre es menor numéricamente que la vencida equivalente." },
@@ -2258,7 +2410,7 @@ export const flashcards = [
     { id: 'fc62', cat: 'matematicas', front: "Componentes de la tasa de interés (CFA)", back: "ic = (1+ir)(1+if)(1+ip)(1+il)(1+iv) - 1. ir=real, if=inflación, ip=crédito, il=liquidez, iv=vencimiento." },
     { id: 'fc63', cat: 'matematicas', front: "Anualidad vencida: fórmula de cuota", back: "A = VP × [i(1+i)^n / ((1+i)^n - 1)]. Primero convertir EA a tasa periódica. Ej: 20% EA → ip mensual = (1,20)^(1/12)-1 = 1,53%." },
     { id: 'fc64', cat: 'matematicas', front: "Regla para sumar spreads", back: "Solo se pueden sumar tasas en la MISMA periodicidad y naturaleza. DTF 4,34% T.A. + spread 4% T.A. = 8,34% N.A.T.A. Si están en distintas periodicidades, primero convertir." }
-,
+    ,
 
     { id: 'fc65', cat: 'regulacion', front: "Repo vs Simultánea vs TTV", back: "Repo: venta con recompra, HAY transferencia de propiedad. Simultánea: compraventa con retroventa, NO hay transferencia de propiedad. TTV: préstamo temporal de valores con contraprestación." },
     { id: 'fc66', cat: 'regulacion', front: "Valores nominativos vs a la orden vs al portador", back: "Nominativos: endoso + registro emisor. A la orden: endoso + entrega. Al portador: solo entrega. Cada tipo tiene diferente mecanismo de transferencia." },
@@ -2283,36 +2435,502 @@ export const flashcards = [
     { id: 'fc85', cat: 'analisis_economico', front: "Indicadores adelantados vs rezagados", back: "Adelantados: anticipan ciclo (permisos construcción, pedidos, confianza). Rezagados: confirman tendencia (desempleo, inflación, crédito). Coincidentes: miden el momento actual (PIB, producción)." },
     { id: 'fc86', cat: 'analisis_economico', front: "Balanza de pagos - Componentes", back: "Cuenta corriente (bienes, servicios, rentas). Cuenta de capital (transferencias de capital). Cuenta financiera (inversión directa, portafolio, reservas). Suma = 0." }
 
-,
+    ,
 
-    {id:'fc87',cat:'regulacion',front:"BOCEAS vs Bonos facultativamente convertibles",back:"BOCEAS: al vencimiento se pagan OBLIGATORIAMENTE en acciones. Facultativos: la conversión es DECISIÓN del inversionista. Ambos requieren acciones en reserva."},
-    {id:'fc88',cat:'regulacion',front:"Titularización - Partes clave",back:"Originadora: transfiere activos. Agente de manejo: vocero del patrimonio, gestiona emisión. Administradora: custodia activos. Colocadora (opcional): distribuye títulos al mercado."},
-    {id:'fc89',cat:'regulacion',front:"Tipos de títulos en titularización",back:"Participación: derecho patrimonial sobre activos. Contenido crediticio: derecho a capital+rendimientos fijos. Mixtos: combinan participación con amortización o rentabilidad mínima."},
-    {id:'fc90',cat:'regulacion',front:"Principio de finalidad",back:"Art. 10 Ley 964/2005: operación aceptada por sistema de compensación = firme, irrevocable, exigible y oponible. NO puede ser impugnada, anulada ni suspendida."},
-    {id:'fc91',cat:'regulacion',front:"TES Clase A vs Clase B",back:"Clase A: sustituyen deuda en OMAS y deuda con BanRep. Clase B: captan recursos para presupuesto, operaciones tesorería. Clase B genera curva de rendimientos."},
-    {id:'fc92',cat:'regulacion',front:"Mercado principal vs Segundo mercado",back:"Principal: todos los inversionistas, requisitos estrictos de emisión. Segundo: solo inversionistas calificados/profesionales, requisitos menos estrictos."},
-    {id:'fc93',cat:'renta_variable',front:"Valor nominal, patrimonial y de mercado",back:"Nominal = Capital social / # acciones (fijo). Patrimonial = Patrimonio neto / # acciones (variable contable). De mercado = Precio en bolsa × # acciones (capitalización bursátil)."},
-    {id:'fc94',cat:'renta_variable',front:"Operaciones de contado T+2",back:"Acciones: cumplimiento en T+2 hasta 4:30pm. BOCEAS: T+0 hasta 7:00pm. Circuit breaker: caída 10% COLCAP = suspensión 30min; 5% adicional = suspensión definitiva."},
-    {id:'fc95',cat:'renta_variable',front:"Período exdividendo",back:"Entre primer día hábil de pago y 4 días hábiles antes: comprador NO recibe dividendos pendientes. Propósito: dar tiempo al emisor para actualizar libro de accionistas."},
-    {id:'fc96',cat:'renta_variable',front:"ADR vs GDR vs MGC",back:"ADR: acciones extranjeras negociadas en EEUU (NYSE/NASDAQ). GDR: en otros mercados internacionales. MGC: acciones extranjeras negociadas en COP a través de BVC."},
-    {id:'fc97',cat:'derivados',front:"Base en futuros: Contango vs Backwardation",back:"Base = Futuro - Spot. Contango: Base > 0 (futuro > spot). Backwardation: Base < 0 (futuro < spot). Contango es normal cuando hay costos de acarreo."},
-    {id:'fc98',cat:'derivados',front:"Valor intrínseco vs Valor temporal en opciones",back:"Valor intrínseco: Max(0, S-K) para call, Max(0, K-S) para put. Valor temporal: Prima - V. intrínseco. Refleja posibilidad de que la opción gane valor antes del vencimiento."},
-    {id:'fc99',cat:'derivados',front:"CRCC - Cámara de Riesgo Central de Contraparte",back:"Se interpone como contraparte de ambas partes. Elimina riesgo de contraparte. Exige márgenes iniciales y de mantenimiento. Realiza MTM diario y margin calls."},
-    {id:'fc100',cat:'renta_fija',front:"Tasa facial vs TIR en bonos",back:"Tasa facial/cupón: fija desde emisión, determina pagos periódicos. TIR: tasa que iguala VP flujos con precio actual, varía con el mercado. Precio = Nominal → facial = TIR."},
-    {id:'fc101',cat:'renta_fija',front:"Bono cupón cero vs Bono con cupón",back:"Cupón cero: se compra con descuento, paga nominal al vencimiento. No reinversión de cupones. Con cupón: paga intereses periódicos + nominal al final. Duration cupón cero = plazo."},
-    {id:'fc102',cat:'divisas',front:"Operaciones cambio obligatorias vs libres",back:"Obligatorias (por IMC/cta compensación): importaciones, exportaciones, IED, deuda externa, inversiones. Libres: turismo, transferencias menores, donaciones, servicios."},
-    {id:'fc103',cat:'portafolios',front:"CAPM: E(Ri) = Rf + β(Rm-Rf)",back:"Rf: tasa libre riesgo. β: riesgo sistemático. (Rm-Rf): prima de mercado. SML: aplica a TODO activo. CML: solo portafolios eficientes. α de Jensen: exceso vs CAPM."},
-    {id:'fc104',cat:'portafolios',front:"Correlación y diversificación",back:"Correlación -1: diversificación perfecta. Correlación +1: sin beneficio. Entre -1 y +1: el portafolio reduce riesgo respecto a activos individuales. Clave: buscar baja correlación."},
-    {id:'fc105',cat:'fondos',front:"FIC abierto vs cerrado vs escalonado",back:"Abierto: entrada/salida libre. Cerrado: redención solo al vencimiento o condiciones del reglamento. Escalonado (fund of funds): invierte en participaciones de otros FIC."},
-    {id:'fc106',cat:'fondos',front:"Rentabilidad mínima en pensiones obligatorias",back:"Piso de rendimiento que cada AFP debe garantizar. Si no lo alcanza: se cubre con reserva de estabilización + patrimonio de la AFP. Calculada sobre benchmarks definidos por SFC."},
-    {id:'fc107',cat:'riesgos',front:"Tipos de riesgo financiero",back:"Mercado (SARM): precios/tasas. Crédito (SARC): incumplimiento. Liquidez (SARL): fondeo. Operativo (SARO): procesos/personas/sistemas. Legal: contratos/regulación. Contraparte."},
-    {id:'fc108',cat:'riesgos',front:"VaR vs Expected Shortfall (CVaR)",back:"VaR: pérdida máxima con X% confianza. No dice qué tan malo puede ser si se excede. CVaR: pérdida promedio CUANDO se excede el VaR. CVaR siempre ≥ VaR. CVaR es más conservador."},
-    {id:'fc109',cat:'etica',front:"KYC (Know Your Customer) - Elementos",back:"1) Identificación del cliente. 2) Actividad económica y origen de fondos. 3) Perfil de riesgo. 4) Transaccionalidad esperada. Base para SARLAFT y perfilamiento de inversión."},
-    {id:'fc110',cat:'etica',front:"Prevalencia del interés del cliente",back:"Las órdenes del cliente SIEMPRE tienen prelación sobre operaciones por cuenta propia del intermediario. Si hay conflicto de interés, debe revelarse y nunca perjudicar al cliente."},
-    {id:'fc111',cat:'autorregulacion',front:"Sanciones AMV: escala de gravedad",back:"1) Amonestación (leve). 2) Multa (hasta 100 SMMLV personas naturales). 3) Suspensión temporal del RNPMV. 4) Expulsión permanente (más severa). Proporcional a la infracción."},
-    {id:'fc112',cat:'analisis_economico',front:"Regla de Taylor",back:"i = r* + π + α(π-π*) + β(y-y*). Banco central sube tasa si: inflación > meta (π>π*) o PIB real > potencial (y>y*). Guía para decisiones de política monetaria."},
-    {id:'fc113',cat:'analisis_economico',front:"Multiplicador bancario",back:"Multiplicador = 1/Encaje. Encaje 10% → multiplicador 10x. Cada peso depositado genera hasta 10 pesos en créditos. BanRep puede modificar encaje como herramienta de política monetaria."},
-    {id:'fc114',cat:'matematicas',front:"Tasa forward implícita",back:"f(1,2) = [(1+r2)²/(1+r1)] - 1. Tasa esperada del período futuro entre año 1 y 2. Si r2 > r1, la forward > r2 (curva con pendiente positiva implica tasas futuras crecientes)."},
-    {id:'fc115',cat:'matematicas',front:"Duration de Macaulay vs Duración modificada",back:"Macaulay: promedio ponderado de plazos por VP de flujos. Modificada = Macaulay/(1+y). DM estima ΔP/P ≈ -DM × Δy. Bono cupón cero: Duration = plazo exacto."}
+    { id: 'fc87', cat: 'regulacion', front: "BOCEAS vs Bonos facultativamente convertibles", back: "BOCEAS: al vencimiento se pagan OBLIGATORIAMENTE en acciones. Facultativos: la conversión es DECISIÓN del inversionista. Ambos requieren acciones en reserva." },
+    { id: 'fc88', cat: 'regulacion', front: "Titularización - Partes clave", back: "Originadora: transfiere activos. Agente de manejo: vocero del patrimonio, gestiona emisión. Administradora: custodia activos. Colocadora (opcional): distribuye títulos al mercado." },
+    { id: 'fc89', cat: 'regulacion', front: "Tipos de títulos en titularización", back: "Participación: derecho patrimonial sobre activos. Contenido crediticio: derecho a capital+rendimientos fijos. Mixtos: combinan participación con amortización o rentabilidad mínima." },
+    { id: 'fc90', cat: 'regulacion', front: "Principio de finalidad", back: "Art. 10 Ley 964/2005: operación aceptada por sistema de compensación = firme, irrevocable, exigible y oponible. NO puede ser impugnada, anulada ni suspendida." },
+    { id: 'fc91', cat: 'regulacion', front: "TES Clase A vs Clase B", back: "Clase A: sustituyen deuda en OMAS y deuda con BanRep. Clase B: captan recursos para presupuesto, operaciones tesorería. Clase B genera curva de rendimientos." },
+    { id: 'fc92', cat: 'regulacion', front: "Mercado principal vs Segundo mercado", back: "Principal: todos los inversionistas, requisitos estrictos de emisión. Segundo: solo inversionistas calificados/profesionales, requisitos menos estrictos." },
+    { id: 'fc93', cat: 'renta_variable', front: "Valor nominal, patrimonial y de mercado", back: "Nominal = Capital social / # acciones (fijo). Patrimonial = Patrimonio neto / # acciones (variable contable). De mercado = Precio en bolsa × # acciones (capitalización bursátil)." },
+    { id: 'fc94', cat: 'renta_variable', front: "Operaciones de contado T+2", back: "Acciones: cumplimiento en T+2 hasta 4:30pm. BOCEAS: T+0 hasta 7:00pm. Circuit breaker: caída 10% COLCAP = suspensión 30min; 5% adicional = suspensión definitiva." },
+    { id: 'fc95', cat: 'renta_variable', front: "Período exdividendo", back: "Entre primer día hábil de pago y 4 días hábiles antes: comprador NO recibe dividendos pendientes. Propósito: dar tiempo al emisor para actualizar libro de accionistas." },
+    { id: 'fc96', cat: 'renta_variable', front: "ADR vs GDR vs MGC", back: "ADR: acciones extranjeras negociadas en EEUU (NYSE/NASDAQ). GDR: en otros mercados internacionales. MGC: acciones extranjeras negociadas en COP a través de BVC." },
+    { id: 'fc97', cat: 'derivados', front: "Base en futuros: Contango vs Backwardation", back: "Base = Futuro - Spot. Contango: Base > 0 (futuro > spot). Backwardation: Base < 0 (futuro < spot). Contango es normal cuando hay costos de acarreo." },
+    { id: 'fc98', cat: 'derivados', front: "Valor intrínseco vs Valor temporal en opciones", back: "Valor intrínseco: Max(0, S-K) para call, Max(0, K-S) para put. Valor temporal: Prima - V. intrínseco. Refleja posibilidad de que la opción gane valor antes del vencimiento." },
+    { id: 'fc99', cat: 'derivados', front: "CRCC - Cámara de Riesgo Central de Contraparte", back: "Se interpone como contraparte de ambas partes. Elimina riesgo de contraparte. Exige márgenes iniciales y de mantenimiento. Realiza MTM diario y margin calls." },
+    { id: 'fc100', cat: 'renta_fija', front: "Tasa facial vs TIR en bonos", back: "Tasa facial/cupón: fija desde emisión, determina pagos periódicos. TIR: tasa que iguala VP flujos con precio actual, varía con el mercado. Precio = Nominal → facial = TIR." },
+    { id: 'fc101', cat: 'renta_fija', front: "Bono cupón cero vs Bono con cupón", back: "Cupón cero: se compra con descuento, paga nominal al vencimiento. No reinversión de cupones. Con cupón: paga intereses periódicos + nominal al final. Duration cupón cero = plazo." },
+    { id: 'fc102', cat: 'divisas', front: "Operaciones cambio obligatorias vs libres", back: "Obligatorias (por IMC/cta compensación): importaciones, exportaciones, IED, deuda externa, inversiones. Libres: turismo, transferencias menores, donaciones, servicios." },
+    { id: 'fc103', cat: 'portafolios', front: "CAPM: E(Ri) = Rf + β(Rm-Rf)", back: "Rf: tasa libre riesgo. β: riesgo sistemático. (Rm-Rf): prima de mercado. SML: aplica a TODO activo. CML: solo portafolios eficientes. α de Jensen: exceso vs CAPM." },
+    { id: 'fc104', cat: 'portafolios', front: "Correlación y diversificación", back: "Correlación -1: diversificación perfecta. Correlación +1: sin beneficio. Entre -1 y +1: el portafolio reduce riesgo respecto a activos individuales. Clave: buscar baja correlación." },
+    { id: 'fc105', cat: 'fondos', front: "FIC abierto vs cerrado vs escalonado", back: "Abierto: entrada/salida libre. Cerrado: redención solo al vencimiento o condiciones del reglamento. Escalonado (fund of funds): invierte en participaciones de otros FIC." },
+    { id: 'fc106', cat: 'fondos', front: "Rentabilidad mínima en pensiones obligatorias", back: "Piso de rendimiento que cada AFP debe garantizar. Si no lo alcanza: se cubre con reserva de estabilización + patrimonio de la AFP. Calculada sobre benchmarks definidos por SFC." },
+    { id: 'fc107', cat: 'riesgos', front: "Tipos de riesgo financiero", back: "Mercado (SARM): precios/tasas. Crédito (SARC): incumplimiento. Liquidez (SARL): fondeo. Operativo (SARO): procesos/personas/sistemas. Legal: contratos/regulación. Contraparte." },
+    { id: 'fc108', cat: 'riesgos', front: "VaR vs Expected Shortfall (CVaR)", back: "VaR: pérdida máxima con X% confianza. No dice qué tan malo puede ser si se excede. CVaR: pérdida promedio CUANDO se excede el VaR. CVaR siempre ≥ VaR. CVaR es más conservador." },
+    { id: 'fc109', cat: 'etica', front: "KYC (Know Your Customer) - Elementos", back: "1) Identificación del cliente. 2) Actividad económica y origen de fondos. 3) Perfil de riesgo. 4) Transaccionalidad esperada. Base para SARLAFT y perfilamiento de inversión." },
+    { id: 'fc110', cat: 'etica', front: "Prevalencia del interés del cliente", back: "Las órdenes del cliente SIEMPRE tienen prelación sobre operaciones por cuenta propia del intermediario. Si hay conflicto de interés, debe revelarse y nunca perjudicar al cliente." },
+    { id: 'fc111', cat: 'autorregulacion', front: "Sanciones AMV: escala de gravedad", back: "1) Amonestación (leve). 2) Multa (hasta 100 SMMLV personas naturales). 3) Suspensión temporal del RNPMV. 4) Expulsión permanente (más severa). Proporcional a la infracción." },
+    { id: 'fc112', cat: 'analisis_economico', front: "Regla de Taylor", back: "i = r* + π + α(π-π*) + β(y-y*). Banco central sube tasa si: inflación > meta (π>π*) o PIB real > potencial (y>y*). Guía para decisiones de política monetaria." },
+    { id: 'fc113', cat: 'analisis_economico', front: "Multiplicador bancario", back: "Multiplicador = 1/Encaje. Encaje 10% → multiplicador 10x. Cada peso depositado genera hasta 10 pesos en créditos. BanRep puede modificar encaje como herramienta de política monetaria." },
+    { id: 'fc114', cat: 'matematicas', front: "Tasa forward implícita", back: "f(1,2) = [(1+r2)²/(1+r1)] - 1. Tasa esperada del período futuro entre año 1 y 2. Si r2 > r1, la forward > r2 (curva con pendiente positiva implica tasas futuras crecientes)." },
+    { id: 'fc115', cat: 'matematicas', front: "Duration de Macaulay vs Duración modificada", back: "Macaulay: promedio ponderado de plazos por VP de flujos. Modificada = Macaulay/(1+y). DM estima ΔP/P ≈ -DM × Δy. Bono cupón cero: Duration = plazo exacto." },
 
+    // ═══════════════════ v6 REGULACIÓN FINAL ═══════════════════
+    {
+        id: 'r52', cat: 'regulacion', q: 'En el contrato de comisión, el comisionista actúa:',
+        opts: ['En nombre propio y por cuenta propia', 'En nombre propio pero por cuenta ajena', 'En nombre del cliente y por cuenta del cliente', 'En nombre del Estado'], ans: 1,
+        exp: 'El contrato de comisión es una especie de mandato donde el comisionista actúa en nombre propio pero por cuenta ajena (del comitente/cliente).'
+    },
+    {
+        id: 'r53', cat: 'regulacion', q: 'El Libro Electrónico de Órdenes (LEO) es:',
+        opts: ['Un registro físico de operaciones', 'Un sistema electrónico que registra cronológicamente las órdenes de compra y venta', 'Un libro contable de la BVC', 'Un registro de la SFC'], ans: 1,
+        exp: 'El LEO es un sistema electrónico que registra de forma consecutiva y en orden cronológico todas las órdenes de compra/venta que recibe un intermediario.'
+    },
+    {
+        id: 'r54', cat: 'regulacion', q: '¿Cuáles son los principios del procesamiento de órdenes en el LEO?',
+        opts: ['Velocidad y costo', 'Trazabilidad, equidad, revelación del sistema e integridad', 'Confidencialidad y rapidez', 'Transparencia y ganancia'], ans: 1,
+        exp: 'Los principios son: trazabilidad (auditar etapas), equidad (tratar órdenes equitativamente), revelación del sistema y integridad/seguridad en documentación.'
+    },
+    {
+        id: 'r55', cat: 'regulacion', q: 'Las cuentas de margen permiten al cliente:',
+        opts: ['Operar solo en el mercado OTC', 'Realizar operaciones de contado por sumas mayores a sus recursos aportados', 'Operar sin garantías', 'Comprar solo renta fija'], ans: 1,
+        exp: 'Las cuentas de margen son contratos que permiten al cliente realizar operaciones de contado de compraventa por sumas mayores a sus recursos aportados (art. 2.33.1.1.1 D. 2555).'
+    },
+    {
+        id: 'r56', cat: 'regulacion', q: 'El llamado al margen se realiza cuando el valor del margen calculado es inferior a:',
+        opts: ['El 100% del margen requerido', 'El 75% del margen requerido', 'El 50% del margen requerido para una posición equivalente', 'El 25% del margen requerido'], ans: 2,
+        exp: 'El llamado al margen ocurre cuando el valor del margen es inferior al 50% del margen requerido para tomar una posición equivalente (art. 2.33.1.2.3 D. 2555).'
+    },
+    {
+        id: 'r57', cat: 'regulacion', q: '¿Quiénes pueden realizar operaciones de cuentas de margen?',
+        opts: ['Cualquier intermediario de valores', 'Solo los bancos comerciales', 'SCB dentro del contrato de comisión o APT, y sociedades fiduciarias', 'Solo las AFP'], ans: 2,
+        exp: 'Las cuentas de margen solo pueden realizarlas las SCB (dentro de comisión o APT) y las sociedades fiduciarias (dentro de fiducia mercantil o encargo fiduciario).'
+    },
+    {
+        id: 'r58', cat: 'regulacion', q: 'En la colocación en firme, la sociedad comisionista:',
+        opts: ['Solo asesora al emisor', 'Suscribe toda o parte de la emisión obligándose a ofrecer los títulos al público', 'Garantiza una rentabilidad mínima', 'Compra los títulos para su portafolio propio'], ans: 1,
+        exp: 'En la colocación en firme, la SCB suscribe la totalidad o parte de la emisión, obligándose a ofrecer al público los títulos así suscritos en las condiciones de precio del contrato.'
+    },
+    {
+        id: 'r59', cat: 'regulacion', q: 'En la colocación garantizada, si no se coloca toda la emisión en el plazo:',
+        opts: ['Se devuelven los títulos al emisor', 'La SCB debe suscribir el remanente no colocado', 'Se cancela la emisión', 'La SFC interviene'], ans: 1,
+        exp: 'En la colocación garantizada, la SCB se compromete a colocar la emisión en un plazo determinado, con la obligación de suscribir el remanente no colocado en dicho plazo.'
+    },
+    {
+        id: 'r60', cat: 'regulacion', q: 'Los pasivos de una SCB destinados a financiar adquisición de valores no pueden superar:',
+        opts: ['Su patrimonio técnico', 'Dos veces su patrimonio técnico', 'Tres veces su patrimonio técnico', 'Cinco veces su patrimonio técnico'], ans: 2,
+        exp: 'Los pasivos destinados a financiar la adquisición de valores no pueden ser superiores a 3 veces el patrimonio técnico de la SCB.'
+    },
+    {
+        id: 'r61', cat: 'regulacion', q: 'Los valores entregados en garantía en financiación de valores se aceptan como máximo al:',
+        opts: ['100% de su valor actual', '90% de su valor actual', '80% de su valor actual', '70% de su valor actual'], ans: 2,
+        exp: 'Los valores entregados en garantía se aceptan como máximo al 80% de su valor actual, con base en su cotización en bolsa.'
+    },
+    {
+        id: 'r62', cat: 'regulacion', q: 'El deber de separación de activos implica que:',
+        opts: ['Los activos de clientes pueden mezclarse con los propios', 'Los recursos de terceros no hacen parte de los activos del intermediario ni son garantía de sus acreedores', 'El intermediario puede usar recursos de clientes temporalmente', 'Los activos se separan solo en el balance'], ans: 1,
+        exp: 'Los recursos o valores de terceros no hacen parte de los activos del intermediario ni constituyen garantía ni prenda general de sus acreedores.'
+    },
+    {
+        id: 'r63', cat: 'regulacion', q: 'El deber de mejor ejecución para clientes inversionistas se evalúa principalmente con base en:',
+        opts: ['El volumen de la operación', 'El tiempo de ejecución', 'El precio o tasa de la operación después de restar costos asociados', 'La reputación de la contraparte'], ans: 2,
+        exp: 'Para clientes inversionistas, el mejor resultado se evalúa principalmente con base en el precio o tasa después de restar todos los costos asociados.'
+    },
+    {
+        id: 'r64', cat: 'regulacion', q: 'Un "vinculado" del intermediario incluye al accionista con beneficio real del:',
+        opts: ['1% o más', '5% o más', '10% o más', '20% o más'], ans: 2,
+        exp: 'Se entiende por vinculado al accionista o beneficiario real del 10% o más de la participación accionaria en el intermediario.'
+    },
+    {
+        id: 'r65', cat: 'regulacion', q: 'El operador de distribución:',
+        opts: ['Puede tomar decisiones de inversión discrecionales', 'Actúa como contraparte sin discrecionalidad para decisiones de inversión ni posiciones abiertas', 'Administra portafolios de terceros', 'Solo opera en bolsa'], ans: 1,
+        exp: 'El operador de distribución actúa como contraparte de clientes en el mercado mostrador sin discrecionalidad para tomar decisiones de inversión o asumir posiciones abiertas.'
+    },
+    {
+        id: 'r66', cat: 'regulacion', q: 'La Administración de Portafolios de Terceros (APT) la realizan las SCB:',
+        opts: ['Sin necesidad de autorización', 'Con autorización de la SFC, acreditando idoneidad y capacidades operativas', 'Solo con aprobación de la BVC', 'Con autorización del MinHacienda'], ans: 1,
+        exp: 'Las SCB pueden administrar portafolios de terceros con autorización de la SFC, una vez acrediten idoneidad y capacidades operativas requeridas (art. 2.9.7.1.2 D. 2555).'
+    },
+    {
+        id: 'r67', cat: 'regulacion', q: 'En el contrato de corretaje, el corredor:',
+        opts: ['Actúa como contraparte', 'Relaciona a dos o más personas para que celebren un negocio, sin estar vinculado a las partes', 'Compra valores para su portafolio', 'Actúa en nombre del cliente'], ans: 1,
+        exp: 'En el corretaje, el corredor relaciona a dos o más personas para que celebren un negocio comercial, sin estar vinculado a las partes (art. 1340 C. Comercio).'
+    },
+    {
+        id: 'r68', cat: 'regulacion', q: 'Las personas facultadas para ingresar órdenes en el LEO deben contar con certificación en modalidad de:',
+        opts: ['Solo operadores', 'Directivos, digitadores, operadores y asesores financieros', 'Solo asesores', 'Cualquier funcionario del intermediario'], ans: 1,
+        exp: 'Las personas certificadas como directivos, digitadores, operadores y asesores financieros, con la especialidad correspondiente, están facultadas para ingresar órdenes en el LEO.'
+    },
+
+    // ═══════════════════ v6 AUTORREGULACIÓN FINAL ═══════════════════
+    {
+        id: 'ar13', cat: 'autorregulacion', q: 'El spoofing consiste en:',
+        opts: ['Comprar acciones con información privilegiada', 'Ingresar posturas falsas en los sistemas de negociación para manipular el precio', 'Operar sin certificación vigente', 'Incumplir deberes de asesoría'], ans: 1,
+        exp: 'El spoofing es el ingreso de posturas falsas en los sistemas de negociación, con el objeto de manipular el precio justo de intercambio o engañar a los demás participantes.'
+    },
+    {
+        id: 'ar14', cat: 'autorregulacion', q: 'El proceso disciplinario de AMV comprende las etapas de:',
+        opts: ['Denuncia y sanción', 'Investigación y decisión', 'Solo investigación', 'Indagación, investigación, apelación y casación'], ans: 1,
+        exp: 'El proceso disciplinario comprende las etapas de investigación (a cargo de AMV) y de decisión (a cargo del Tribunal Disciplinario).'
+    },
+    {
+        id: 'ar15', cat: 'autorregulacion', q: 'La etapa de decisión del proceso disciplinario de AMV está a cargo de:',
+        opts: ['La SFC', 'La Presidencia de AMV', 'El Tribunal Disciplinario de AMV', 'La BVC'], ans: 2,
+        exp: 'La etapa de decisión corresponde al Tribunal Disciplinario de AMV (art. 62 del Reglamento AMV).'
+    },
+    {
+        id: 'ar16', cat: 'autorregulacion', q: 'La certificación como directivo de AMV tiene una vigencia de:',
+        opts: ['Un (1) año', 'Dos (2) años', 'Tres (3) años', 'Cuatro (4) años'], ans: 3,
+        exp: 'La certificación como directivo tiene una vigencia de cuatro (4) años y requiere un examen con componente básico y componente especializado.'
+    },
+    {
+        id: 'ar17', cat: 'autorregulacion', q: 'Los exámenes para la modalidad de operador tienen una vigencia de:',
+        opts: ['Un (1) año', 'Dos (2) años', 'Tres (3) años', 'Cuatro (4) años'], ans: 2,
+        exp: 'Los exámenes para la modalidad de operador tienen una vigencia de tres (3) años.'
+    },
+    {
+        id: 'ar18', cat: 'autorregulacion', q: 'La reincidencia para efectos disciplinarios se entiende cuando el sujeto incurre en la misma conducta dentro de los:',
+        opts: ['6 meses siguientes', '12 meses siguientes', 'Tres años siguientes', 'Cinco años siguientes'], ans: 2,
+        exp: 'Se entiende por reincidente cuando el mismo sujeto incurre en la misma conducta dentro de los tres años siguientes a la fecha de adopción de la herramienta preventiva.'
+    },
+    {
+        id: 'ar19', cat: 'autorregulacion', q: 'Los Acuerdos de Terminación Anticipada (ATA) son:',
+        opts: ['Contratos de comisión especiales', 'Mecanismos de negociación para finalizar procesos disciplinarios antes de sentencia', 'Acuerdos entre emisores y la BVC', 'Terminación de contratos de asesoría'], ans: 1,
+        exp: 'Los ATA son parte de la función disciplinaria y consisten en la negociación y suscripción de acuerdos para terminar anticipadamente un proceso disciplinario.'
+    },
+    {
+        id: 'ar20', cat: 'autorregulacion', q: 'Quien esté certificado como operador puede realizar actividades de:',
+        opts: ['Solo operación', 'Operación y dirección', 'Asesor financiero sin necesidad de certificarse como asesor', 'Solo la especialidad certificada'], ans: 2,
+        exp: 'Quien esté certificado como operador puede realizar las actividades de Asesor Financiero sin necesidad de estar certificado como Asesor Financiero.'
+    },
+    {
+        id: 'ar21', cat: 'autorregulacion', q: 'Los miembros de la junta directiva de una SCB:',
+        opts: ['Deben certificarse como directivos', 'No tienen obligación de certificarse como directivos', 'Deben certificarse como operadores', 'Están exentos de toda regulación AMV'], ans: 1,
+        exp: 'Los miembros de juntas directivas ni los presidentes de intermediarios de valores tienen obligación de certificarse, salvo que tengan asignado un código de acceso de operador.'
+    },
+    {
+        id: 'ar22', cat: 'autorregulacion', q: 'La Gerencia de certificación e información de AMV NO puede contar con el apoyo de funcionarios que:',
+        opts: ['Tengan más de 5 años de experiencia', 'Desarrollen funciones disciplinarias o de supervisión', 'Sean menores de 30 años', 'Tengan doble nacionalidad'], ans: 1,
+        exp: 'La Gerencia de certificación puede contar con apoyo de todos los funcionarios de AMV, menos aquellos que desarrollen funciones disciplinarias o de supervisión (art. 120 Reglamento AMV).'
+    },
+    {
+        id: 'ar23', cat: 'autorregulacion', q: 'Los principios de la certificación AMV incluyen:',
+        opts: ['Rentabilidad y liquidez', 'Profesionalización, protección al inversionista, prevención del riesgo, actualización permanente y ausencia de asimetría regulatoria', 'Solo protección al inversionista', 'Eficiencia y competitividad'], ans: 1,
+        exp: 'Los principios son: profesionalización de la intermediación, protección del interés de inversionistas, prevención del riesgo, actualización permanente y ausencia de asimetría regulatoria en estándares profesionales.'
+    },
+    // ═══════════════════ v6 DERIVADOS FINAL ═══════════════════
+    {
+        id: 'd27', cat: 'derivados', q: 'Un Credit Default Swap (CDS) es un derivado donde:',
+        opts: ['Se intercambian tasas de interés', 'El emisor del derivado paga al inversionista el valor del bono si el emisor del título incumple', 'Se intercambian divisas a futuro', 'Se compran acciones con apalancamiento'], ans: 1,
+        exp: 'Un CDS es un derivado de crédito donde el emisor del derivado le paga al inversionista el valor del bono en caso de que el emisor del título incumpla sus obligaciones.'
+    },
+    {
+        id: 'd28', cat: 'derivados', q: 'Un Credit Linked Note (CLN) protege contra:',
+        opts: ['Cambios en tasas de interés', 'Un número determinado de defaults en una canasta de bonos', 'Fluctuaciones de la tasa de cambio', 'Cambios en el precio del petróleo'], ans: 1,
+        exp: 'Un CLN protege contra los primeros N defaults de una canasta de bonos (ej: los 10 primeros), resultando más barato que comprar CDS individuales para cada emisor.'
+    },
+    {
+        id: 'd29', cat: 'derivados', q: 'Para neutralizar la duración de un portafolio de deuda privada se pueden usar:',
+        opts: ['Acciones del mismo sector', 'Posiciones cortas en futuros de TES', 'Bonos del Banco de la República', 'Opciones sobre divisas'], ans: 1,
+        exp: 'Se pueden construir posiciones cortas en futuros de TES para neutralizar la duración del portafolio de deuda privada, ya que la metodología de valoración de la deuda privada está atada al comportamiento de los TES.'
+    },
+    {
+        id: 'd30', cat: 'derivados', q: 'Un swap de tasa de interés IBR a tasa fija permite a una empresa:',
+        opts: ['Aumentar su exposición al riesgo cambiario', 'Convertir la indexación variable (IBR + spread) de un crédito a flujos de tasa fija', 'Eliminar el riesgo crediticio', 'Especular con tasas futuras'], ans: 1,
+        exp: 'Con un IRS, el banco paga el flujo IBR+spread y la empresa paga tasa fija, convirtiendo efectivamente el crédito variable en uno de tasa fija, eliminando la incertidumbre de la IBR.'
+    },
+    {
+        id: 'd31', cat: 'derivados', q: 'Una estructura collar de opciones FX se compone de:',
+        opts: ['Solo opciones call', 'Solo opciones put', 'Compra de call + venta de put (o viceversa) con diferentes strikes', 'Dos futuros con diferentes vencimientos'], ans: 2,
+        exp: 'Un collar combina la compra de una opción call (techo) y la venta de una opción put (piso), o viceversa. Permite costo cero cuando la prima del put compensa la del call.'
+    },
+    {
+        id: 'd32', cat: 'derivados', q: 'El rebalanceo de portafolios con derivados permite:',
+        opts: ['Solo vender activos', 'Aumentar o disminuir participaciones en subyacentes sin afectar significativamente el flujo de caja', 'Eliminar todo riesgo del portafolio', 'Cambiar de categoría de activos'], ans: 1,
+        exp: 'Los derivados permiten recomponer portafolios aumentando o disminuyendo participaciones sin afectar significativamente el flujo de caja, solo el valor de las garantías.'
+    },
+    {
+        id: 'd33', cat: 'derivados', q: 'Los fondos de cesantías utilizan futuros de TES al inicio de febrero para:',
+        opts: ['Especular con tasas', 'Anticipar la exposición en TES antes de recibir los aportes, evitando comprar a tasas bajas', 'Cubrir riesgo cambiario', 'Cumplir requisitos regulatorios'], ans: 1,
+        exp: 'Al comprar futuros de TES en enero, el fondo de cesantías puede aprovechar el movimiento de tasas antes de que la demanda de febrero (por aportes) las baje.'
+    },
+    {
+        id: 'd34', cat: 'derivados', q: 'Un exportador que compra un collar con call strike 3.650 y put strike 3.400 en USDCOP:',
+        opts: ['Siempre compra dólares a 3.650', 'Compra a precio de mercado entre 3.400 y 3.650, pero máximo 3.650 y mínimo 3.400', 'Solo puede vender dólares', 'No tiene ninguna protección'], ans: 1,
+        exp: 'Con el collar: si TRM > 3.650, compra a 3.650 (protección); si TRM está entre 3.400 y 3.650, compra a mercado; si TRM < 3.400, compra a 3.400 (por la put vendida).'
+    },
+    {
+        id: 'd35', cat: 'derivados', q: 'El costo financiero de un crédito en USD cubierto con forward de compra se calcula como:',
+        opts: ['Tasa USD - devaluación', 'Tasa USD + devaluación (aproximadamente (1+tasa USD)×(1+devaluación implícita)-1)', 'Tasa USD × devaluación', 'Solo la tasa USD'], ans: 1,
+        exp: 'El costo financiero total = (1 + tasa crédito USD) × (1 + devaluación implícita forward) - 1. Combina el costo del crédito con el de la cobertura cambiaria.'
+    },
+
+    // ═══════════════════ v6 DIVISAS FINAL ═══════════════════
+    {
+        id: 'div16', cat: 'divisas', q: 'El Banco de la República puede intervenir en el mercado cambiario para:',
+        opts: ['Fijar la tasa de cambio', 'Acumular/desacumular reservas internacionales, mitigar volatilidad y regular liquidez del mercado', 'Solo comprar dólares', 'Solo vender dólares'], ans: 1,
+        exp: 'El BanRep interviene para: acumular/desacumular reservas internacionales, mitigar movimientos de la TRM que no reflejen fundamentales, y regular la liquidez del mercado financiero.'
+    },
+    {
+        id: 'div17', cat: 'divisas', q: 'Las opciones put del BanRep para acumulación de reservas pueden ejercerse cuando:',
+        opts: ['La TRM esté por encima de su promedio de 20 días', 'La TRM esté por debajo de su promedio móvil de los últimos 20 días hábiles', 'Solo los viernes', 'Cuando el BanRep lo decida'], ans: 1,
+        exp: 'Las opciones put para acumulación de reservas pueden ejercerse cualquier día hábil durante su plazo cuando la TRM esté por debajo de su promedio móvil de 20 días hábiles.'
+    },
+    {
+        id: 'div18', cat: 'divisas', q: 'Las opciones call para control de volatilidad se convocan cuando la TRM se encuentre:',
+        opts: ['1% o más por encima de su promedio', '2% o más por encima de su promedio', '4% o más por encima de su promedio móvil de 20 días hábiles', '10% o más por encima'], ans: 2,
+        exp: 'Las opciones call para control de volatilidad se convocan cuando la TRM esté 4% o más por encima de su promedio móvil de los últimos 20 días hábiles.'
+    },
+    {
+        id: 'div19', cat: 'divisas', q: 'En las subastas de opciones del BanRep, cada IOC puede presentar máximo:',
+        opts: ['Una (1) oferta', 'Tres (3) ofertas', 'Cinco (5) ofertas', 'Diez (10) ofertas'], ans: 2,
+        exp: 'Cada intermediario de opciones cambiarias (IOC) puede presentar máximo cinco (5) ofertas en las subastas de opciones del Banco de la República.'
+    },
+    {
+        id: 'div20', cat: 'divisas', q: 'La sanción por incumplimiento total en el ejercicio de opciones del BanRep equivale al:',
+        opts: ['1% de la tasa de cambio por el monto incumplido', '5% de la tasa de cambio por el monto incumplido', '10% de la tasa de cambio', 'Solo pérdida de la prima'], ans: 1,
+        exp: 'Cuando el IOC no entregue las divisas o moneda legal, pierde el derecho a ejercer la opción y debe pagar una sanción del 5% de la tasa de cambio por el monto incumplido.'
+    },
+    {
+        id: 'div21', cat: 'divisas', q: 'Las importaciones se registran con valor CIF, que incluye:',
+        opts: ['Solo el costo del producto', 'Costo, seguro y flete', 'Solo costo y flete', 'Costo más impuestos'], ans: 1,
+        exp: 'Las importaciones se registran en valor CIF (Cost Insurance Freight), que incluye el costo del producto más el seguro y el flete.'
+    },
+    {
+        id: 'div22', cat: 'divisas', q: 'Las exportaciones se registran con valor FOB, que corresponde a:',
+        opts: ['Precio de venta incluyendo seguro y flete', 'Precio de venta puesto en el medio de transporte sin incluir seguros y fletes', 'Precio al consumidor final', 'Precio con aranceles incluidos'], ans: 1,
+        exp: 'Las exportaciones se registran en valor FOB (Free On Board), es decir, el precio de venta puesto en el medio de transporte sin incluir el valor de los seguros y fletes.'
+    },
+    {
+        id: 'div23', cat: 'divisas', q: 'La inversión extranjera de portafolio se destina a:',
+        opts: ['Solo inmuebles', 'Valores inscritos en el RNVE, participaciones en FIC y valores en sistemas de negociación', 'Creación de empresas', 'Negocios fiduciarios exclusivamente'], ans: 1,
+        exp: 'La inversión extranjera de portafolio (temporal) se destina a: valores inscritos en el RNVE, participaciones en FIC, valores listados en sistemas de negociación y fondos de capital privado.'
+    },
+    {
+        id: 'div24', cat: 'divisas', q: 'En las subastas de compra/venta de divisas del BanRep, la puja dura:',
+        opts: ['1 minuto', '3 minutos', '5 minutos', '10 minutos'], ans: 1,
+        exp: 'En las subastas de compra o venta de divisas del BanRep hay una puja de tres (3) minutos durante los cuales los participantes pueden presentar y modificar su oferta.'
+    },
+    {
+        id: 'div25', cat: 'divisas', q: 'Las subastas de compra/venta de divisas del BanRep se anuncian:',
+        opts: ['Con una semana de antelación', 'Dos (2) minutos antes de iniciar a través de SEBRA, SET-FX y SEN', 'El día anterior', 'Un mes antes'], ans: 1,
+        exp: 'El anuncio de la subasta se realiza dos (2) minutos antes de iniciar la subasta a través de SEBRA, SET-FX y el Sistema Electrónico de Negociación (SEN).'
+    },
+
+    // ═══════════════════ v6 PORTAFOLIOS FINAL ═══════════════════
+    {
+        id: 'p16', cat: 'portafolios', q: 'La Asignación Estratégica de Activos (SAA) se considera un método de inversión:',
+        opts: ['Activa', 'Pasiva', 'Especulativa', 'Neutral'], ans: 1,
+        exp: 'La asignación estratégica de activos (SAA) es considerada un método de inversión pasiva, mientras que la asignación táctica (TAA) es considerada inversión activa.'
+    },
+    {
+        id: 'p17', cat: 'portafolios', q: 'La Asignación Táctica de Activos (TAA) busca:',
+        opts: ['Mantener los pesos originales del portafolio', 'Generar valor agregado desviándose temporalmente de las ponderaciones SAA según rendimientos esperados a corto plazo', 'Eliminar todo riesgo', 'Invertir solo en renta fija'], ans: 1,
+        exp: 'La TAA hace ajustes a corto plazo de las ponderaciones por clase de activo en función del rendimiento esperado, buscando explotar desviaciones de valores de largo plazo.'
+    },
+    {
+        id: 'p18', cat: 'portafolios', q: 'La selección pasiva de activos individuales (security selection) consiste en:',
+        opts: ['Elegir acciones subvaloradas', 'Indexar el portafolio replicando la composición de un índice de mercado', 'Usar información privilegiada', 'Market timing'], ans: 1,
+        exp: 'La selección pasiva indexa el portafolio replicando un índice, partiendo de que los mercados son eficientes y que market timing es costoso y no genera rendimientos razonables.'
+    },
+    {
+        id: 'p19', cat: 'portafolios', q: 'El modelo de Markowitz fue desarrollado en 1952 y comprobó matemáticamente:',
+        opts: ['Que la diversificación es irrelevante', 'Los beneficios de la diversificación en términos de volatilidad', 'Que el mercado siempre sube', 'Que todos los activos son iguales'], ans: 1,
+        exp: 'Harry Markowitz, padre de la teoría moderna de portafolios, comprobó matemáticamente los beneficios de la diversificación en términos de volatilidad en su Portfolio Selection (1952).'
+    },
+    {
+        id: 'p20', cat: 'portafolios', q: 'Según Statman (1987), después de aproximadamente 30 acciones, la diversificación adicional:',
+        opts: ['Duplica el beneficio', 'Tiene beneficio nulo porque solo queda el riesgo sistémico', 'Aumenta el riesgo', 'Elimina todo tipo de riesgo'], ans: 1,
+        exp: 'Después de alrededor de 30 acciones el beneficio de diversificación tiende a ser nulo: el riesgo no sistémico se ha eliminado y solo queda el riesgo sistémico (de mercado).'
+    },
+    {
+        id: 'p21', cat: 'portafolios', q: 'El Holding Period Return (HPR) se calcula como:',
+        opts: ['(Valor final + Flujos) / Valor inicial', '(Valor final - Valor inicial + Flujos de caja) / Valor inicial', 'Valor final / Valor inicial', '(Valor inicial - Valor final) / Flujos'], ans: 1,
+        exp: 'HPR = (Valor final - Valor inicial + Flujos de caja) / Valor inicial. Mide el retorno total en el periodo de tenencia del activo.'
+    },
+    {
+        id: 'p22', cat: 'portafolios', q: 'La varianza de un portafolio de dos activos incluye el término:',
+        opts: ['Solo las varianzas individuales', 'Las varianzas individuales ponderadas + 2×covarianza ponderada entre los activos', 'Solo la covarianza', 'El promedio simple de varianzas'], ans: 1,
+        exp: 'Var(Rp) = X1²σ1² + X2²σ2² + 2X1X2σ12. Incluye las varianzas individuales ponderadas al cuadrado más 2 veces la covarianza ponderada.'
+    },
+    {
+        id: 'p23', cat: 'portafolios', q: 'El rebalanceo sistémico de portafolios consiste en:',
+        opts: ['Nunca modificar el portafolio', 'Comprar y vender activos con una base periódica o ante cambios significativos en el valor de alguna clase de activo', 'Cambiar todo el portafolio cada día', 'Indexar al COLCAP únicamente'], ans: 1,
+        exp: 'El rebalanceo sistémico se hace periódicamente (mensual, trimestral, anual) o ante cambios significativos (ej. ±10% de la asignación inicial). También se conoce como indexación.'
+    },
+    {
+        id: 'p24', cat: 'portafolios', q: 'Los supuestos del modelo de Markowitz incluyen que los inversionistas:',
+        opts: ['Son neutrales al riesgo', 'Estiman el riesgo con la volatilidad, deciden con base en retorno esperado y riesgo, y buscan maximizar su utilidad', 'Prefieren mayor riesgo', 'Ignoran los retornos esperados'], ans: 1,
+        exp: 'Los supuestos son: estiman riesgo con volatilidad, decisiones basadas en retorno/riesgo, prefieren altos rendimientos y menor riesgo, y buscan maximizar su función de utilidad.'
+    },
+
+    // ═══════════════════ v6 RIESGOS FINAL ═══════════════════
+    {
+        id: 'ri18', cat: 'riesgos', q: 'La convexidad mide:',
+        opts: ['El retorno esperado de un bono', 'El cambio de la duración modificada cuando cambia la tasa de interés', 'La probabilidad de default', 'El riesgo cambiario de un bono'], ans: 1,
+        exp: 'La convexidad es la medida de cambio de la duración modificada de un bono cuando cambia la tasa de interés. Corrige el error de la aproximación lineal de la duración.'
+    },
+    {
+        id: 'ri19', cat: 'riesgos', q: 'El tracking error mide:',
+        opts: ['El error en el registro de operaciones', 'La desviación de los retornos del portafolio respecto al benchmark', 'El error de cálculo del VaR', 'La diferencia entre precio bid y ask'], ans: 1,
+        exp: 'El tracking error es la desviación estándar de la diferencia entre los retornos del portafolio y los del benchmark. Los administradores que siguen índices buscan minimizarlo.'
+    },
+    {
+        id: 'ri20', cat: 'riesgos', q: 'El bid-ask spread está relacionado con:',
+        opts: ['La rentabilidad del portafolio', 'Los costos asociados a operaciones y la iliquidez del activo', 'La tasa de interés libre de riesgo', 'El riesgo sistémico'], ans: 1,
+        exp: 'El bid-ask spread es la diferencia entre precios de compra y venta, relacionado con costos operativos, gestión de órdenes, costos de inventario, nueva información y asimetría informativa.'
+    },
+    {
+        id: 'ri21', cat: 'riesgos', q: 'El indicador de riesgo de liquidez (IRL) se calcula como:',
+        opts: ['Activos totales / Pasivos totales', 'IRL = ALM - RLN (activos líquidos ajustados menos requerimientos de liquidez netos)', 'Ganancias / Pérdidas', 'Capital / Activos ponderados por riesgo'], ans: 1,
+        exp: 'IRL = ALM - RLN, donde ALM son activos líquidos ajustados por liquidez de mercado y RLN son requerimientos de liquidez netos en un horizonte determinado.'
+    },
+    {
+        id: 'ri22', cat: 'riesgos', q: 'Para FIC sin pacto de permanencia, la liquidez mínima corresponde al:',
+        opts: ['5% del valor del portafolio', '10% del valor del portafolio', '15% del valor del portafolio', '20% del valor del portafolio'], ans: 1,
+        exp: 'Para los FIC sin pacto de permanencia, la liquidez mínima corresponde al 10% del valor del portafolio.'
+    },
+    {
+        id: 'ri23', cat: 'riesgos', q: 'El coeficiente de fondeo estable neto (CFEN) se calcula como:',
+        opts: ['Activos / Pasivos', 'FED / FER (fondeo estable disponible sobre fondeo estable requerido)', 'Ingresos / Egresos', 'Capital / Deuda'], ans: 1,
+        exp: 'CFEN = FED/FER, donde FED es el fondeo estable disponible y FER es el fondeo estable requerido. Mide el grado de desajuste del fondeo de la entidad.'
+    },
+    {
+        id: 'ri24', cat: 'riesgos', q: 'La pérdida esperada por riesgo de crédito se estima como:',
+        opts: ['PD × Exposición', '(1-R) × Exposición × PD, donde R es la tasa de recuperación', 'Solo la probabilidad de default', 'VaR × nivel de confianza'], ans: 1,
+        exp: 'RC = (1-R) × Exp × PD, donde R es la tasa de recuperación si la contraparte incumple, Exp es el valor de la inversión en riesgo y PD es la probabilidad de incumplimiento.'
+    },
+    {
+        id: 'ri25', cat: 'riesgos', q: 'Los eventos de crédito según ISDA incluyen:',
+        opts: ['Solo bancarrota', 'Bancarrota, imposibilidad de pago, reestructuración y default técnico', 'Solo imposibilidad de pago', 'Solo reestructuración'], ans: 1,
+        exp: 'Los eventos de crédito incluyen: bancarrota (cesación de pagos), imposibilidad de pago (fallo en obligaciones materiales), reestructuración (redefinición de términos) y default técnico (incumplimiento de covenants).'
+    },
+    {
+        id: 'ri26', cat: 'riesgos', q: 'El SIAR se compone de las etapas:',
+        opts: ['Solo medición y control', 'Identificación, medición, control y monitoreo', 'Solo identificación y monitoreo', 'Planificación, ejecución y cierre'], ans: 1,
+        exp: 'El Sistema Integral de Administración de Riesgos comprende: identificación (determinar riesgos), medición (cuantificar exposición), control (mitigar ocurrencia/impacto) y monitoreo (seguimiento permanente).'
+    },
+    {
+        id: 'ri27', cat: 'riesgos', q: 'El apetito al riesgo se define como:',
+        opts: ['La máxima pérdida posible', 'El nivel de riesgo que una entidad está dispuesta a aceptar en la búsqueda de sus objetivos', 'La capacidad de pago de la entidad', 'El nivel de riesgo del mercado'], ans: 1,
+        exp: 'El apetito al riesgo (según COSO) es el nivel de riesgo que una entidad está dispuesta a aceptar en la búsqueda de su misión, visión y objetivos. Diferente de tolerancia y capacidad.'
+    },
+    {
+        id: 'ri28', cat: 'riesgos', q: 'La tolerancia al riesgo es:',
+        opts: ['Igual al apetito al riesgo', 'El nivel aceptable de variación en los resultados en la búsqueda de objetivos', 'La máxima pérdida posible', 'El riesgo total del mercado'], ans: 1,
+        exp: 'La tolerancia al riesgo es el nivel aceptable de variación en los resultados o de actuación de la entidad en la búsqueda de sus objetivos (COSO).'
+    },
+    {
+        id: 'ri29', cat: 'riesgos', q: 'Los modelos de score de crédito se dividen en:',
+        opts: ['Solo calificación reactiva', 'Calificación reactiva, de comportamiento y proactiva', 'Solo calificación interna y externa', 'Modelos estándar y avanzados'], ans: 1,
+        exp: 'Se dividen en: reactiva (clasifica para un contrato específico), de comportamiento (seguimiento al cliente existente) y proactiva (clasificación general, no frente a un producto).'
+    },
+    {
+        id: 'ri30', cat: 'riesgos', q: 'Las metodologías de medición de riesgos se dividen principalmente en:',
+        opts: ['Cuantitativas y cualitativas', 'Modelo estándar (definido por el supervisor) y modelos internos (creados por la institución)', 'Solo modelos paramétricos', 'Solo simulación histórica'], ans: 1,
+        exp: 'Se dividen en modelo estándar (definido por el supervisor) y modelos internos (creados por la institución y aprobados por el supervisor, ajustados a su negocio).'
+    },
+
+    // ═══════════════════ v6 ÉTICA FINAL ═══════════════════
+    {
+        id: 'e17', cat: 'etica', q: 'El deber de documentación del intermediario implica:',
+        opts: ['Solo registrar operaciones exitosas', 'Documentar oportuna y adecuadamente las órdenes y operaciones, poniéndolas a disposición de clientes, AMV y SFC', 'Documentar solo operaciones por cuenta propia', 'Mantener registros solo por 6 meses'], ans: 1,
+        exp: 'Los intermediarios deben documentar oportuna y adecuadamente las órdenes y las operaciones sobre valores, poniéndolas a disposición de clientes, organismos de autorregulación y la SFC.'
+    },
+    {
+        id: 'e18', cat: 'etica', q: 'El deber de reserva del intermediario obliga a:',
+        opts: ['Publicar todas las operaciones', 'Guardar reserva de las operaciones ejecutadas, sus resultados y cualquier información confidencial', 'Informar a la prensa sobre operaciones importantes', 'Compartir información con competidores'], ans: 1,
+        exp: 'Los intermediarios están obligados a guardar reserva de las operaciones ejecutadas, sus resultados y cualquier información de carácter confidencial, incorporando procedimientos en el Código de buen gobierno.'
+    },
+    {
+        id: 'e19', cat: 'etica', q: 'El deber de valoración de activos requiere valorar a precios de mercado:',
+        opts: ['Solo los activos del intermediario', 'Todos los activos de los clientes, con la periodicidad que establezca la SFC', 'Solo acciones', 'Solo bonos del gobierno'], ans: 1,
+        exp: 'Los intermediarios deben valorar a precios de mercado todos los activos de sus clientes, incluidos valores en repos, simultáneas y TTV, con la periodicidad que establezca la SFC.'
+    },
+    {
+        id: 'e20', cat: 'etica', q: 'El deber de asesoría aplica en los siguientes casos EXCEPTO:',
+        opts: ['Contrato de comisión', 'Administración de portafolios de terceros', 'Distribución de FIC', 'Operaciones personales del intermediario'], ans: 3,
+        exp: 'El deber de asesoría aplica en: asesoría en MV, comisión, APT, distribución de FIC, fondos voluntarios de pensiones, negocios fiduciarios en valores y cuentas de margen.'
+    },
+
+    // ═══════════════════ v6 FONDOS FINAL ═══════════════════
+    {
+        id: 'fo14', cat: 'fondos', q: 'En los fondos de cesantías, los aportes se reciben en:',
+        opts: ['Enero de cada año', 'Febrero de cada año', 'Julio de cada año', 'Cualquier mes del año'], ans: 1,
+        exp: 'Los portafolios de cesantías reciben los aportes de las personas vinculadas por parte de sus empleadores en febrero de cada año.'
+    },
+    {
+        id: 'fo15', cat: 'fondos', q: 'Los inversionistas institucionales que diversifican portafolios en el exterior incluyen:',
+        opts: ['Solo bancos comerciales', 'Fondos de pensiones obligatorias y voluntarias, fiduciarias y aseguradoras', 'Solo personas naturales', 'Solo el gobierno'], ans: 1,
+        exp: 'Los inversionistas institucionales colombianos que adquieren activos en el exterior incluyen fondos de pensiones (obligatorias y voluntarias), fiduciarias y aseguradoras.'
+    },
+
+    // ═══════════════════ v6 ANÁLISIS ECONÓMICO FINAL ═══════════════════
+    {
+        id: 'ae16', cat: 'analisis_economico', q: 'Las remesas son:',
+        opts: ['Préstamos del gobierno', 'Transferencias de divisas realizadas por colombianos que viven en el exterior', 'Inversiones de portafolio', 'Pagos de deuda externa'], ans: 1,
+        exp: 'Las remesas corresponden a transferencias de divisas realizadas por los colombianos que viven en el exterior, alcanzando cerca de USD 8.500 millones en 2021.'
+    },
+    {
+        id: 'ae17', cat: 'analisis_economico', q: 'La inversión extranjera directa se diferencia de la de portafolio en:',
+        opts: ['El monto invertido', 'El ánimo de permanencia: la directa es permanente, la de portafolio es temporal', 'El tipo de divisa', 'No hay diferencia'], ans: 1,
+        exp: 'La inversión extranjera se clasifica según el ánimo de permanencia: directa (permanente, en sociedades, inmuebles, etc.) y de portafolio (temporal, en valores y FIC).'
+    },
+
+    // ═══════════════════ v6 RENTA FIJA FINAL ═══════════════════
+    {
+        id: 'rf23', cat: 'renta_fija', q: 'La duración modificada asume un comportamiento lineal del precio del bono, lo que implica:',
+        opts: ['Una medición perfecta', 'Un error que se corrige con la convexidad', 'Que no se necesita la tasa de interés', 'Que el precio siempre sube'], ans: 1,
+        exp: 'La duración modificada es una aproximación lineal del cambio de precio. Como la relación precio-tasa es curva, hay un error que se corrige introduciendo la convexidad.'
+    },
+    {
+        id: 'rf24', cat: 'renta_fija', q: 'El ajuste por convexidad del precio de un bono se calcula como:',
+        opts: ['Convexidad × Δr', '½ × Convexidad × (Δr)² × P', 'Convexidad / Duración', 'Convexidad + Duración'], ans: 1,
+        exp: 'Ajuste Convexidad = ½ × Conv × (Δr)² × P. Se suma al cambio estimado por duración modificada para obtener una mejor aproximación del cambio de precio.'
+    },
+
+    // ═══════════════════ v6 RENTA VARIABLE FINAL ═══════════════════
+    {
+        id: 'rv32', cat: 'renta_variable', q: 'Las operaciones por cuenta propia en el mercado secundario buscan:',
+        opts: ['Financiar al emisor', 'Imprimir liquidez y estabilidad al mercado, atendiendo ofertas o estimulando demandas', 'Especular exclusivamente', 'Comprar acciones propias'], ans: 1,
+        exp: 'Las operaciones por cuenta propia en el mercado secundario buscan imprimir liquidez y estabilidad al mercado, atendiendo ofertas o estimulando y abasteciendo demandas.'
+    },
+    {
+        id: 'rv33', cat: 'renta_variable', q: 'Las SCB NO pueden realizar operaciones por cuenta propia teniendo como contraparte:',
+        opts: ['Otros intermediarios', 'Los FIC, portafolios de terceros o contratos de APT que ellos administren', 'Bancos del exterior', 'La Nación'], ans: 1,
+        exp: 'Las SCB no pueden realizar operaciones por cuenta propia teniendo como contraparte directa o indirectamente los FIC, portafolios de terceros o contratos de APT que administren.'
+    },
+
+    // ═══════════════════ v6 MATEMÁTICAS FINAL ═══════════════════
+    {
+        id: 'm35', cat: 'matematicas', q: 'El VaR paramétrico de un portafolio de $100M con volatilidad 8% anual, 1 mes y 95% de confianza es aproximadamente:',
+        opts: ['$1.65M', '$3.80M', '$8.00M', '$13.16M'], ans: 1,
+        exp: 'VaR = P × σ × √T × Z = 100 × 8% × √(1/12) × 1.645 ≈ $3.80M. Es la máxima pérdida probable en un mes al 95% de confianza.'
+    },
+    {
+        id: 'm36', cat: 'matematicas', q: 'Si un portafolio tiene 40% en activo 1 (retorno 12%) y 60% en activo 2 (retorno 18%), el retorno esperado del portafolio es:',
+        opts: ['15%', '15.6%', '16.8%', '12%'], ans: 1,
+        exp: 'E(Rp) = 0.40 × 12% + 0.60 × 18% = 4.8% + 10.8% = 15.6%. El retorno del portafolio es el promedio ponderado de los retornos individuales.'
+    },
+    // ═══════════════════ v6 FLASHCARDS ═══════════════════
+    { id: 'f116', cat: 'regulacion', type: 'flashcard', front: '¿Qué es el Libro Electrónico de Órdenes (LEO)?', back: 'Sistema electrónico que registra cronológicamente todas las órdenes de compra y venta recibidas por un intermediario, cumpliendo principios de trazabilidad, equidad, revelación e integridad.' },
+    { id: 'f117', cat: 'regulacion', type: 'flashcard', front: '¿Qué son las cuentas de margen?', back: 'Contratos que permiten al cliente realizar operaciones de contado de compraventa por sumas mayores a sus recursos aportados. Llamado al margen: cuando el margen calculado < 50% del requerido.' },
+    { id: 'f118', cat: 'regulacion', type: 'flashcard', front: 'Diferencia entre colocación en firme y colocación garantizada', back: 'En firme: SCB suscribe toda/parte de la emisión y la ofrece al público. Garantizada: SCB se compromete a colocar en un plazo, y si no logra colocar todo, debe suscribir el remanente.' },
+    { id: 'f119', cat: 'regulacion', type: 'flashcard', front: 'Deber de separación de activos', back: 'Los recursos o valores de terceros NO hacen parte de los activos del intermediario ni constituyen garantía ni prenda general de los acreedores del intermediario.' },
+    { id: 'f120', cat: 'regulacion', type: 'flashcard', front: 'Deber de mejor ejecución', back: 'Para clientes inversionistas, el mejor resultado se evalúa principalmente con base en el precio o tasa de la operación después de restar todos los costos asociados.' },
+    { id: 'f121', cat: 'autorregulacion', type: 'flashcard', front: '¿Qué es el spoofing?', back: 'Ingreso de posturas falsas en los sistemas de negociación para manipular el precio o engañar a los demás participantes del mercado. Es una conducta de alto impacto sancionada por AMV.' },
+    { id: 'f122', cat: 'autorregulacion', type: 'flashcard', front: 'Etapas del proceso disciplinario AMV', back: '1. Investigación (a cargo de AMV). 2. Decisión (a cargo del Tribunal Disciplinario de AMV). También existen los Acuerdos de Terminación Anticipada (ATA).' },
+    { id: 'f123', cat: 'autorregulacion', type: 'flashcard', front: 'Vigencia certificaciones AMV', back: 'Directivo: 4 años. Operador: 3 años. Asesor: 3 años. Digital: 2 años. Quien esté certificado como operador puede realizar actividades de asesor financiero sin certificación adicional.' },
+    { id: 'f124', cat: 'autorregulacion', type: 'flashcard', front: 'Principios de la certificación AMV', back: '1. Profesionalización, 2. Protección al inversionista, 3. Prevención del riesgo, 4. Actualización permanente, 5. Ausencia de asimetría regulatoria en estándares profesionales.' },
+    { id: 'f125', cat: 'derivados', type: 'flashcard', front: 'Credit Default Swap (CDS)', back: 'Derivado de crédito donde el emisor del derivado paga al inversionista el valor del bono si el emisor del título incumple. Transfiere el riesgo de crédito a un tercero.' },
+    { id: 'f126', cat: 'derivados', type: 'flashcard', front: 'Collar de opciones FX', back: 'Estructura compuesta por compra de call + venta de put (o viceversa) con diferentes strikes. Permite costo cero cuando las primas se compensan. Limita tanto el beneficio como la pérdida.' },
+    { id: 'f127', cat: 'derivados', type: 'flashcard', front: 'Rebalanceo de portafolios con derivados', back: 'Permite aumentar o disminuir participaciones en subyacentes sin afectar significativamente el flujo de caja (solo el valor de las garantías). Más eficiente que comprar/vender los activos directamente.' },
+    { id: 'f128', cat: 'divisas', type: 'flashcard', front: 'Instrumentos de intervención del BanRep', back: '1. Opciones put/call (acumulación/desacumulación de reservas y control de volatilidad), 2. Compra/venta directa de divisas (subastas), 3. FX Swaps, 4. Forwards.' },
+    { id: 'f129', cat: 'divisas', type: 'flashcard', front: 'Opciones BanRep para control de volatilidad', back: 'Call: se convocan cuando TRM ≥ 4% por encima del promedio móvil 20 días. Put: cuando TRM ≥ 4% por debajo. Cupo USD 200M. Plazo 1 mes desde la subasta.' },
+    { id: 'f130', cat: 'divisas', type: 'flashcard', front: 'CIF vs FOB', back: 'CIF (Cost Insurance Freight): valor importaciones, incluye costo + seguro + flete. FOB (Free On Board): valor exportaciones, precio puesto en transporte sin seguros ni fletes.' },
+    { id: 'f131', cat: 'divisas', type: 'flashcard', front: 'Inversión extranjera: directa vs portafolio', back: 'Directa: ánimo de permanencia (sociedades, inmuebles, negocios fiduciarios). Portafolio: temporal (valores RNVE, FIC, sistemas de negociación, fondos capital privado).' },
+    { id: 'f132', cat: 'portafolios', type: 'flashcard', front: 'SAA vs TAA', back: 'SAA (Strategic Asset Allocation): inversión pasiva, asignación de largo plazo. TAA (Tactical Asset Allocation): inversión activa, ajustes a corto plazo de ponderaciones según rendimientos esperados.' },
+    { id: 'f133', cat: 'portafolios', type: 'flashcard', front: 'Diversificación según Markowitz y Statman', back: 'Markowitz (1952): diversificación reduce volatilidad. Statman (1987): después de ~30 acciones el beneficio es nulo; el riesgo no sistémico (diversificable) se eliminó, queda solo el sistémico.' },
+    { id: 'f134', cat: 'portafolios', type: 'flashcard', front: 'HPR (Holding Period Return)', back: 'HPR = (Valor final - Valor inicial + Flujos de caja) / Valor inicial. Mide el retorno total en el periodo de tenencia. Es un retorno histórico.' },
+    { id: 'f135', cat: 'portafolios', type: 'flashcard', front: 'Varianza de un portafolio de 2 activos', back: 'Var(Rp) = X1²σ1² + X2²σ2² + 2X1X2σ12. Incluye varianzas individuales + covarianza. Por eso el riesgo del portafolio NO es el promedio ponderado de riesgos individuales.' },
+    { id: 'f136', cat: 'riesgos', type: 'flashcard', front: 'Convexidad', back: 'Medida de cambio de la duración modificada cuando cambia la tasa de interés. Ajuste = ½ × Conv × (Δr)² × P. Corrige el error de la aproximación lineal de la duración.' },
+    { id: 'f137', cat: 'riesgos', type: 'flashcard', front: 'Tracking error', back: 'σ(p,b) = desviación estándar de la diferencia de retornos entre portafolio y benchmark. Administradores que siguen índices buscan minimizarlo. VaR relativo usa este concepto.' },
+    { id: 'f138', cat: 'riesgos', type: 'flashcard', front: 'IRL (Indicador de Riesgo de Liquidez)', back: 'IRL = ALM - RLN. ALM: activos líquidos ajustados por liquidez mercado. RLN: requerimientos de liquidez netos. IRL(razón) = ALM/RLN. FIC sin pacto: liquidez mínima = 10%.' },
+    { id: 'f139', cat: 'riesgos', type: 'flashcard', front: 'CFEN (Coeficiente de Fondeo Estable Neto)', back: 'CFEN = FED/FER. Mide el grado de desajuste del fondeo. FED: fondeo estable disponible (patrimonio + pasivos por factor de estabilidad). FER: fondeo estable requerido (activos ponderados).' },
+    { id: 'f140', cat: 'riesgos', type: 'flashcard', front: 'Pérdida esperada por riesgo de crédito', back: 'RC = (1-R) × Exp × PD. R: tasa de recuperación, Exp: valor de inversión en riesgo, PD: probabilidad de incumplimiento. Eventos de crédito: bancarrota, imposibilidad pago, reestructuración, default técnico.' },
+    { id: 'f141', cat: 'riesgos', type: 'flashcard', front: 'SIAR: etapas del ciclo de gestión del riesgo', back: '1. Identificación (determinar riesgos actuales/potenciales), 2. Medición (cuantificar exposición-impacto), 3. Control (mitigar probabilidad/impacto), 4. Monitoreo (seguimiento permanente).' },
+    { id: 'f142', cat: 'riesgos', type: 'flashcard', front: 'Apetito vs Tolerancia vs Capacidad de riesgo (COSO)', back: 'Apetito: riesgo que la entidad está DISPUESTA a aceptar. Tolerancia: variación ACEPTABLE en resultados. Capacidad: nivel MÁXIMO de riesgo que puede soportar.' },
+    { id: 'f143', cat: 'etica', type: 'flashcard', front: 'Principales deberes del intermediario', back: 'Documentación (registrar órdenes/operaciones), Reserva (confidencialidad), Separación de activos (no mezclar con propios), Valoración (precios de mercado), Mejor ejecución (mejor precio neto).' },
 ];
