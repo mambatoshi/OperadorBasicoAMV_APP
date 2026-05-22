@@ -629,7 +629,6 @@ export const questions = [
         opts: ['Solo conservador', 'Conservador, moderado y de mayor riesgo', 'Solo moderado y agresivo', 'Bajo y alto riesgo'], ans: 1,
         exp: 'El esquema de multifondos ofrece tres perfiles: conservador, moderado y de mayor riesgo, permitiendo al afiliado elegir según su perfil de riesgo y cercanía al retiro.'
     },
-    ,
 
     {
         id: 'e8', cat: 'etica', q: "Según el Decreto 2555 de 2010, ¿cuáles son los principios orientadores para el manejo de conflictos de interés?",
@@ -1524,32 +1523,32 @@ export const questions = [
 
     // ═══════════════════ v4 REGULACIÓN EXPANSION ═══════════════════
     {
-        id: 'r20', cat: 'regulacion', q: 'Los CDT (Certificados de Depósito a Término) son emitidos por:',
+        id: 'r20_v2', cat: 'regulacion', q: 'Los CDT (Certificados de Depósito a Término) son emitidos por:',
         opts: ['Sociedades comisionistas de bolsa', 'Establecimientos bancarios y corporaciones financieras', 'La Bolsa de Valores', 'El Banco de la República'], ans: 1,
         exp: 'Los CDT son títulos de renta fija emitidos por establecimientos bancarios, corporaciones financieras y compañías de financiamiento.'
     },
     {
-        id: 'r21', cat: 'regulacion', q: 'La titularización es un proceso mediante el cual:',
+        id: 'r21_v2', cat: 'regulacion', q: 'La titularización es un proceso mediante el cual:',
         opts: ['Se emiten acciones ordinarias', 'Se transforman activos ilíquidos en títulos negociables', 'Se cancelan deudas con el gobierno', 'Se registran emisores en el RNVE'], ans: 1,
         exp: 'La titularización convierte activos o flujos de caja en títulos valores negociables en el mercado, mejorando la liquidez del originador.'
     },
     {
-        id: 'r22', cat: 'regulacion', q: 'Las aceptaciones bancarias son:',
+        id: 'r22_v2', cat: 'regulacion', q: 'Las aceptaciones bancarias son:',
         opts: ['Títulos de deuda pública', 'Letras de cambio aceptadas por un banco para financiar operaciones comerciales', 'Acciones preferenciales de bancos', 'Títulos emitidos por el Banco de la República'], ans: 1,
         exp: 'Las aceptaciones bancarias son letras de cambio giradas por una empresa y aceptadas por un banco, generalmente para financiar comercio exterior.'
     },
     {
-        id: 'r23', cat: 'regulacion', q: '¿Qué es una operación simultánea?',
+        id: 'r23_v2', cat: 'regulacion', q: '¿Qué es una operación simultánea?',
         opts: ['Dos operaciones de contado ejecutadas al mismo tiempo', 'Compraventa de valores con pacto de retroventa sin transferencia de propiedad plena', 'La compra y venta del mismo título en diferentes bolsas', 'Una operación de derivados con dos subyacentes'], ans: 1,
         exp: 'En la simultánea, a diferencia del repo, NO hay transferencia de propiedad. El enajenante conserva los derechos económicos del título.'
     },
     {
-        id: 'r24', cat: 'regulacion', q: 'La Transferencia Temporal de Valores (TTV) permite:',
+        id: 'r24_v2', cat: 'regulacion', q: 'La Transferencia Temporal de Valores (TTV) permite:',
         opts: ['Vender valores definitivamente', 'Prestar temporalmente valores a cambio de una contraprestación', 'Comprar valores a plazo sin garantía', 'Emitir nuevos valores'], ans: 1,
         exp: 'La TTV es un préstamo temporal de valores. El originador entrega títulos y recibe una contraprestación; al vencimiento se restituyen valores de la misma especie.'
     },
     {
-        id: 'r25', cat: 'regulacion', q: 'En una operación repo, ¿quién asume los rendimientos del título durante la vigencia?',
+        id: 'r25_v2', cat: 'regulacion', q: 'En una operación repo, ¿quién asume los rendimientos del título durante la vigencia?',
         opts: ['El enajenante (vendedor inicial)', 'El adquirente (comprador)', 'La bolsa de valores', 'El depósito centralizado'], ans: 1,
         exp: 'En el repo hay transferencia de propiedad, por lo que el adquirente recibe los rendimientos del título durante la vigencia de la operación.'
     },
@@ -1606,27 +1605,27 @@ export const questions = [
 
     // ═══════════════════ v4 AUTORREGULACIÓN EXPANSION ═══════════════════
     {
-        id: 'a10', cat: 'autorregulacion', q: 'El Tribunal Disciplinario de la AMV es competente para:',
+        id: 'a10_v2', cat: 'autorregulacion', q: 'El Tribunal Disciplinario de la AMV es competente para:',
         opts: ['Emitir regulación del mercado', 'Conocer y fallar las investigaciones disciplinarias contra personas vinculadas a entidades miembro', 'Aprobar emisiones de valores', 'Fijar tasas de interés'], ans: 1,
         exp: 'El Tribunal Disciplinario es el órgano de la AMV encargado de conocer y fallar las investigaciones disciplinarias iniciadas contra personas naturales o jurídicas.'
     },
     {
-        id: 'a11', cat: 'autorregulacion', q: 'Las etapas del proceso disciplinario de la AMV son:',
+        id: 'a11_v2', cat: 'autorregulacion', q: 'Las etapas del proceso disciplinario de la AMV son:',
         opts: ['Denuncia y sentencia', 'Investigación preliminar, investigación formal, formulación de cargos y fallo', 'Auditoría y sanción', 'Queja, mediación y resolución'], ans: 1,
         exp: 'El proceso incluye: indagación preliminar, investigación formal, formulación de cargos, descargos, práctica de pruebas, alegatos y fallo por el Tribunal.'
     },
     {
-        id: 'a12', cat: 'autorregulacion', q: 'La certificación ante la AMV es obligatoria para:',
+        id: 'a12_v2', cat: 'autorregulacion', q: 'La certificación ante la AMV es obligatoria para:',
         opts: ['Todos los empleados de entidades financieras', 'Las personas que realicen operaciones en el mercado de valores por cuenta de intermediarios', 'Solo los gerentes generales', 'Solo los auditores internos'], ans: 1,
         exp: 'La certificación es obligatoria para quienes se inscriban en el RNPMV: operadores, asesores y directivos de intermediarios del mercado de valores.'
     },
     {
-        id: 'a13', cat: 'autorregulacion', q: 'La función normativa de la AMV consiste en:',
+        id: 'a13_v2', cat: 'autorregulacion', q: 'La función normativa de la AMV consiste en:',
         opts: ['Sancionar a los infractores', 'Expedir reglamentos y normas de conducta para el mercado de valores', 'Supervisar al Banco de la República', 'Aprobar las OPA'], ans: 1,
         exp: 'La función normativa permite a la AMV expedir reglamentos de autorregulación que complementan la regulación estatal con estándares de conducta.'
     },
     {
-        id: 'a14', cat: 'autorregulacion', q: 'Una infracción disciplinaria en la AMV se diferencia de una falta porque:',
+        id: 'a14_v2', cat: 'autorregulacion', q: 'Una infracción disciplinaria en la AMV se diferencia de una falta porque:',
         opts: ['Son lo mismo', 'La infracción viola normas de autorregulación; la falta viola normas legales estatales', 'La infracción es más grave', 'La falta solo aplica a personas jurídicas'], ans: 1,
         exp: 'Las infracciones son violaciones a los reglamentos de autorregulación de la AMV. Las faltas son incumplimientos de la normativa estatal supervisados por la SFC.'
     },
@@ -1638,49 +1637,49 @@ export const questions = [
 
     // ═══════════════════ v4 ÉTICA EXPANSION ═══════════════════
     {
-        id: 'e9', cat: 'etica', q: 'El front running consiste en:',
+        id: 'e9_v2', cat: 'etica', q: 'El front running consiste en:',
         opts: ['Ejecutar operaciones propias antes que las del cliente, aprovechando conocimiento de órdenes pendientes', 'Operar en mercados extranjeros', 'Vender títulos al descubierto', 'Ejecutar órdenes del cliente rápidamente'], ans: 0,
         exp: 'Front running es la práctica prohibida de operar por cuenta propia antes de ejecutar órdenes de clientes, aprovechando la información sobre dichas órdenes.'
     },
     {
-        id: 'e10', cat: 'etica', q: 'El churning es:',
+        id: 'e10_v2', cat: 'etica', q: 'El churning es:',
         opts: ['Diversificar el portafolio del cliente', 'Realizar operaciones excesivas e innecesarias en la cuenta del cliente para generar comisiones', 'Invertir en fondos de inversión colectiva', 'Cambiar de corredor de bolsa'], ans: 1,
         exp: 'Churning es la rotación excesiva de un portafolio sin beneficio para el cliente, con el objetivo de generar mayores comisiones para el intermediario.'
     },
     {
-        id: 'e11', cat: 'etica', q: 'Las murallas chinas (Chinese walls) en el mercado de valores son:',
+        id: 'e11_v2', cat: 'etica', q: 'Las murallas chinas (Chinese walls) en el mercado de valores son:',
         opts: ['Regulaciones de comercio exterior con China', 'Barreras de información entre departamentos de una misma entidad para prevenir conflictos de interés', 'Límites a la inversión extranjera', 'Normas de la bolsa de Shanghai'], ans: 1,
         exp: 'Las murallas chinas son barreras organizacionales que impiden el flujo de información privilegiada entre áreas de una entidad financiera.'
     },
     {
-        id: 'e12', cat: 'etica', q: 'El uso de información privilegiada está sancionado por:',
+        id: 'e12_v2', cat: 'etica', q: 'El uso de información privilegiada está sancionado por:',
         opts: ['Solo normas administrativas', 'La Ley 964 de 2005 con sanciones administrativas y penales', 'Solo normas penales', 'No está sancionado en Colombia'], ans: 1,
         exp: 'El uso de información privilegiada tiene sanciones tanto administrativas (multas, suspensión) como penales (Ley 964 de 2005 y Código Penal).'
     },
     {
-        id: 'e13', cat: 'etica', q: 'El deber de mejor ejecución obliga al intermediario a:',
+        id: 'e13_v2', cat: 'etica', q: 'El deber de mejor ejecución obliga al intermediario a:',
         opts: ['Ejecutar la orden más rápidamente posible sin importar el precio', 'Obtener las mejores condiciones de precio, costo, velocidad y probabilidad de ejecución para el cliente', 'Ejecutar solo en la BVC', 'Cobrar la menor comisión posible'], ans: 1,
         exp: 'El deber de mejor ejecución obliga al intermediario a buscar las condiciones más favorables en precio, costos, velocidad y probabilidad de ejecución.'
     },
 
     // ═══════════════════ v4 RENTA VARIABLE EXPANSION ═══════════════════
     {
-        id: 'rv15', cat: 'renta_variable', q: 'El índice MSCI COLCAP mide:',
+        id: 'rv15_v2', cat: 'renta_variable', q: 'El índice MSCI COLCAP mide:',
         opts: ['La inflación en Colombia', 'El desempeño de las acciones más representativas y líquidas de la BVC', 'El rendimiento de los TES', 'La variación del dólar'], ans: 1,
         exp: 'El MSCI COLCAP es el principal índice bursátil de Colombia. Refleja el desempeño de las acciones más líquidas y de mayor capitalización en la BVC.'
     },
     {
-        id: 'rv16', cat: 'renta_variable', q: 'La capitalización bursátil se calcula como:',
+        id: 'rv16_v2', cat: 'renta_variable', q: 'La capitalización bursátil se calcula como:',
         opts: ['Utilidades / Número de acciones', 'Precio de mercado × Número total de acciones en circulación', 'Patrimonio / Acciones emitidas', 'Dividendo / Precio de la acción'], ans: 1,
         exp: 'Capitalización bursátil = Precio de mercado por acción × Número total de acciones en circulación. Mide el valor total de mercado de la empresa.'
     },
     {
-        id: 'rv17', cat: 'renta_variable', q: 'El RPG (Relación Precio/Ganancia) indica:',
+        id: 'rv17_v2', cat: 'renta_variable', q: 'El RPG (Relación Precio/Ganancia) indica:',
         opts: ['El dividendo por acción', 'Cuántas veces la utilidad por acción está contenida en el precio de la acción', 'El valor patrimonial', 'La tasa de descuento'], ans: 1,
         exp: 'RPG = Precio / UPA. Indica cuántos pesos paga el inversionista por cada peso de utilidad. Un RPG alto puede indicar expectativas de crecimiento.'
     },
     {
-        id: 'rv18', cat: 'renta_variable', q: 'En la subasta de apertura de acciones líquidas:',
+        id: 'rv18_v2', cat: 'renta_variable', q: 'En la subasta de apertura de acciones líquidas:',
         opts: ['Se ejecutan todas las órdenes al precio de cierre del día anterior', 'Se acumulan órdenes y se calcula un precio de equilibrio para calzarlas', 'Solo se permiten órdenes de mercado', 'No se permite la participación de personas naturales'], ans: 1,
         exp: 'En la subasta de apertura se acumulan órdenes durante un período y se calcula un precio de equilibrio que maximiza el volumen negociado.'
     },
@@ -1717,79 +1716,79 @@ export const questions = [
 
     // ═══════════════════ v4 DERIVADOS EXPANSION ═══════════════════
     {
-        id: 'd10', cat: 'derivados', q: 'El nemotécnico de un futuro en la BVC tiene 7 caracteres. Los tres primeros identifican:',
+        id: 'd10_v2', cat: 'derivados', q: 'El nemotécnico de un futuro en la BVC tiene 7 caracteres. Los tres primeros identifican:',
         opts: ['El mes de vencimiento', 'El activo subyacente', 'El tipo de operación', 'La CRCC'], ans: 1,
         exp: 'Estructura: 3 letras (subyacente) + 1 letra (mes) + 2 dígitos (año) + F (futuro). Ej: TRMQ21F = futuro TRM agosto 2021.'
     },
     {
-        id: 'd11', cat: 'derivados', q: 'En los futuros, la compensación diaria (mark-to-market) implica:',
+        id: 'd11_v2', cat: 'derivados', q: 'En los futuros, la compensación diaria (mark-to-market) implica:',
         opts: ['Se pagan intereses diarios', 'Las ganancias/pérdidas se liquidan diariamente contra la cuenta de margen', 'Se cambia el subyacente cada día', 'Se renueva el contrato a diario'], ans: 1,
         exp: 'El MTM diario ajusta el valor del contrato al precio de cierre, abonando o debitando la diferencia en la cuenta de margen.'
     },
     {
-        id: 'd12', cat: 'derivados', q: 'Un margin call ocurre cuando:',
+        id: 'd12_v2', cat: 'derivados', q: 'Un margin call ocurre cuando:',
         opts: ['El contrato vence', 'El margen de la cuenta cae por debajo del margen de mantenimiento requerido', 'Se obtienen ganancias', 'Se cierra la posición'], ans: 1,
         exp: 'El margin call es una solicitud de la CRCC para recomponer el margen. Si no se atiende, la cámara puede cerrar la posición automáticamente.'
     },
     {
-        id: 'd13', cat: 'derivados', q: 'La letra Q en el nemotécnico de un futuro indica vencimiento en:',
+        id: 'd13_v2', cat: 'derivados', q: 'La letra Q en el nemotécnico de un futuro indica vencimiento en:',
         opts: ['Abril', 'Julio', 'Agosto', 'Diciembre'], ans: 2,
         exp: 'Tabla de meses: F=Ene, G=Feb, H=Mar, J=Abr, K=May, M=Jun, N=Jul, Q=Ago, U=Sep, V=Oct, X=Nov, Z=Dic.'
     },
     {
-        id: 'd14', cat: 'derivados', q: 'Delta en opciones mide:',
+        id: 'd14_v2', cat: 'derivados', q: 'Delta en opciones mide:',
         opts: ['El paso del tiempo', 'La sensibilidad del precio de la opción ante cambios en el precio del subyacente', 'La volatilidad implícita', 'El costo de financiamiento'], ans: 1,
         exp: 'Delta = ∂Prima/∂Precio. Para un call, delta está entre 0 y 1. Para un put, entre -1 y 0. Delta 0,5 significa que la prima sube $0,50 por cada $1 del subyacente.'
     },
     {
-        id: 'd15', cat: 'derivados', q: 'Theta en opciones representa:',
+        id: 'd15_v2', cat: 'derivados', q: 'Theta en opciones representa:',
         opts: ['Sensibilidad al precio del subyacente', 'La pérdida de valor de la opción por el paso del tiempo', 'Sensibilidad a cambios en volatilidad', 'La tasa libre de riesgo'], ans: 1,
         exp: 'Theta mide el decaimiento temporal: cuánto pierde de valor la opción por cada día que pasa (time decay). Es negativa para posiciones largas.'
     },
     {
-        id: 'd16', cat: 'derivados', q: 'Vega en opciones mide la sensibilidad a:',
+        id: 'd16_v2', cat: 'derivados', q: 'Vega en opciones mide la sensibilidad a:',
         opts: ['Cambios en el precio del subyacente', 'Cambios en la tasa de interés', 'Cambios en la volatilidad implícita', 'El paso del tiempo'], ans: 2,
         exp: 'Vega mide cuánto cambia la prima de la opción por cada punto porcentual de cambio en la volatilidad implícita del subyacente.'
     },
     {
-        id: 'd17', cat: 'derivados', q: 'Un swap de tasa de interés (IRS) consiste en:',
+        id: 'd17_v2', cat: 'derivados', q: 'Un swap de tasa de interés (IRS) consiste en:',
         opts: ['Intercambiar divisas', 'Intercambiar flujos de interés fijos por variables sobre un nocional', 'Comprar y vender acciones simultáneamente', 'Intercambiar títulos de renta fija'], ans: 1,
         exp: 'En un IRS una parte paga tasa fija y recibe variable, y la otra al contrario. El nocional no se intercambia, solo los flujos de intereses.'
     },
     {
-        id: 'd18', cat: 'derivados', q: 'Una opción está "in the money" (ITM) cuando:',
+        id: 'd18_v2', cat: 'derivados', q: 'Una opción está "in the money" (ITM) cuando:',
         opts: ['No tiene valor intrínseco', 'Tiene valor intrínseco positivo (ejercerla genera ganancia)', 'El precio del subyacente es igual al strike', 'Ha vencido'], ans: 1,
         exp: 'Call ITM: precio subyacente > strike. Put ITM: precio subyacente < strike. La opción tiene valor intrínseco que se puede capturar al ejercerla.'
     },
 
     // ═══════════════════ v4 RENTA FIJA EXPANSION ═══════════════════
     {
-        id: 'rf10', cat: 'renta_fija', q: 'La curva de rendimientos (yield curve) normal tiene pendiente:',
+        id: 'rf10_v2', cat: 'renta_fija', q: 'La curva de rendimientos (yield curve) normal tiene pendiente:',
         opts: ['Negativa (invertida)', 'Positiva (tasas a largo plazo > corto plazo)', 'Plana siempre', 'No tiene forma definida'], ans: 1,
         exp: 'La curva normal tiene pendiente positiva: mayores plazos implican mayores tasas por la prima por vencimiento. Una curva invertida puede señalar recesión.'
     },
     {
-        id: 'rf11', cat: 'renta_fija', q: 'Las calificaciones de riesgo crediticio AAA indican:',
+        id: 'rf11_v2', cat: 'renta_fija', q: 'Las calificaciones de riesgo crediticio AAA indican:',
         opts: ['Alto riesgo de incumplimiento', 'La máxima calidad crediticia con mínimo riesgo de incumplimiento', 'Calificación promedio', 'Grado especulativo'], ans: 1,
         exp: 'AAA es la calificación más alta: máxima capacidad de pago. Las escalas van de AAA (mejor) a D (default). BBB- o superior es grado de inversión.'
     },
     {
-        id: 'rf12', cat: 'renta_fija', q: 'El riesgo de reinversión en renta fija se refiere a:',
+        id: 'rf12_v2', cat: 'renta_fija', q: 'El riesgo de reinversión en renta fija se refiere a:',
         opts: ['No poder vender el título', 'La posibilidad de que los cupones se reinviertan a tasas menores que la tasa original', 'El incumplimiento del emisor', 'La pérdida de valor por inflación'], ans: 1,
         exp: 'El riesgo de reinversión surge cuando las tasas bajan y los cupones recibidos se reinvierten a tasas inferiores, reduciendo el retorno efectivo.'
     },
     {
-        id: 'rf13', cat: 'renta_fija', q: 'Las operaciones OMAS (Operaciones de Mercado Abierto) son realizadas por:',
+        id: 'rf13_v2', cat: 'renta_fija', q: 'Las operaciones OMAS (Operaciones de Mercado Abierto) son realizadas por:',
         opts: ['La SFC', 'El Banco de la República para regular la liquidez del sistema', 'La BVC', 'El Ministerio de Hacienda'], ans: 1,
         exp: 'Las OMAS son el principal instrumento de política monetaria. BanRep compra/vende TES para inyectar/drenar liquidez al sistema financiero.'
     },
     {
-        id: 'rf14', cat: 'renta_fija', q: 'El MEC (Mercado Electrónico Colombiano) es un sistema de negociación para:',
+        id: 'rf14_v2', cat: 'renta_fija', q: 'El MEC (Mercado Electrónico Colombiano) es un sistema de negociación para:',
         opts: ['Acciones', 'Títulos de renta fija y deuda pública', 'Derivados', 'Divisas'], ans: 1,
         exp: 'El MEC es administrado por la BVC y es el principal sistema de negociación de títulos de deuda pública y renta fija en Colombia.'
     },
     {
-        id: 'rf15', cat: 'renta_fija', q: 'La convexidad de un bono mide:',
+        id: 'rf15_v2', cat: 'renta_fija', q: 'La convexidad de un bono mide:',
         opts: ['Su liquidez', 'La curvatura de la relación precio-tasa, complementando la duración para cambios grandes en tasas', 'Su calificación crediticia', 'El plazo al vencimiento'], ans: 1,
         exp: 'La convexidad captura el efecto no lineal de cambios en tasas sobre el precio. A mayor convexidad, la duración sobreestima menos la caída del precio.'
     },
@@ -1818,22 +1817,22 @@ export const questions = [
 
     // ═══════════════════ v4 PORTAFOLIOS EXPANSION ═══════════════════
     {
-        id: 'p8', cat: 'portafolios', q: 'El Ratio de Sharpe mide:',
+        id: 'p8_v2', cat: 'portafolios', q: 'El Ratio de Sharpe mide:',
         opts: ['Solo el rendimiento del portafolio', 'El exceso de rendimiento sobre la tasa libre de riesgo por unidad de riesgo total (desviación estándar)', 'El riesgo sistemático', 'La correlación entre activos'], ans: 1,
         exp: 'Sharpe = (Rp - Rf) / σp. A mayor Sharpe, mejor rendimiento ajustado por riesgo. Usa riesgo total (desviación estándar), no solo sistemático.'
     },
     {
-        id: 'p9', cat: 'portafolios', q: 'El Ratio de Treynor se diferencia del Sharpe en que usa:',
+        id: 'p9_v2', cat: 'portafolios', q: 'El Ratio de Treynor se diferencia del Sharpe en que usa:',
         opts: ['La desviación estándar', 'Beta (riesgo sistemático) como denominador en lugar de la desviación estándar', 'El VaR', 'La duración'], ans: 1,
         exp: 'Treynor = (Rp - Rf) / βp. Usa beta (riesgo no diversificable). Es más apropiado cuando el portafolio está bien diversificado.'
     },
     {
-        id: 'p10', cat: 'portafolios', q: 'El alpha de Jensen mide:',
+        id: 'p10_v2', cat: 'portafolios', q: 'El alpha de Jensen mide:',
         opts: ['El riesgo del portafolio', 'El rendimiento excedente del portafolio respecto al rendimiento esperado según el CAPM', 'La volatilidad', 'La correlación con el benchmark'], ans: 1,
         exp: 'Alpha = Rp - [Rf + βp(Rm - Rf)]. Un alpha positivo indica que el gestor generó rendimiento superior al esperado por el nivel de riesgo asumido.'
     },
     {
-        id: 'p11', cat: 'portafolios', q: 'El rebalanceo de un portafolio consiste en:',
+        id: 'p11_v2', cat: 'portafolios', q: 'El rebalanceo de un portafolio consiste en:',
         opts: ['Vender todos los activos', 'Ajustar las ponderaciones de los activos para volver a la asignación original o deseada', 'Cambiar de administrador', 'Aumentar el riesgo'], ans: 1,
         exp: 'El rebalanceo corrige desviaciones de la asignación objetivo causadas por movimientos del mercado. Puede ser periódico o por umbrales de desviación.'
     },
@@ -1877,59 +1876,59 @@ export const questions = [
 
     // ═══════════════════ v4 RIESGOS EXPANSION ═══════════════════
     {
-        id: 'ri10', cat: 'riesgos', q: 'El VaR paramétrico asume que los rendimientos siguen una distribución:',
+        id: 'ri10_v2', cat: 'riesgos', q: 'El VaR paramétrico asume que los rendimientos siguen una distribución:',
         opts: ['Uniforme', 'Normal (gaussiana)', 'Exponencial', 'No requiere supuesto de distribución'], ans: 1,
         exp: 'El VaR paramétrico asume distribución normal de rendimientos. Usa media, desviación estándar y el nivel de confianza para calcular la pérdida máxima.'
     },
     {
-        id: 'ri11', cat: 'riesgos', q: 'El backtesting del VaR consiste en:',
+        id: 'ri11_v2', cat: 'riesgos', q: 'El backtesting del VaR consiste en:',
         opts: ['Calcular el VaR hacia adelante', 'Comparar las predicciones del VaR con las pérdidas reales históricas para validar el modelo', 'Aumentar el nivel de confianza', 'Reducir la ventana de observación'], ans: 1,
         exp: 'El backtesting verifica la precisión del modelo VaR comparando las pérdidas estimadas con las reales. Si las excepciones son excesivas, el modelo falla.'
     },
     {
-        id: 'ri12', cat: 'riesgos', q: 'El stress testing se diferencia del VaR en que:',
+        id: 'ri12_v2', cat: 'riesgos', q: 'El stress testing se diferencia del VaR en que:',
         opts: ['Es más preciso', 'Evalúa el impacto de escenarios extremos o poco probables, no cubiertos por el VaR normal', 'Solo se aplica a renta fija', 'Usa distribución normal'], ans: 1,
         exp: 'Las pruebas de estrés evalúan escenarios extremos (crisis, shocks) que están fuera del intervalo de confianza del VaR, complementando la medición de riesgo.'
     },
     {
-        id: 'ri13', cat: 'riesgos', q: 'El SARL (Sistema de Administración de Riesgo de Liquidez) obliga a las entidades a:',
+        id: 'ri13_v2', cat: 'riesgos', q: 'El SARL (Sistema de Administración de Riesgo de Liquidez) obliga a las entidades a:',
         opts: ['Mantener todo en efectivo', 'Medir, monitorear y gestionar el riesgo de no poder cumplir obligaciones de pago oportunamente', 'Solo invertir en TES', 'Reportar diariamente a la AMV'], ans: 1,
         exp: 'El SARL establece políticas para que las entidades gestionen el riesgo de no poder atender sus obligaciones por descalces de plazos entre activos y pasivos.'
     },
     {
-        id: 'ri14', cat: 'riesgos', q: 'La duración modificada se utiliza para:',
+        id: 'ri14_v2', cat: 'riesgos', q: 'La duración modificada se utiliza para:',
         opts: ['Calcular el plazo del bono', 'Estimar la variación porcentual del precio ante un cambio de 1% en la tasa de interés', 'Determinar el cupón', 'Calcular el VaR de acciones'], ans: 1,
         exp: 'Duración Modificada = Duración / (1+y). ΔP/P ≈ -DM × Δy. Un bono con DM=5 caerá ~5% si las tasas suben 1%.'
     },
 
     // ═══════════════════ v4 ANÁLISIS ECONÓMICO EXPANSION ═══════════════════
     {
-        id: 'ae10', cat: 'analisis_economico', q: 'La política monetaria contractiva del Banco de la República busca:',
+        id: 'ae10_v2', cat: 'analisis_economico', q: 'La política monetaria contractiva del Banco de la República busca:',
         opts: ['Reducir las tasas de interés', 'Subir las tasas de interés para reducir la inflación y enfriar la economía', 'Aumentar el gasto público', 'Devaluar la moneda'], ans: 1,
         exp: 'La política contractiva sube tasas de interés y/o reduce la oferta monetaria para controlar la inflación, desestimulando el crédito y el consumo.'
     },
     {
-        id: 'ae11', cat: 'analisis_economico', q: 'La curva de Phillips describe la relación entre:',
+        id: 'ae11_v2', cat: 'analisis_economico', q: 'La curva de Phillips describe la relación entre:',
         opts: ['PIB y exportaciones', 'Inflación y desempleo: a menor desempleo, mayor presión inflacionaria', 'Tasas de interés y tipo de cambio', 'Oferta y demanda de divisas'], ans: 1,
         exp: 'La curva de Phillips muestra un trade-off entre inflación y desempleo en el corto plazo: cuando el desempleo baja, la inflación tiende a subir.'
     },
     {
-        id: 'ae12', cat: 'analisis_economico', q: 'Los indicadores económicos adelantados (leading) son aquellos que:',
+        id: 'ae12_v2', cat: 'analisis_economico', q: 'Los indicadores económicos adelantados (leading) son aquellos que:',
         opts: ['Se publican con retraso', 'Anticipan los cambios en el ciclo económico antes de que ocurran', 'Solo miden el pasado', 'No tienen uso práctico'], ans: 1,
         exp: 'Los indicadores adelantados (permisos de construcción, índice de confianza, pedidos nuevos) anticipan la dirección futura de la economía.'
     },
     {
-        id: 'ae13', cat: 'analisis_economico', q: 'La balanza de pagos registra:',
+        id: 'ae13_v2', cat: 'analisis_economico', q: 'La balanza de pagos registra:',
         opts: ['Solo las exportaciones', 'Todas las transacciones económicas de un país con el resto del mundo en un período determinado', 'El presupuesto del gobierno', 'Solo la deuda externa'], ans: 1,
         exp: 'La balanza de pagos tiene cuenta corriente (bienes, servicios, rentas, transferencias), cuenta de capital y cuenta financiera (inversiones, préstamos).'
     },
     {
-        id: 'ae14', cat: 'analisis_economico', q: 'Las fases del ciclo económico son:',
+        id: 'ae14_v2', cat: 'analisis_economico', q: 'Las fases del ciclo económico son:',
         opts: ['Solo expansión y recesión', 'Expansión, auge (pico), recesión (contracción) y depresión (valle)', 'Crecimiento y estabilidad', 'No existen ciclos económicos'], ans: 1,
         exp: 'El ciclo tiene 4 fases: expansión (crecimiento PIB), auge (pico máximo), recesión (contracción) y depresión/valle (punto mínimo antes de la recuperación).'
     },
     {
-        id: 'ae15', cat: 'analisis_economico', q: 'La política fiscal expansiva consiste en:',
+        id: 'ae15_v2', cat: 'analisis_economico', q: 'La política fiscal expansiva consiste en:',
         opts: ['Subir tasas de interés', 'Aumentar el gasto público y/o reducir impuestos para estimular la demanda agregada', 'Reducir la oferta monetaria', 'Aumentar las reservas bancarias'], ans: 1,
         exp: 'La política fiscal expansiva usa mayor gasto público o menores impuestos para aumentar la demanda agregada y estimular el crecimiento económico.'
     }
@@ -2077,22 +2076,22 @@ export const questions = [
 
     // ═══════════════════ v5 DERIVADOS DEEP ═══════════════════
     {
-        id: 'd19', cat: 'derivados', q: 'La base en futuros se calcula como:',
+        id: 'd19_v2', cat: 'derivados', q: 'La base en futuros se calcula como:',
         opts: ['Precio futuro × Precio spot', 'Precio futuro - Precio spot del subyacente', 'Tasa de interés × Plazo', 'Volatilidad × Delta'], ans: 1,
         exp: 'Base = Precio futuro - Precio spot. Si la base es positiva se llama contango; si es negativa, backwardation (normal para commodities con costo de almacenamiento).'
     },
     {
-        id: 'd20', cat: 'derivados', q: 'El contango en el mercado de futuros significa que:',
+        id: 'd20_v2', cat: 'derivados', q: 'El contango en el mercado de futuros significa que:',
         opts: ['El precio futuro es menor que el spot', 'El precio futuro es mayor que el precio spot', 'No hay diferencia entre futuro y spot', 'El mercado está cerrado'], ans: 1,
         exp: 'Contango: Futuro > Spot. Es la situación normal cuando hay costos de acarreo (almacenamiento, financiamiento). Backwardation: Futuro < Spot.'
     },
     {
-        id: 'd21', cat: 'derivados', q: 'La CRCC (Cámara de Riesgo Central de Contraparte) tiene como función principal:',
+        id: 'd21_v2', cat: 'derivados', q: 'La CRCC (Cámara de Riesgo Central de Contraparte) tiene como función principal:',
         opts: ['Regular el mercado de derivados', 'Interponerse como contraparte de ambas partes en una operación, garantizando el cumplimiento', 'Emitir opciones', 'Fijar los precios de los futuros'], ans: 1,
         exp: 'La CRCC se convierte en compradora de todo vendedor y vendedora de todo comprador, eliminando el riesgo de contraparte. Exige márgenes y garantías para su gestión.'
     },
     {
-        id: 'd22', cat: 'derivados', q: 'Un warrant es:',
+        id: 'd22_v2', cat: 'derivados', q: 'Un warrant es:',
         opts: ['Un tipo de bono', 'Una opción emitida por una empresa que da derecho a comprar sus acciones a un precio fijo', 'Un futuro sobre divisas', 'Un contrato de permuta financiera'], ans: 1,
         exp: 'Un warrant es similar a una opción call pero es emitido directamente por la empresa. Al ejercerse, se emiten acciones nuevas (a diferencia de opciones listadas que no diluyen).'
     },
@@ -2114,32 +2113,32 @@ export const questions = [
 
     // ═══════════════════ v5 RENTA FIJA DEEP ═══════════════════
     {
-        id: 'rf16', cat: 'renta_fija', q: 'Los TES Clase A tienen como destino:',
+        id: 'rf16_v2', cat: 'renta_fija', q: 'Los TES Clase A tienen como destino:',
         opts: ['Financiar el presupuesto nacional', 'Sustituir deuda contraída en OMAS y sustituir deuda interna con el Banco de la República', 'Financiar infraestructura', 'Pagar pensiones'], ans: 1,
         exp: 'TES Clase A: sustituyen deuda del gobierno en operaciones de mercado abierto (OMAS) o deuda con el Banco de la República.'
     },
     {
-        id: 'rf17', cat: 'renta_fija', q: 'Los TES Clase B se utilizan principalmente para:',
+        id: 'rf17_v2', cat: 'renta_fija', q: 'Los TES Clase B se utilizan principalmente para:',
         opts: ['Sustituir deuda del BanRep', 'Obtener recursos para apropiaciones presupuestales, operaciones de tesorería y generar curva de rendimientos', 'Financiar exportaciones', 'Pagar deuda externa'], ans: 1,
         exp: 'TES Clase B captan recursos para el presupuesto, operaciones de tesorería, y además proveen información al mercado generando una curva de rendimientos.'
     },
     {
-        id: 'rf18', cat: 'renta_fija', q: 'Un bono cupón cero se caracteriza porque:',
+        id: 'rf18_v2', cat: 'renta_fija', q: 'Un bono cupón cero se caracteriza porque:',
         opts: ['Paga cupones mensuales', 'No paga intereses periódicos; paga al vencimiento el valor nominal más todos los intereses acumulados', 'Su tasa es variable', 'No tiene fecha de vencimiento'], ans: 1,
         exp: 'Un bono cupón cero se emite con descuento sobre su valor nominal y al vencimiento paga el valor nominal completo. La diferencia es el rendimiento del inversionista.'
     },
     {
-        id: 'rf19', cat: 'renta_fija', q: 'Los bonos subordinados se caracterizan porque en caso de liquidación:',
+        id: 'rf19_v2', cat: 'renta_fija', q: 'Los bonos subordinados se caracterizan porque en caso de liquidación:',
         opts: ['Tienen prelación sobre todas las deudas', 'Se pagan después de los demás acreedores pero antes de los accionistas', 'Se pagan primero', 'No se pagan'], ans: 1,
         exp: 'La deuda subordinada tiene menor prelación que la deuda senior. En liquidación, se paga después de otros acreedores (senior) pero antes que los accionistas.'
     },
     {
-        id: 'rf20', cat: 'renta_fija', q: 'La tasa facial de un bono es:',
+        id: 'rf20_v2', cat: 'renta_fija', q: 'La tasa facial de un bono es:',
         opts: ['La tasa de descuento del mercado', 'La tasa de interés que el emisor promete pagar periódicamente sobre el valor nominal', 'La TIR del bono', 'La tasa libre de riesgo'], ans: 1,
         exp: 'La tasa facial o cupón es la tasa contractual que determina los pagos periódicos de intereses. Es fija desde la emisión, a diferencia de la TIR que varía con el precio de mercado.'
     },
     {
-        id: 'rf21', cat: 'renta_fija', q: 'Cuando la tasa de mercado sube, el precio de un bono de tasa fija:',
+        id: 'rf21_v2', cat: 'renta_fija', q: 'Cuando la tasa de mercado sube, el precio de un bono de tasa fija:',
         opts: ['Sube', 'Baja (relación inversa entre tasa y precio)', 'No cambia', 'Depende del emisor'], ans: 1,
         exp: 'Existe relación inversa entre tasa y precio en renta fija: si las tasas suben, el valor presente de los flujos futuros disminuye y el precio del bono baja.'
     },
@@ -2222,49 +2221,49 @@ export const questions = [
 
     // ═══════════════════ v5 RIESGOS DEEP ═══════════════════
     {
-        id: 'ri15', cat: 'riesgos', q: 'El riesgo operativo incluye pérdidas por:',
+        id: 'ri15_v2', cat: 'riesgos', q: 'El riesgo operativo incluye pérdidas por:',
         opts: ['Solo fluctuaciones de mercado', 'Fallas en procesos internos, personas, sistemas o eventos externos', 'Solo incumplimiento de contrapartes', 'Solo cambios regulatorios'], ans: 1,
         exp: 'El riesgo operativo (SARO) abarca fallas en procesos, errores humanos, fallos tecnológicos y eventos externos (fraude, desastres). Es transversal a todas las áreas.'
     },
     {
-        id: 'ri16', cat: 'riesgos', q: 'El riesgo de contraparte es:',
+        id: 'ri16_v2', cat: 'riesgos', q: 'El riesgo de contraparte es:',
         opts: ['El riesgo de que un activo pierda valor', 'El riesgo de que la otra parte en una operación no cumpla sus obligaciones', 'El riesgo de cambios regulatorios', 'El riesgo país'], ans: 1,
         exp: 'El riesgo de contraparte es una forma de riesgo de crédito donde la contraparte de una operación financiera incumple sus obligaciones contractuales.'
     },
     {
-        id: 'ri17', cat: 'riesgos', q: 'El Expected Shortfall (ES) o CVaR se diferencia del VaR en que:',
+        id: 'ri17_v2', cat: 'riesgos', q: 'El Expected Shortfall (ES) o CVaR se diferencia del VaR en que:',
         opts: ['Es menos conservador que el VaR', 'Mide la pérdida esperada promedio en los escenarios que exceden el VaR (cola de la distribución)', 'Solo usa distribución normal', 'Ignora la cola de la distribución'], ans: 1,
         exp: 'El ES/CVaR mide la pérdida promedio cuando se excede el VaR. Es más informativo que el VaR porque cuantifica qué tan grandes pueden ser las pérdidas extremas.'
     },
     {
-        id: 'ri18', cat: 'riesgos', q: 'El riesgo legal se refiere a:',
+        id: 'ri18_v2', cat: 'riesgos', q: 'El riesgo legal se refiere a:',
         opts: ['El riesgo de mercado', 'Pérdidas por deficiencias en la documentación legal, cambios normativos adversos o fallos judiciales desfavorables', 'El riesgo de liquidez', 'El riesgo cambiario'], ans: 1,
         exp: 'El riesgo legal incluye contratos inadecuados, cambios regulatorios adversos, demandas, y la imposibilidad de ejecutar contratos. Es un componente del riesgo operativo.'
     },
     {
-        id: 'ri19', cat: 'riesgos', q: 'El SARM (Sistema de Administración de Riesgo de Mercado) obliga a las entidades a:',
+        id: 'ri19_v2', cat: 'riesgos', q: 'El SARM (Sistema de Administración de Riesgo de Mercado) obliga a las entidades a:',
         opts: ['Solo invertir en renta fija', 'Identificar, medir, controlar y monitorear el riesgo de mercado de sus posiciones', 'No asumir ningún riesgo', 'Reportar solo anualmente'], ans: 1,
         exp: 'El SARM establece políticas y procedimientos para gestionar el riesgo de mercado (pérdidas por movimientos adversos en tasas, precios, tipos de cambio) de las posiciones.'
     },
 
     // ═══════════════════ v5 ÉTICA DEEP ═══════════════════
     {
-        id: 'e14', cat: 'etica', q: 'El deber de confidencialidad del intermediario implica:',
+        id: 'e14_v2', cat: 'etica', q: 'El deber de confidencialidad del intermediario implica:',
         opts: ['Compartir información con todos los clientes', 'Guardar reserva sobre las operaciones e información del cliente, salvo excepciones legales', 'No es obligatorio en Colombia', 'Solo aplica a clientes institucionales'], ans: 1,
         exp: 'El intermediario debe mantener confidencial la información de sus clientes, sus operaciones y portafolios. Solo puede revelarla por orden judicial o requerimiento de autoridades.'
     },
     {
-        id: 'e15', cat: 'etica', q: 'El principio de prevalencia del interés del cliente obliga al intermediario a:',
+        id: 'e15_v2', cat: 'etica', q: 'El principio de prevalencia del interés del cliente obliga al intermediario a:',
         opts: ['Priorizar siempre las operaciones por cuenta propia', 'Dar prelación a las órdenes del cliente sobre las operaciones por cuenta propia cuando exista conflicto', 'Cobrar la menor comisión posible', 'Solo atender inversionistas profesionales'], ans: 1,
         exp: 'Cuando hay conflicto de interés, el intermediario debe dar prioridad a las órdenes del cliente sobre sus propias operaciones. La prevalencia del interés del cliente es principio fundamental.'
     },
     {
-        id: 'e16', cat: 'etica', q: 'El know your customer (KYC) incluye:',
+        id: 'e16_v2', cat: 'etica', q: 'El know your customer (KYC) incluye:',
         opts: ['Solo verificar la identidad del cliente', 'Conocer la identidad, actividad económica, perfil de riesgo y origen de fondos del cliente', 'Solo clasificar al cliente como profesional', 'Revisar solo el historial crediticio'], ans: 1,
         exp: 'KYC es un proceso integral: verificar identidad, conocer actividad económica, origen de recursos, perfil de riesgo, transaccionalidad esperada. Es base del SARLAFT y perfilamiento.'
     },
     {
-        id: 'e17', cat: 'etica', q: 'El conflicto de interés en el mercado de valores surge cuando:',
+        id: 'e17_v2', cat: 'etica', q: 'El conflicto de interés en el mercado de valores surge cuando:',
         opts: ['El cliente no está de acuerdo con la comisión', 'El interés del intermediario o de un tercero puede comprometer la actuación imparcial del intermediario frente al cliente', 'Solo en operaciones internacionales', 'Cuando hay pérdidas en el portafolio'], ans: 1,
         exp: 'Hay conflicto de interés cuando el intermediario tiene incentivos que podrían llevarle a actuar en contra de los intereses de su cliente. Deben gestionarse y revelarse.'
     },
@@ -2288,17 +2287,17 @@ export const questions = [
 
     // ═══════════════════ v5 ANÁLISIS ECONÓMICO DEEP ═══════════════════
     {
-        id: 'ae16', cat: 'analisis_economico', q: 'La tasa de cambio real efectiva mide:',
+        id: 'ae16_v2', cat: 'analisis_economico', q: 'La tasa de cambio real efectiva mide:',
         opts: ['Solo el precio del dólar en pesos', 'El poder adquisitivo de la moneda nacional respecto a una canasta de monedas de socios comerciales, ajustado por inflación', 'La tasa interbancaria', 'El IPC'], ans: 1,
         exp: 'La tasa de cambio real efectiva ajusta la tasa nominal por los diferenciales de inflación con los socios comerciales. Indica competitividad real de las exportaciones.'
     },
     {
-        id: 'ae17', cat: 'analisis_economico', q: 'La regla de Taylor establece que la tasa de interés de política monetaria debe responder a:',
+        id: 'ae17_v2', cat: 'analisis_economico', q: 'La regla de Taylor establece que la tasa de interés de política monetaria debe responder a:',
         opts: ['Solo la inflación', 'La desviación de la inflación respecto a su meta y la brecha del producto (PIB real vs potencial)', 'Solo el tipo de cambio', 'La tasa de desempleo únicamente'], ans: 1,
         exp: 'Taylor: i = r* + π + α(π-π*) + β(y-y*). La tasa sube si la inflación excede la meta o si el PIB real sobrepasa el potencial, y baja en la situación contraria.'
     },
     {
-        id: 'ae18', cat: 'analisis_economico', q: 'El multiplicador bancario relaciona:',
+        id: 'ae18_v2', cat: 'analisis_economico', q: 'El multiplicador bancario relaciona:',
         opts: ['La tasa de cambio y la inflación', 'La cantidad de dinero que el sistema bancario puede crear a partir de los depósitos, según el encaje bancario', 'La deuda pública y el PIB', 'Las exportaciones y las importaciones'], ans: 1,
         exp: 'Multiplicador = 1/Encaje. Si el encaje es 10%, cada peso depositado puede generar hasta 10 pesos en el sistema. A menor encaje, mayor capacidad de creación de dinero.'
     },
@@ -2577,12 +2576,12 @@ export const questions = [
         exp: 'El anuncio de la subasta se realiza dos (2) minutos antes de iniciar la subasta a través de SEBRA, SET-FX y el Sistema Electrónico de Negociación (SEN).'
     },
     {
-        id: 'p16', cat: 'portafolios', q: 'La Asignación Estratégica de Activos (SAA) se considera un método de inversión:',
+        id: 'p16_v2', cat: 'portafolios', q: 'La Asignación Estratégica de Activos (SAA) se considera un método de inversión:',
         opts: ['Activa', 'Pasiva', 'Especulativa', 'Neutral'], ans: 1,
         exp: 'La asignación estratégica de activos (SAA) es considerada un método de inversión pasiva, mientras que la asignación táctica (TAA) es considerada inversión activa.'
     },
     {
-        id: 'p17', cat: 'portafolios', q: 'La Asignación Táctica de Activos (TAA) busca:',
+        id: 'p17_v2', cat: 'portafolios', q: 'La Asignación Táctica de Activos (TAA) busca:',
         opts: ['Mantener los pesos originales del portafolio', 'Generar valor agregado desviándose temporalmente de las ponderaciones SAA según rendimientos esperados a corto plazo', 'Eliminar todo riesgo', 'Invertir solo en renta fija'], ans: 1,
         exp: 'La TAA hace ajustes a corto plazo de las ponderaciones por clase de activo en función del rendimiento esperado, buscando explotar desviaciones de valores de largo plazo.'
     },
@@ -2622,27 +2621,27 @@ export const questions = [
         exp: 'Los supuestos son: estiman riesgo con volatilidad, decisiones basadas en retorno/riesgo, prefieren altos rendimientos y menor riesgo, y buscan maximizar su función de utilidad.'
     },
     {
-        id: 'ri18', cat: 'riesgos', q: 'La convexidad mide:',
+        id: 'ri18_v3', cat: 'riesgos', q: 'La convexidad mide:',
         opts: ['El retorno esperado de un bono', 'El cambio de la duración modificada cuando cambia la tasa de interés', 'La probabilidad de default', 'El riesgo cambiario de un bono'], ans: 1,
         exp: 'La convexidad es la medida de cambio de la duración modificada de un bono cuando cambia la tasa de interés. Corrige el error de la aproximación lineal de la duración.'
     },
     {
-        id: 'ri19', cat: 'riesgos', q: 'El tracking error mide:',
+        id: 'ri19_v3', cat: 'riesgos', q: 'El tracking error mide:',
         opts: ['El error en el registro de operaciones', 'La desviación de los retornos del portafolio respecto al benchmark', 'El error de cálculo del VaR', 'La diferencia entre precio bid y ask'], ans: 1,
         exp: 'El tracking error es la desviación estándar de la diferencia entre los retornos del portafolio y los del benchmark. Los administradores que siguen índices buscan minimizarlo.'
     },
     {
-        id: 'ri20', cat: 'riesgos', q: 'El bid-ask spread está relacionado con:',
+        id: 'ri20_v2', cat: 'riesgos', q: 'El bid-ask spread está relacionado con:',
         opts: ['La rentabilidad del portafolio', 'Los costos asociados a operaciones y la iliquidez del activo', 'La tasa de interés libre de riesgo', 'El riesgo sistémico'], ans: 1,
         exp: 'El bid-ask spread es la diferencia entre precios de compra y venta, relacionado con costos operativos, gestión de órdenes, costos de inventario, nueva información y asimetría informativa.'
     },
     {
-        id: 'ri21', cat: 'riesgos', q: 'El indicador de riesgo de liquidez (IRL) se calcula como:',
+        id: 'ri21_v2', cat: 'riesgos', q: 'El indicador de riesgo de liquidez (IRL) se calcula como:',
         opts: ['Activos totales / Pasivos totales', 'IRL = ALM - RLN (activos líquidos ajustados menos requerimientos de liquidez netos)', 'Ganancias / Pérdidas', 'Capital / Activos ponderados por riesgo'], ans: 1,
         exp: 'IRL = ALM - RLN, donde ALM son activos líquidos ajustados por liquidez de mercado y RLN son requerimientos de liquidez netos en un horizonte determinado.'
     },
     {
-        id: 'ri22', cat: 'riesgos', q: 'Para FIC sin pacto de permanencia, la liquidez mínima corresponde al:',
+        id: 'ri22_v2', cat: 'riesgos', q: 'Para FIC sin pacto de permanencia, la liquidez mínima corresponde al:',
         opts: ['5% del valor del portafolio', '10% del valor del portafolio', '15% del valor del portafolio', '20% del valor del portafolio'], ans: 1,
         exp: 'Para los FIC sin pacto de permanencia, la liquidez mínima corresponde al 10% del valor del portafolio.'
     },
@@ -2687,12 +2686,12 @@ export const questions = [
         exp: 'Se dividen en modelo estándar (definido por el supervisor) y modelos internos (creados por la institución y aprobados por el supervisor, ajustados a su negocio).'
     },
     {
-        id: 'e17', cat: 'etica', q: 'El deber de documentación del intermediario implica:',
+        id: 'e17_v3', cat: 'etica', q: 'El deber de documentación del intermediario implica:',
         opts: ['Solo registrar operaciones exitosas', 'Documentar oportuna y adecuadamente las órdenes y operaciones, poniéndolas a disposición de clientes, AMV y SFC', 'Documentar solo operaciones por cuenta propia', 'Mantener registros solo por 6 meses'], ans: 1,
         exp: 'Los intermediarios deben documentar oportuna y adecuadamente las órdenes y las operaciones sobre valores, poniéndolas a disposición de clientes, organismos de autorregulación y la SFC.'
     },
     {
-        id: 'e18', cat: 'etica', q: 'El deber de reserva del intermediario obliga a:',
+        id: 'e18_v2', cat: 'etica', q: 'El deber de reserva del intermediario obliga a:',
         opts: ['Publicar todas las operaciones', 'Guardar reserva de las operaciones ejecutadas, sus resultados y cualquier información confidencial', 'Informar a la prensa sobre operaciones importantes', 'Compartir información con competidores'], ans: 1,
         exp: 'Los intermediarios están obligados a guardar reserva de las operaciones ejecutadas, sus resultados y cualquier información de carácter confidencial, incorporando procedimientos en el Código de buen gobierno.'
     },
@@ -2707,27 +2706,27 @@ export const questions = [
         exp: 'El deber de asesoría aplica en: asesoría en MV, comisión, APT, distribución de FIC, fondos voluntarios de pensiones, negocios fiduciarios en valores y cuentas de margen.'
     },
     {
-        id: 'fo14', cat: 'fondos', q: 'En los fondos de cesantías, los aportes se reciben en:',
+        id: 'fo14_v2', cat: 'fondos', q: 'En los fondos de cesantías, los aportes se reciben en:',
         opts: ['Enero de cada año', 'Febrero de cada año', 'Julio de cada año', 'Cualquier mes del año'], ans: 1,
         exp: 'Los portafolios de cesantías reciben los aportes de las personas vinculadas por parte de sus empleadores en febrero de cada año.'
     },
     {
-        id: 'fo15', cat: 'fondos', q: 'Los inversionistas institucionales que diversifican portafolios en el exterior incluyen:',
+        id: 'fo15_v2', cat: 'fondos', q: 'Los inversionistas institucionales que diversifican portafolios en el exterior incluyen:',
         opts: ['Solo bancos comerciales', 'Fondos de pensiones obligatorias y voluntarias, fiduciarias y aseguradoras', 'Solo personas naturales', 'Solo el gobierno'], ans: 1,
         exp: 'Los inversionistas institucionales colombianos que adquieren activos en el exterior incluyen fondos de pensiones (obligatorias y voluntarias), fiduciarias y aseguradoras.'
     },
     {
-        id: 'ae16', cat: 'analisis_economico', q: 'Las remesas son:',
+        id: 'ae16_v3', cat: 'analisis_economico', q: 'Las remesas son:',
         opts: ['Préstamos del gobierno', 'Transferencias de divisas realizadas por colombianos que viven en el exterior', 'Inversiones de portafolio', 'Pagos de deuda externa'], ans: 1,
         exp: 'Las remesas corresponden a transferencias de divisas realizadas por los colombianos que viven en el exterior, alcanzando cerca de USD 8.500 millones en 2021.'
     },
     {
-        id: 'ae17', cat: 'analisis_economico', q: 'La inversión extranjera directa se diferencia de la de portafolio en:',
+        id: 'ae17_v3', cat: 'analisis_economico', q: 'La inversión extranjera directa se diferencia de la de portafolio en:',
         opts: ['El monto invertido', 'El ánimo de permanencia: la directa es permanente, la de portafolio es temporal', 'El tipo de divisa', 'No hay diferencia'], ans: 1,
         exp: 'La inversión extranjera se clasifica según el ánimo de permanencia: directa (permanente, en sociedades, inmuebles, etc.) y de portafolio (temporal, en valores y FIC).'
     },
     {
-        id: 'rf23', cat: 'renta_fija', q: 'La duración modificada asume un comportamiento lineal del precio del bono, lo que implica:',
+        id: 'rf23_v2', cat: 'renta_fija', q: 'La duración modificada asume un comportamiento lineal del precio del bono, lo que implica:',
         opts: ['Una medición perfecta', 'Un error que se corrige con la convexidad', 'Que no se necesita la tasa de interés', 'Que el precio siempre sube'], ans: 1,
         exp: 'La duración modificada es una aproximación lineal del cambio de precio. Como la relación precio-tasa es curva, hay un error que se corrige introduciendo la convexidad.'
     },
@@ -2737,22 +2736,22 @@ export const questions = [
         exp: 'Ajuste Convexidad = ½ × Conv × (Δr)² × P. Se suma al cambio estimado por duración modificada para obtener una mejor aproximación del cambio de precio.'
     },
     {
-        id: 'rv32', cat: 'renta_variable', q: 'Las operaciones por cuenta propia en el mercado secundario buscan:',
+        id: 'rv32_v2', cat: 'renta_variable', q: 'Las operaciones por cuenta propia en el mercado secundario buscan:',
         opts: ['Financiar al emisor', 'Imprimir liquidez y estabilidad al mercado, atendiendo ofertas o estimulando demandas', 'Especular exclusivamente', 'Comprar acciones propias'], ans: 1,
         exp: 'Las operaciones por cuenta propia en el mercado secundario buscan imprimir liquidez y estabilidad al mercado, atendiendo ofertas o estimulando y abasteciendo demandas.'
     },
     {
-        id: 'rv33', cat: 'renta_variable', q: 'Las SCB NO pueden realizar operaciones por cuenta propia teniendo como contraparte:',
+        id: 'rv33_v2', cat: 'renta_variable', q: 'Las SCB NO pueden realizar operaciones por cuenta propia teniendo como contraparte:',
         opts: ['Otros intermediarios', 'Los FIC, portafolios de terceros o contratos de APT que ellos administren', 'Bancos del exterior', 'La Nación'], ans: 1,
         exp: 'Las SCB no pueden realizar operaciones por cuenta propia teniendo como contraparte directa o indirectamente los FIC, portafolios de terceros o contratos de APT que administren.'
     },
     {
-        id: 'm35', cat: 'matematicas', q: 'El VaR paramétrico de un portafolio de $100M con volatilidad 8% anual, 1 mes y 95% de confianza es aproximadamente:',
+        id: 'm35_v2', cat: 'matematicas', q: 'El VaR paramétrico de un portafolio de $100M con volatilidad 8% anual, 1 mes y 95% de confianza es aproximadamente:',
         opts: ['$1.65M', '$3.80M', '$8.00M', '$13.16M'], ans: 1,
         exp: 'VaR = P × σ × √T × Z = 100 × 8% × √(1/12) × 1.645 ≈ $3.80M. Es la máxima pérdida probable en un mes al 95% de confianza.'
     },
     {
-        id: 'm36', cat: 'matematicas', q: 'Si un portafolio tiene 40% en activo 1 (retorno 12%) y 60% en activo 2 (retorno 18%), el retorno esperado del portafolio es:',
+        id: 'm36_v2', cat: 'matematicas', q: 'Si un portafolio tiene 40% en activo 1 (retorno 12%) y 60% en activo 2 (retorno 18%), el retorno esperado del portafolio es:',
         opts: ['15%', '15.6%', '16.8%', '12%'], ans: 1,
         exp: 'E(Rp) = 0.40 × 12% + 0.60 × 18% = 4.8% + 10.8% = 15.6%. El retorno del portafolio es el promedio ponderado de los retornos individuales.'
     },
@@ -2783,7 +2782,6 @@ export const flashcards = [
     { id: 'fc22', cat: 'portafolios', front: 'Riesgo sistemático vs no sistemático', back: 'Sistemático: afecta todo el mercado, NO diversificable. No sistemático: específico de una empresa/sector, SÍ diversificable.' },
     { id: 'fc23', cat: 'fondos', front: '¿Qué es un FIC?', back: 'Fondo de Inversión Colectiva. Mecanismo que reúne aportes de varias personas para inversión colectiva con resultados compartidos.' },
     { id: 'fc24', cat: 'fondos', front: 'Multifondos de pensiones', back: 'Tres perfiles: Conservador, Moderado y de Mayor Riesgo. El afiliado elige según su perfil y cercanía a la jubilación.' },
-    ,
     { id: 'fc25', cat: 'etica', front: "Principios del Decreto 2555 para conflictos de interés", back: "Transparencia del mercado, Confidencialidad y reserva, Uso adecuado de información, Lealtad, Profesionalismo, Respeto de la ley." },
     { id: 'fc26', cat: 'etica', front: "¿Qué es el VTU?", back: "Valor Total Unificado. Valor único (% EA y pesos) que indica al cliente el costo total real de un producto financiero. Creado por Ley 1748 de 2014." },
     { id: 'fc27', cat: 'etica', front: "Ley 1778 de 2016", back: "Ley antisoborno/anticorrupción. Sanciona el soborno transnacional y promueve programas de ética empresarial." },

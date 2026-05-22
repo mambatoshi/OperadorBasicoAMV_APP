@@ -5,6 +5,7 @@ function getDefaultData() {
     stats: {},
     wrongAnswers: {},
     examHistory: [],
+    lastSession: null,
     streak: { current: 0, lastDate: null },
     totalAnswered: 0,
     totalCorrect: 0
@@ -47,6 +48,18 @@ export function recordAnswer(category, isCorrect, questionId) {
 export function saveExamResult(result) {
   const data = loadData();
   data.examHistory.push({ ...result, date: new Date().toISOString() });
+  saveData(data);
+}
+
+export function saveLastSession(session) {
+  const data = loadData();
+  data.lastSession = session;
+  saveData(data);
+}
+
+export function clearLastSession() {
+  const data = loadData();
+  data.lastSession = null;
   saveData(data);
 }
 

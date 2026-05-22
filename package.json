@@ -6,9 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preview:local": "vite preview --host 127.0.0.1 --port 4173",
+    "audit": "npm audit",
+    "verify:data": "node verify_data.mjs",
+    "coverage:report": "node scripts/coverage_report.mjs",
+    "check": "npm run verify:data && npm run build"
   },
   "devDependencies": {
-    "vite": "^7.3.1"
+    "vite": "^7.3.3"
   }
 }

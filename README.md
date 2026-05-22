@@ -1,100 +1,128 @@
-# 📊 AMV Operador Básico — Study App
+# AMV Operador Basico - Study App
 
-App de estudio interactiva para preparar el examen de certificación **Operador Básico** del Autorregulador del Mercado de Valores de Colombia (AMV).
+App de estudio interactiva para preparar el examen de certificacion **Operador** del Autorregulador del Mercado de Valores de Colombia (AMV), incluyendo componente basico y especialidades.
 
 ![Vite](https://img.shields.io/badge/Vite-7.x-646CFF?logo=vite&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)
-![Questions](https://img.shields.io/badge/Preguntas-326-00C853)
-![Flashcards](https://img.shields.io/badge/Flashcards-86-2979FF)
+![Preguntas](https://img.shields.io/badge/Preguntas-485-00C853)
+![Flashcards](https://img.shields.io/badge/Flashcards-143-2979FF)
 
----
+## Caracteristicas
 
-## ✨ Características
+- Dashboard de estudio con recomendacion de que practicar hoy.
+- Practica por tema con retroalimentacion inmediata.
+- Lector lateral de guias AMV en practica por tema y durante el quiz.
+- Simulacro de Operador con estructura visible AMV: 170 preguntas, 3h40m y 70% para aprobar.
+- Practicas de especialidad para Renta Fija, Renta Variable, Derivados y Divisas.
+- Flashcards para repaso rapido.
+- Repaso de errores guardado en localStorage.
+- Continuidad de sesion para reanudar una practica pendiente.
+- Interfaz dark sobria y responsive.
 
-- 🎯 **Modo Práctica** — Practica por tema con retroalimentación inmediata
-- 📝 **Simulacro de Examen** — 130 preguntas aleatorias con temporizador de 2h40m (formato real AMV)
-- 🃏 **Flashcards 3D** — Tarjetas con efecto flip para memorización rápida
-- ❌ **Repaso de Errores** — Revisa y practica solo las preguntas que fallaste
-- 📈 **Tracking de Progreso** — Estadísticas guardadas localmente (localStorage)
-- 🌙 **Diseño Dark Mode Premium** — Interfaz financiera profesional
-- 📱 **100% Responsive** — Funciona en desktop, tablet y móvil
+## Contenido actual
 
-## 📚 Contenido
+Banco actual: **485 preguntas + 143 flashcards**.
 
-**326 preguntas + 86 flashcards** (~50% de cobertura de las guías oficiales AMV):
+La app no declara 100% de cobertura de las guias AMV todavia. La cobertura se esta manejando como una matriz trazable por componente, guia y seccion en `src/data/coverage_manifest.js`, con registro item por item en `src/data/item_traceability.js`.
 
-| Categoría | Preguntas | Temas Clave |
-|---|---|---|
-| 📜 Regulación | 35 | Ley 964, SIMEV, OPV, repo/simultáneas/TTV, SARLAFT, defensoría |
-| ⚖️ Autorregulación | 15 | AMV, tribunal disciplinario, sanciones, certificación |
-| 🤝 Ética | 13 | Información privilegiada, front running, churning, murallas chinas |
-| 📊 Análisis Económico | 15 | Política monetaria/fiscal, PIB, ciclos, balanza de pagos |
-| ⚠️ Riesgos | 14 | VaR, duración, backtesting, stress testing, SARL |
-| 🔢 Matemáticas Financieras | 41 | Tasas, TIR/VPN, anualidades, conversiones, Fisher |
-| 📄 Renta Fija | 15 | TES, bonos, yield curve, calificaciones, OMAS, convexidad |
-| 📈 Renta Variable | 24 | Acciones, COLCAP, RPG, capitalización, valoración DCF |
-| 🔄 Derivados | 18 | Futuros, forwards, opciones, griegas, swaps, nemotécnicos |
-| 💱 Divisas | 11 | TRM, mercado cambiario, posición propia, NDF |
-| 💼 Portafolios | 12 | Frontera eficiente, Sharpe, Treynor, Jensen, asset allocation |
-| 🏦 Fondos | 13 | FIC, multifondos, ETF, pensiones, bono pensional |
+| Categoria | Preguntas | Flashcards |
+|---|---:|---:|
+| Regulacion | 74 | 17 |
+| Autorregulacion | 34 | 8 |
+| Etica | 31 | 10 |
+| Analisis Economico | 31 | 7 |
+| Riesgos | 45 | 18 |
+| Matematicas Financieras | 48 | 12 |
+| Renta Fija | 37 | 11 |
+| Renta Variable | 41 | 10 |
+| Derivados | 47 | 16 |
+| Divisas | 32 | 12 |
+| Portafolios | 30 | 12 |
+| Fondos | 35 | 10 |
 
-## 🚀 Instalación
+## Estructura AMV visible
 
-### Requisitos
-- [Node.js](https://nodejs.org/) v18+ 
+- Operador: 170 preguntas, 3h40m, 70% para aprobar.
+- Especialidades individuales: 40 preguntas, 60 min.
+- Si una especialidad no tiene 40 preguntas disponibles en el banco actual, la app la muestra como practica de especialidad, no como simulacro oficial completo.
 
-### Setup
+## Lector de guias
 
-```bash
-# Clonar el repositorio
+La vista `Practica por tema` incluye un boton `Guia` por categoria. El lector se abre como sidebar ocultable y preselecciona la guia oficial asociada al tema. Durante el quiz tambien aparece `Consultar guia de <tema>`.
+
+Cuando la fuente es un PDF directo, la app intenta mostrarlo embebido. Si el navegador embebido bloquea el visor remoto, usa `Abrir guia`; en Chrome/Edge los PDFs directos suelen abrir correctamente.
+
+## Instalacion
+
+Requisitos:
+
+- Node.js compatible con Vite 7: `^20.19.0 || >=22.12.0`.
+- En Windows/PowerShell se recomienda usar `npm.cmd`.
+
+```powershell
 git clone https://github.com/mambatoshi/OperadorBasicoAMV_APP.git
 cd OperadorBasicoAMV_APP
-
-# Instalar dependencias
-npm install
-
-# Iniciar servidor de desarrollo
-npm run dev
+npm.cmd install
+npm.cmd run dev -- --host 127.0.0.1 --port 5173
 ```
 
-Abre `http://localhost:5173` en tu navegador.
+Abre:
 
-### Build de producción
-
-```bash
-npm run build
-npm run preview
+```text
+http://127.0.0.1:5173/
 ```
 
-## 🛠️ Tech Stack
+Mantener `--host 127.0.0.1` evita exponer el servidor de desarrollo en la red local.
 
-- **[Vite](https://vitejs.dev/)** — Build tool ultrarrápido
-- **Vanilla JS** — Sin frameworks, máximo rendimiento
-- **CSS3** — Glassmorphism, gradientes, animaciones
-- **localStorage** — Persistencia de progreso sin backend
+## Scripts
 
-## 📁 Estructura
-
-```
-├── index.html              # Entry point
-├── package.json
-├── src/
-│   ├── main.js             # Lógica principal de la app
-│   ├── style.css           # Diseño dark mode premium
-│   ├── data/
-│   │   └── questions.js    # Banco de preguntas y flashcards
-│   └── modules/
-│       └── storage.js      # Módulo de persistencia
-└── public/
-    └── vite.svg
+```powershell
+npm.cmd run dev -- --host 127.0.0.1 --port 5173
+npm.cmd run build
+npm.cmd run preview:local
+npm.cmd run verify:data
+npm.cmd run coverage:report
+npm.cmd run audit
+npm.cmd run check
 ```
 
-## 📖 Sobre el Examen AMV
+## Seguridad del toolchain
 
-El examen de **Operador Básico** del AMV evalúa la idoneidad profesional para operar en el mercado de valores colombiano. Consta de **130 preguntas** en **2 horas y 40 minutos**, cubriendo regulación, ética, instrumentos financieros, riesgos y matemáticas financieras.
+La app usa Vite 7.3.x para evitar un salto mayor a Vite 8. El lockfile debe resolver dependencias sin vulnerabilidades conocidas en `npm audit`.
 
-> ⚠️ Esta app es una herramienta de estudio complementaria. Consulta siempre las [guías oficiales de AMV](https://www.amvcolombia.org.co/) para la preparación completa.
+Validacion recomendada antes de publicar cambios:
 
-## 📄 Licencia
+```powershell
+npm.cmd audit
+npm.cmd run check
+git diff --check
+```
 
-Este proyecto es de uso educativo y personal. El contenido se basa en las guías de estudio publicadas por AMV bajo licencia CC BY-NC-ND 4.0.
+## Cobertura y calidad de datos
+
+La ruta hacia 100% de data utilization es incremental:
+
+1. Mapear cada capitulo/seccion de guia AMV en `coverage_manifest.js`.
+2. Mantener la trazabilidad item por item en `item_traceability.js` con `source`, `guideSection`, `component`, `traceStatus` y `traceConfidence`.
+3. Revisar primero los items de confianza media o baja antes de afirmar cobertura validada.
+4. Evitar preguntas de relleno: cada item nuevo debe estar vinculado a una guia o a un objetivo de examen.
+5. Mantener el banco validado con `npm.cmd run verify:data` y auditar cobertura con `npm.cmd run coverage:report`.
+
+El verificador falla si una pregunta o flashcard queda sin trazabilidad. Las advertencias se reservan para baja confianza, items que requieren revision o especialidades que no llegan al minimo de 40 preguntas utilizables.
+
+## Fuentes oficiales
+
+- [AMV Operador](https://amvcolombia.org.co/en-que-se-puede-certificar/operador/)
+- [Guia de Estudio Regulacion Operador](https://amvcolombia.org.co/wp-content/uploads/2021/09/GuiaRegulacion-OPERADOR.pdf)
+- [Guia de Estudio Etica e Integridad](https://amvcolombia.org.co/wp-content/uploads/2025/09/ETIC-001-2025-08-29-Ajustada_compressed.pdf)
+- [Guia de Estudio Analisis Economico y Matematicas Financieras](https://www.amvcolombia.org.co/wp-content/uploads/2019/12/Gu%C3%83%C2%ADa-An%C3%83%C2%A1lisis-Econ%C3%83%C2%B3mico-y-Matem%C3%83%C2%A1ticas-financieras-Asesor-Financiero-Operador-y-Directivo.pdf)
+- [Guia de ejercicios de Matematicas Financieras](https://amvcolombia.org.co/wp-content/uploads/2025/04/Guia-de-ejercicios-Matematicas-financieras.pdf)
+- [Guia de Estudio Fondos de Inversion Colectiva](https://www.amvcolombia.org.co/wp-content/uploads/2019/08/Gu%C3%ADa-FIC-Operador.pdf)
+- [Guia de Estudio Administracion de Portafolios](https://www.amvcolombia.org.co/wp-content/uploads/2019/08/Gu%C3%ADa-Administraci%C3%B3n-de-Portafolios.pdf)
+- [Guia de Estudio Renta Fija](https://www.amvcolombia.org.co/wp-content/uploads/2019/08/Guia-Renta-Fija-.pdf)
+- [Guia de Estudio Renta Variable](https://www.amvcolombia.org.co/wp-content/uploads/2022/06/9.2-Guia-Renta-Variable-Operador-V.-2022-06-07.pdf)
+- [Guia de Estudio de Autorregulacion](https://amvcolombia.org.co/wp-content/uploads/2025/08/AAMV-002-2025-08-26.pdf)
+
+## Licencia
+
+Proyecto de uso educativo y personal. Consulta siempre las guias oficiales de AMV para preparacion completa y validacion normativa.
