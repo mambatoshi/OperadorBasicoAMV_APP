@@ -12,6 +12,7 @@ import {
 const app = document.getElementById('app');
 
 const PASSING_PCT = 70;
+const GUIDE_WIDTH_KEY = 'amv_guide_width';
 const GUIDE_READER_SOURCES = [
   'guia_regulacion',
   'guia_autorregulacion',
@@ -787,8 +788,8 @@ function renderGuideReader(selectedGuideKey = GUIDE_READER_SOURCES[0]?.key) {
   const firstGuide = GUIDE_READER_SOURCES.find((guide) => guide.key === selectedGuideKey) || GUIDE_READER_SOURCES[0];
   return `
     <div class="guide-drawer" id="guide-drawer" aria-hidden="true">
-      <button class="guide-backdrop" id="guide-backdrop" aria-label="Cerrar guias"></button>
       <aside class="panel guide-reader" aria-label="Guias oficiales AMV">
+        <div class="guide-resize" id="guide-resize" role="separator" aria-orientation="vertical" aria-label="Redimensionar guias"></div>
         <div class="section-heading inline">
           <div>
             <p class="eyebrow">Lector</p>
@@ -847,17 +848,25 @@ function setGuideReaderOpen(isOpen) {
   if (!drawer) return;
   drawer.classList.toggle('open', isOpen);
   drawer.setAttribute('aria-hidden', String(!isOpen));
-  document.body.classList.toggle('drawer-open', isOpen);
+
 }
 
 function openGuideForCategory(category) {
   const select = document.getElementById('guide-select');
   const guideKey = getGuideKeyForCategory(category);
-  if (select) {
+  if (isGuideReaderOpen() && select?.value === guideKey) {
+    setGuideReaderOpen(false);
+    return;
+  }
+  if (select && select.value !== guideKey) {
     select.value = guideKey;
     select.dispatchEvent(new Event('change'));
   }
   setGuideReaderOpen(true);
+}
+
+function isGuideReaderOpen() {
+  return document.getElementById('guide-drawer')?.classList.contains('open') || false;
 }
 
 function getGuideKeyForCategory(category) {
@@ -870,11 +879,10 @@ function bindGuideReader() {
   const openLink = document.getElementById('guide-open');
   const component = document.getElementById('guide-component');
   const close = document.getElementById('close-guide-reader');
-  const backdrop = document.getElementById('guide-backdrop');
   if (!select || !viewer || !openLink || !component) return;
 
-  close.onclick = () => setGuideReaderOpen(false);
-  backdrop.onclick = () => setGuideReaderOpen(false);
+  if (close) close.onclick = () => setGuideReaderOpen(false);
+  bindGuideResize();
   document.onkeydown = (event) => {
     if (event.key === 'Escape') setGuideReaderOpen(false);
   };
@@ -884,6 +892,34 @@ function bindGuideReader() {
     viewer.innerHTML = renderGuideViewer(guide);
     openLink.href = guide.url;
     component.textContent = formatComponentLabel(guide.component);
+  };
+}
+
+function bindGuideResize() {
+  const drawer = document.getElementById('guide-drawer');
+  const handle = document.getElementById('guide-resize');
+  if (!drawer || !handle) return;
+
+  const saved = Number(localStorage.getItem(GUIDE_WIDTH_KEY));
+  if (saved) drawer.style.setProperty('--guide-width', `${saved}px`);
+
+  handle.onpointerdown = (event) => {
+    event.preventDefault();
+    handle.setPointerCapture(event.pointerId);
+    const onMove = (moveEvent) => {
+      const maxWidth = Math.min(window.innerWidth - 24, 980);
+      const nextWidth = Math.max(380, Math.min(maxWidth, window.innerWidth - moveEvent.clientX));
+      drawer.style.setProperty('--guide-width', `${nextWidth}px`);
+      localStorage.setItem(GUIDE_WIDTH_KEY, String(Math.round(nextWidth)));
+    };
+    const onUp = () => {
+      handle.onpointermove = null;
+      handle.onpointerup = null;
+      handle.onpointercancel = null;
+    };
+    handle.onpointermove = onMove;
+    handle.onpointerup = onUp;
+    handle.onpointercancel = onUp;
   };
 }
 

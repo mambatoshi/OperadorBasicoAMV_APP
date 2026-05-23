@@ -45,10 +45,6 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
 }
 
-body.drawer-open {
-  overflow: hidden;
-}
-
 button {
   color: inherit;
   font: inherit;
@@ -819,47 +815,62 @@ button:focus-visible {
 
 .guide-drawer {
   position: fixed;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   z-index: 40;
-  display: grid;
-  justify-items: end;
+  width: min(var(--guide-width, 620px), calc(100vw - 18px));
   visibility: hidden;
   pointer-events: none;
+  transform: translateX(100%);
+  transition: transform 220ms ease, visibility 220ms ease;
 }
 
 .guide-drawer.open {
   visibility: visible;
   pointer-events: auto;
+  transform: translateX(0);
 }
 
-.guide-backdrop {
-  position: absolute;
-  inset: 0;
-  border: 0;
-  background: rgba(3, 7, 12, 0.58);
-  opacity: 0;
-  cursor: pointer;
-  transition: opacity var(--transition);
-}
-
-.guide-drawer.open .guide-backdrop {
-  opacity: 1;
-}
 
 .guide-reader {
   position: relative;
   z-index: 1;
-  width: min(760px, calc(100vw - 28px));
-  height: calc(100vh - 28px);
-  margin: 14px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
   overflow: hidden;
-  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.48);
-  transform: translateX(calc(100% + 28px));
-  transition: transform 220ms ease;
+  border-radius: var(--radius) 0 0 var(--radius);
+  box-shadow: -18px 0 50px rgba(0, 0, 0, 0.42);
 }
 
-.guide-drawer.open .guide-reader {
-  transform: translateX(0);
+.guide-resize {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -5px;
+  z-index: 3;
+  width: 10px;
+  cursor: ew-resize;
+}
+
+.guide-resize::after {
+  position: absolute;
+  top: 14px;
+  bottom: 14px;
+  left: 4px;
+  width: 2px;
+  border-radius: 999px;
+  background: var(--border-strong);
+  content: '';
+  opacity: 0;
+  transition: opacity var(--transition), background var(--transition);
+}
+
+.guide-resize:hover::after,
+.guide-resize:active::after {
+  background: var(--accent);
+  opacity: 1;
 }
 
 .icon-btn {
@@ -1125,10 +1136,16 @@ button:focus-visible {
     flex: 1;
   }
 
+  .guide-drawer {
+    width: calc(100vw - 8px);
+  }
+
+  .guide-resize {
+    display: none;
+  }
+
   .guide-reader {
-    width: calc(100vw - 16px);
-    height: calc(100vh - 16px);
-    margin: 8px;
+    border-radius: var(--radius) 0 0 var(--radius);
   }
 
   .guide-meta {
