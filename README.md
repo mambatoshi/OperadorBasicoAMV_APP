@@ -90,4 +90,9 @@ src/
 
 ## Licencia
 
-Proyecto de uso educativo y personal. El contenido se basa en las guías de estudio de AMV; consulta siempre las guías oficiales para la preparación completa y la validación normativa.
+Proyecto con fines educativos y de uso personal, sin ánimo de lucro.
+
+- **Código:** [MIT](LICENSE).
+- **Contenido de estudio** (`src/data/`): basado en las guías de estudio de AMV, que se publican bajo [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es). No está cubierto por la licencia MIT, no puede usarse con fines comerciales y sus derechos pertenecen a AMV.
+
+Proyecto independiente, sin afiliación ni aval de AMV. Consulta siempre las guías oficiales para la preparación completa y la validación normativa.
