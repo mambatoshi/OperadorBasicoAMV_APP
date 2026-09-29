@@ -1,128 +1,98 @@
-# AMV Operador Basico - Study App
+# AMV Estudio · Operador
 
-App de estudio interactiva para preparar el examen de certificacion **Operador** del Autorregulador del Mercado de Valores de Colombia (AMV), incluyendo componente basico y especialidades.
+App para preparar la certificación de **Operador** del Autorregulador del Mercado de Valores de Colombia (AMV), incluyendo las especialidades de negociación. Funciona en el navegador y se instala en el iPhone como app a pantalla completa, con uso sin conexión.
 
-![Vite](https://img.shields.io/badge/Vite-7.x-646CFF?logo=vite&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)
-![Preguntas](https://img.shields.io/badge/Preguntas-485-00C853)
-![Flashcards](https://img.shields.io/badge/Flashcards-143-2979FF)
+**Banco actual:** 485 preguntas y 143 tarjetas, cada una trazada a su guía oficial.
 
-## Caracteristicas
+## Cómo estudia
 
-- Dashboard de estudio con recomendacion de que practicar hoy.
-- Practica por tema con retroalimentacion inmediata.
-- Lector lateral de guias AMV en practica por tema y durante el quiz.
-- Simulacro de Operador con estructura visible AMV: 170 preguntas, 3h40m y 70% para aprobar.
-- Practicas de especialidad para Renta Fija, Renta Variable, Derivados y Divisas.
-- Flashcards para repaso rapido.
-- Repaso de errores guardado en localStorage.
-- Continuidad de sesion para reanudar una practica pendiente.
-- Interfaz dark sobria y responsive.
+- **Sesión de hoy:** junta los repasos que vencen hoy con preguntas nuevas, repartidas según cuántas preguntas trae el examen de cada tema y cuánto te falta dominarlo. Los temas se intercalan.
+- **Repetición espaciada (Leitner):** cada pregunta y cada tarjeta sube de caja al acertar (1, 3, 7, 16 y 35 días) y vuelve a la caja 0 al fallar, así que reaparece en 10 minutos.
+- **Metacognición:** al acertar eliges "Lo sabía" o "Dudé o adiviné". Un acierto con duda vuelve antes.
+- **Opciones barajadas:** en el banco la respuesta correcta era la B en el 80% de las preguntas. Ahora el orden se baraja, salvo en las que dicen "todas las anteriores" o "A y B".
+- **Fuente en cada explicación:** cada pregunta cita su guía y sección, con enlace al PDF oficial.
+- **Simulacros con la estructura oficial:** Operador (170 preguntas en 3 h 40 min, con la misma cantidad por tema y 70% exigido en cada componente), Operador corto, las cuatro especialidades y el Maestro de Negociación. Se guardan en cada respuesta, así que sobreviven si iOS cierra la app. Al final muestran el resultado por componente y por tema y la revisión pregunta por pregunta.
+- **Tarjetas:** autoevaluación en cuatro niveles, con el próximo repaso a la vista.
+- **Consulta:** conversor de tasas (EA, nominales y periódicas, vencidas y anticipadas) que muestra el paso a paso, y una hoja de fórmulas.
+- **Progreso:** roseta de dominio por tema, preparación por componente ponderada por el examen, calendario de actividad y respaldo en JSON para pasar tu progreso entre dispositivos.
 
-## Contenido actual
+## Estructura oficial del examen
 
-Banco actual: **485 preguntas + 143 flashcards**.
+Según la [página de AMV](https://amvcolombia.org.co/en-que-se-puede-certificar/operador/):
 
-La app no declara 100% de cobertura de las guias AMV todavia. La cobertura se esta manejando como una matriz trazable por componente, guia y seccion en `src/data/coverage_manifest.js`, con registro item por item en `src/data/item_traceability.js`.
+| Componente | Preguntas | Para aprobar |
+|---|---|---|
+| Básico: Regulación 30, Autorregulación 15, Ética 15, Análisis económico 15, Riesgos 25, Matemáticas 10 | 110 | 77 |
+| Complementario: Fondos de pensiones 20, FIC 20, Portafolios 20 | 60 | 42 |
+| Cada especialidad (Renta fija, Renta variable, Derivados, Divisas) | 40 | 28 |
+| Maestro de Negociación: Renta fija 34, Renta variable 33, Derivados 33 | 100 | 70 |
 
-| Categoria | Preguntas | Flashcards |
-|---|---:|---:|
-| Regulacion | 74 | 17 |
-| Autorregulacion | 34 | 8 |
-| Etica | 31 | 10 |
-| Analisis Economico | 31 | 7 |
-| Riesgos | 45 | 18 |
-| Matematicas Financieras | 48 | 12 |
-| Renta Fija | 37 | 11 |
-| Renta Variable | 41 | 10 |
-| Derivados | 47 | 16 |
-| Divisas | 32 | 12 |
-| Portafolios | 30 | 12 |
-| Fondos | 35 | 10 |
+Si el banco no tiene suficientes preguntas de un tema (hoy: FIC y las especialidades de Renta fija y Divisas), el simulacro usa las que hay y ajusta el tiempo para mantener el ritmo del examen real. La app lo indica antes de empezar.
 
-## Estructura AMV visible
+## Desarrollo
 
-- Operador: 170 preguntas, 3h40m, 70% para aprobar.
-- Especialidades individuales: 40 preguntas, 60 min.
-- Si una especialidad no tiene 40 preguntas disponibles en el banco actual, la app la muestra como practica de especialidad, no como simulacro oficial completo.
-
-## Lector de guias
-
-La vista `Practica por tema` incluye un boton `Guia` por categoria. El lector se abre como sidebar ocultable y preselecciona la guia oficial asociada al tema. Durante el quiz tambien aparece `Consultar guia de <tema>`.
-
-Cuando la fuente es un PDF directo, la app intenta mostrarlo embebido. Si el navegador embebido bloquea el visor remoto, usa `Abrir guia`; en Chrome/Edge los PDFs directos suelen abrir correctamente.
-
-## Instalacion
-
-Requisitos:
-
-- Node.js compatible con Vite 7: `^20.19.0 || >=22.12.0`.
-- En Windows/PowerShell se recomienda usar `npm.cmd`.
+Requiere Node.js `^20.19.0 || >=22.12.0`. En Windows/PowerShell se recomienda `npm.cmd`.
 
 ```powershell
-git clone https://github.com/mambatoshi/OperadorBasicoAMV_APP.git
-cd OperadorBasicoAMV_APP
 npm.cmd install
 npm.cmd run dev -- --host 127.0.0.1 --port 5173
 ```
 
-Abre:
-
-```text
-http://127.0.0.1:5173/
-```
-
 Mantener `--host 127.0.0.1` evita exponer el servidor de desarrollo en la red local.
 
-## Scripts
+| Script | Qué hace |
+|---|---|
+| `run build` | Build de producción en `dist/`, con el service worker generado |
+| `run preview:local` | Sirve el build en `127.0.0.1:4173` |
+| `run verify:data` | Valida el banco y su trazabilidad |
+| `run coverage:report` | Reporte de cobertura por guía y sección |
+| `run check` | `verify:data` y `build` |
+| `run audit` | `npm audit` |
 
-```powershell
-npm.cmd run dev -- --host 127.0.0.1 --port 5173
-npm.cmd run build
-npm.cmd run preview:local
-npm.cmd run verify:data
-npm.cmd run coverage:report
-npm.cmd run audit
-npm.cmd run check
-```
+Antes de publicar: `npm.cmd audit`, `npm.cmd run check` y `git diff --check`.
 
-## Seguridad del toolchain
+## Publicar e instalar en el iPhone
 
-La app usa Vite 7.3.x para evitar un salto mayor a Vite 8. El lockfile debe resolver dependencias sin vulnerabilidades conocidas en `npm audit`.
+El workflow `.github/workflows/deploy.yml` publica la app en GitHub Pages en cada push a `main` (en el repositorio, Pages debe tener la fuente "GitHub Actions").
 
-Validacion recomendada antes de publicar cambios:
+En el iPhone: abre la URL en Safari, toca **Compartir** y luego **Agregar a pantalla de inicio**. Se abre a pantalla completa y funciona sin conexión.
 
-```powershell
-npm.cmd audit
-npm.cmd run check
-git diff --check
-```
+El progreso se guarda en el dispositivo (localStorage). Para pasarlo de un dispositivo a otro, usa **Progreso → Guardar respaldo** en uno y **Restaurar respaldo** en el otro.
 
 ## Cobertura y calidad de datos
 
-La ruta hacia 100% de data utilization es incremental:
+La ruta hacia cobertura completa es incremental:
 
-1. Mapear cada capitulo/seccion de guia AMV en `coverage_manifest.js`.
-2. Mantener la trazabilidad item por item en `item_traceability.js` con `source`, `guideSection`, `component`, `traceStatus` y `traceConfidence`.
-3. Revisar primero los items de confianza media o baja antes de afirmar cobertura validada.
-4. Evitar preguntas de relleno: cada item nuevo debe estar vinculado a una guia o a un objetivo de examen.
-5. Mantener el banco validado con `npm.cmd run verify:data` y auditar cobertura con `npm.cmd run coverage:report`.
+1. Mapear cada capítulo o sección de las guías en `src/data/coverage_manifest.js`.
+2. Mantener la trazabilidad ítem por ítem en `src/data/item_traceability.js` con `source`, `guideSection`, `component`, `traceStatus` y `traceConfidence`.
+3. Revisar primero los ítems de confianza media o baja antes de afirmar cobertura validada.
+4. Evitar preguntas de relleno: cada ítem nuevo debe estar vinculado a una guía o a un objetivo de examen.
+5. Validar con `verify:data` y auditar con `coverage:report`.
 
-El verificador falla si una pregunta o flashcard queda sin trazabilidad. Las advertencias se reservan para baja confianza, items que requieren revision o especialidades que no llegan al minimo de 40 preguntas utilizables.
+El verificador falla si una pregunta o tarjeta queda sin trazabilidad.
 
-## Fuentes oficiales
+## Estructura del código
 
-- [AMV Operador](https://amvcolombia.org.co/en-que-se-puede-certificar/operador/)
-- [Guia de Estudio Regulacion Operador](https://amvcolombia.org.co/wp-content/uploads/2021/09/GuiaRegulacion-OPERADOR.pdf)
-- [Guia de Estudio Etica e Integridad](https://amvcolombia.org.co/wp-content/uploads/2025/09/ETIC-001-2025-08-29-Ajustada_compressed.pdf)
-- [Guia de Estudio Analisis Economico y Matematicas Financieras](https://www.amvcolombia.org.co/wp-content/uploads/2019/12/Gu%C3%83%C2%ADa-An%C3%83%C2%A1lisis-Econ%C3%83%C2%B3mico-y-Matem%C3%83%C2%A1ticas-financieras-Asesor-Financiero-Operador-y-Directivo.pdf)
-- [Guia de ejercicios de Matematicas Financieras](https://amvcolombia.org.co/wp-content/uploads/2025/04/Guia-de-ejercicios-Matematicas-financieras.pdf)
-- [Guia de Estudio Fondos de Inversion Colectiva](https://www.amvcolombia.org.co/wp-content/uploads/2019/08/Gu%C3%ADa-FIC-Operador.pdf)
-- [Guia de Estudio Administracion de Portafolios](https://www.amvcolombia.org.co/wp-content/uploads/2019/08/Gu%C3%ADa-Administraci%C3%B3n-de-Portafolios.pdf)
-- [Guia de Estudio Renta Fija](https://www.amvcolombia.org.co/wp-content/uploads/2019/08/Guia-Renta-Fija-.pdf)
-- [Guia de Estudio Renta Variable](https://www.amvcolombia.org.co/wp-content/uploads/2022/06/9.2-Guia-Renta-Variable-Operador-V.-2022-06-07.pdf)
-- [Guia de Estudio de Autorregulacion](https://amvcolombia.org.co/wp-content/uploads/2025/08/AAMV-002-2025-08-26.pdf)
+```
+src/
+├── main.js              # router y barra de pestañas
+├── style.css            # sistema visual (claro y oscuro)
+├── data/                # banco, manifiesto de cobertura y trazabilidad
+├── lib/
+│   ├── bank.js          # normaliza el banco y lo une con sus fuentes
+│   ├── store.js         # persistencia, repetición espaciada y migración
+│   ├── sessions.js      # sesión diaria, práctica por tema y errores
+│   ├── exams.js         # estructura oficial de los exámenes
+│   └── nav.js, util.js
+├── ui/                  # plantillas, íconos y roseta
+└── views/               # hoy, temas, práctica, tarjetas, simulacro, progreso, consulta
+```
 
 ## Licencia
 
-Proyecto de uso educativo y personal. Consulta siempre las guias oficiales de AMV para preparacion completa y validacion normativa.
+Proyecto con fines educativos y de uso personal, sin ánimo de lucro.
+
+- **Código:** [MIT](LICENSE).
+- **Contenido de estudio** (`src/data/`): basado en las guías de estudio de AMV, que se publican bajo [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es). No está cubierto por la licencia MIT, no puede usarse con fines comerciales y sus derechos pertenecen a AMV.
+
+Proyecto independiente, sin afiliación ni aval de AMV. Consulta siempre las guías oficiales para la preparación completa y la validación normativa.
