@@ -10,9 +10,10 @@ function serviceWorker() {
     apply: 'build',
     generateBundle(_, bundle) {
       // _headers y _redirects son configuración de Cloudflare Pages, no se sirven.
-      const files = ['./', ...readdirSync('public'), ...Object.keys(bundle)]
-        .filter(f => !f.endsWith('.map') && !f.startsWith('_') && !f.startsWith('.'))
-        .map(f => (f === './' ? f : './' + f));
+      const publicFiles = readdirSync('public').filter(f => !f.startsWith('_') && !f.startsWith('.'));
+      const files = ['./', ...[...publicFiles, ...Object.keys(bundle)]
+        .filter(f => !f.endsWith('.map'))
+        .map(f => './' + f)];
       const version = createHash('sha1').update(files.join('|')).digest('hex').slice(0, 10);
       this.emitFile({
         type: 'asset',
