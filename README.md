@@ -53,7 +53,16 @@ Antes de publicar: `npm.cmd audit`, `npm.cmd run check` y `git diff --check`.
 
 ## Publicar e instalar en el iPhone
 
-El workflow `.github/workflows/deploy.yml` publica la app en GitHub Pages en cada push a `main` (en el repositorio, Pages debe tener la fuente "GitHub Actions").
+La app se publica en **Cloudflare Pages**, conectado a este repositorio: cada push a `main` genera un despliegue nuevo.
+
+| Ajuste | Valor |
+|---|---|
+| Framework preset | None |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+| Variable de entorno | `NODE_VERSION` = `22` |
+
+`public/_headers` evita que el service worker y el `index.html` queden en caché, para que cada actualización llegue a la app instalada.
 
 En el iPhone: abre la URL en Safari, toca **Compartir** y luego **Agregar a pantalla de inicio**. Se abre a pantalla completa y funciona sin conexión.
 
